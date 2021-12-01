@@ -1,0 +1,37 @@
+```meta-Currency
+usdt
+```
+
+# Swap BNB to USDT in PancakeSwap
+
+In this scenario, you will swap BNB to USDT in PancakeSwap.
+
+### Type in asset to swap.
+
+```input-Dynamic BNB
+let amountIn = 0.1;
+```
+
+```input-Verify
+assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
+assert(isCurrency(amountIn), "Invalid value");
+assert(amountIn <= getBalance(), "Insufficient BNB." );
+```
+
+```output-Dynamic USDT
+let usdtAmount = Q.pancake.getAmountOutFromExactIn ("usdt", amountIn);
+print (usdtAmount);
+```
+
+### Swap BNB to USDT.
+
+- Default PancakeSwap slippage (0.5%)
+
+```taster
+// Swap BNB to USDT.
+Q.pancake.swapExactBNBForTokens ("usdt", amountIn);
+```
+
+### All steps are done successfully.
+
+- Check your balance on the left bar or your connected wallet.
