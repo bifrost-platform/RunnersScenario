@@ -4,7 +4,7 @@ bfc
 
 # Sushiswap에서 ETH를 BFC로 교환하기
 
-Chainrunner Q는 이 문서의 내용대로, Sushiswap에서 ETH를 BFC로 교환합니다.
+Chainrunner Q는 이 문서의 내용대로 Sushiswap에서 ETH를 BFC로 교환합니다.
 
 ![title](https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/imgs/ETHtoBFC.jpg)
 
@@ -20,12 +20,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
-assert(amountIn <= getBalance (), "ETH 잔액이 부족합니다." );
+assert(amountIn <= getBalance(), "ETH 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic BFC
-let bfcAmount = Q.sushi.getAmountsOutFromExactIn ("bfc", amountIn);
-print (bfcAmount);
+let bfcAmount = Q.sushi.getAmountsOutFromExactIn("bfc", amountIn);
+print(bfcAmount);
 ```
 
 ### Sushiswap에서 ETH를 BFC로 교환합니다.
@@ -34,7 +34,7 @@ print (bfcAmount);
 
 ```taster
 // ETH를 BFC로 교환합니다.
-Q.sushi.swapExactETHForTokens ("bfc", amountIn);
+Q.sushi.swapExactETHForTokens("bfc", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

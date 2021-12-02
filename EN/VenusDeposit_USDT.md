@@ -11,7 +11,7 @@ In this scenario, you will deposit USDT in Venus.
 - Type the amount of asset to deposit.
 
 ```input USDT
-// Amount of USDT to deposit
+// USDT to deposit
 let amountDeposit = 100;
 ```
 

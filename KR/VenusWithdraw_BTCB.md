@@ -29,7 +29,7 @@ let amountWithdraw = 0.01;
 ```input-Verify
 assert(amountWithdraw > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountWithdraw), "잘못된 형식의 값 입니다.");
-assert(Q.venus.getAmountWithdrawMax("btcb") >= amountWithdraw, "예치된 BTCB가 부족합니다.");
+assert(amountWithdrawMax >= amountWithdraw, "예치된 BTCB가 부족합니다.");
 ```
 
 ### 설정한 금액 출금하기

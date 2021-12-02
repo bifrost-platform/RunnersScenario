@@ -20,7 +20,7 @@ print ("Deposited ETH:" + assetAmount.toString());
 ### Withdraw ETH in AAVE v2.
 
 ```taster
-Withdraw ETH in AAVE.
+// Withdraw ETH in AAVE.
 Q.aaveV2.withdraw ("ether", assetAmount);
 ```
 

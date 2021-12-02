@@ -21,7 +21,7 @@ print ("Deposited USDC:" + assetAmount.toString());
 ### Withdraw USDC in AAVE v2.
 
 ```taster
-Withdraw USDC in AAVE.
+// Withdraw USDC in AAVE.
 Q.aaveV2.withdraw ("usdc", assetAmount);
 ```
 

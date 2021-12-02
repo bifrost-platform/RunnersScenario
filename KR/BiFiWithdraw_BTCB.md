@@ -7,7 +7,7 @@ btcb
 ![BiFi Logo](https://s3.ap-northeast-2.amazonaws.com/thebifrost.io/home/bifi/bifi_logo.svg)
 
 [BiFi](https://bifi.finance/) 는 다양한 네트워크에서 Lending 서비스를 지원합니다.
-Chainrunner Q는 이 문서의 내용대로 BiFi에 예금한 ETH를 출금합니다.
+Chainrunner Q는 이 문서의 내용대로 BiFi에 예금한 BTCB를 출금합니다.
 
 ### 출금 가능한 최대 금액 확인하기
 

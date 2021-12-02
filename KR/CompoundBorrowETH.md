@@ -11,9 +11,9 @@ Chainrunner Q는 이 문서의 내용대로 Compound에서 ETH를 대출합니�
 - 정확한 수량은 [Compound](https://app.compound.finance/)에서 확인할 수 있습니다.
 
 ```output-Dynamic
-let amountBorrowMax = Q.compound.getAvailableBorrows ("ether");
-assert (amountBorrowMax >= 0.000001 ether, "Compound에서 대출 가능한 ETH가 없거나 너무 적습니다.");
-print ("대출 가능한 금액: " + amountBorrowMax.toString());
+let amountBorrowMax = Q.compound.getAvailableBorrows("ether");
+assert(amountBorrowMax >= 0.000001 eth, "Compound에서 대출 가능한 ETH가 없거나 너무 적습니다.");
+print("대출 가능한 금액: " + amountBorrowMax.toString());
 ```
 
 ### 대출할 금액 설정하기
@@ -38,7 +38,7 @@ assert(amountBorrowMax >= amount, "대출 가능한 ETH가 부족합니다.");
 - 대출의 성공 여부는 [Compound](https://app.compound.finance/)에서 다시 한번 확인하세요.
 
 ```taster
-Q.compound.borrow ("ether", amount);
+Q.compound.borrow("ether", amount);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

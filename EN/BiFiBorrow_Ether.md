@@ -1,7 +1,7 @@
 ```meta-Currency
 ```
 
-# Borrow Ether from BiFi
+# Borrow ETH from BiFi
 
 ![BiFi Logo](https://s3.ap-northeast-2.amazonaws.com/thebifrost.io/home/bifi/bifi_logo.svg)
 
@@ -36,7 +36,7 @@ assert(Q.bifi.getMaxBorrowAmount("ether") >= amountBorrow, "Insufficient ETH to 
 
 ### Proceed loaning
 
-- Now, proceed loaning.
+- Now, proceed loaning in BiFi.
 
 ```taster
 Q.bifi.borrow("ether", amountBorrow);

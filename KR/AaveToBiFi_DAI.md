@@ -4,7 +4,7 @@ dai
 
 # AAVE V2에서 BiFi로 DAI 자산 옮기기
 
-다음 과정에서 AAVE V2에 예금된 DAI를 인출하고, 곧바로 BiFi로 옮깁니다.
+다음 과정에서 AAVE V2에 예금된 DAI를 출금하고, 곧바로 BiFi로 옮깁니다.
 
 ### AAVE V2에 예금된 DAI 수량을 확인합니다.
 

@@ -36,7 +36,7 @@ assert(Q.bifi.getMaxBorrowAmount("bnb") >= amountBorrow, "Insufficient BNB to bo
 
 ### Proceed loaning
 
-- Now, proceed loaning.
+- Now, proceed loaning in BiFi.
 
 ```taster
 Q.bifi.borrow("bnb", amountBorrow);

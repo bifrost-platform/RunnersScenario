@@ -30,7 +30,7 @@ assert(isCurrency(amountBorrow), "잘못된 형식의 값 입니다.");
 assert(amountBorrowMax >= amountBorrow, "빌릴 수 있는 BNB가 부족합니다.");
 ```
 
-### 설정 한 금액 대출하기
+### 설정한 금액 대출하기
 
 - 설정한 수량만큼 대출합니다.
 - 서비스의 특성상 대출 가능한 수치를 벗어나면, 성공 여부를 정확히 알려주지 않고 종료될 수 있습니다.

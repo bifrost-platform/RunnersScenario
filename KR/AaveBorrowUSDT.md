@@ -7,8 +7,9 @@ usdt
 다음 과정은 AAVE V2의 예금을 담보로 USDT를 대출합니다.
 
 ### 대출 가능한 금액 확인하기
-대출 가능한 USDT의 최대 수량을 확인합니다.
-정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
+
+- 대출 가능한 USDT의 최대 수량을 확인합니다.
+- 정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
 let amountBorrowMax = Q.aaveV2.getAmountBorrowMax("usdt");
@@ -32,8 +33,10 @@ assert(amountBorrowMax >= amount, "빌릴 수 있는 USDT가 부족합니다.");
 ```
 
 ### 대출 이자 방식 선택하기
-AAVE는 이자 계산 방식에 따라 고정금리(stable) 대출과 변동금리(variable) 대출을 지원합니다.
-자세한 이자 계산 방식은 [여기](https://docs.aave.com/faq/borrowing#what-is-the-difference-between-stable-and-variable-rate)에서 확인할 수 있습니다.
+
+- AAVE는 이자 계산 방식에 따라 고정금리(stable) 대출과 변동금리(variable) 대출을 지원합니다.
+- 자세한 이자 계산 방식은 [여기](https://docs.aave.com/faq/borrowing#what-is-the-difference-between-stable-and-variable-rate)에서 확인할 수 있습니다.
+
 - 고정금리(stable): 1
 - 변동금리(varialbe): 2
 

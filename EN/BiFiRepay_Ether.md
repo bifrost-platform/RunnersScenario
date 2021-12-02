@@ -1,7 +1,7 @@
 ```meta-Currency
 ```
 
-# Repay Ether in BiFi
+# Repay ETH in BiFi
 
 ![BiFi Logo](https://s3.ap-northeast-2.amazonaws.com/thebifrost.io/home/bifi/bifi_logo.svg)
 
@@ -31,7 +31,7 @@ let amountRepay = 0.1;
 ```input-Verify
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value");
-assert(getBalance() >= amountRepay, "Insufficient Ether available to repay.");
+assert(getBalance() >= amountRepay, "Insufficient ETH available to repay.");
 assert(Q.bifi.getMaxRepayAmount("ether") >= amountRepay, "You cannot repay more than your loan.");
 ```
 

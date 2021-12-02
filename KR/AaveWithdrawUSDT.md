@@ -8,7 +8,7 @@ usdt
 
 ### 출금 가능한 최대 금액 확인
 
-- 대출 가능한 WBTC의 최대 수량을 확인합니다.
+- 출금 가능한 USDT의 최대 수량을 확인합니다.
 - 정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic

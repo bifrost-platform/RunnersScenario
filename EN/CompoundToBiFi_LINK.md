@@ -21,7 +21,7 @@ print ("Deposited LINK:" + assetAmount.toString());
 ### Withdraw LINK in Compound.
 
 ```taster
-Withdraw LINK in Compound.
+// Withdraw LINK in Compound.
 Q.compound.withdraw ("link", assetAmount);
 ```
 

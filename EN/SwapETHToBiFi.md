@@ -20,12 +20,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(amountIn <= getBalance (), "Insufficient ETH." );
+assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic BIFI
-let bifiAmount = Q.sushi.getAmountsOutFromExactIn ("bifi", amountIn);
-print (bifiAmount);
+let bifiAmount = Q.sushi.getAmountsOutFromExactIn("bifi", amountIn);
+print(bifiAmount);
 ```
 
 ### Swap ETH to BiFi in Sushiswap.
@@ -34,7 +34,7 @@ print (bifiAmount);
 
 ```taster
 // Swap ETH to BiFi.
-Q.sushi.swapExactETHForTokens ("bifi", amountIn);
+Q.sushi.swapExactETHForTokens("bifi", amountIn);
 ```
 
 ### All steps are done successfully.

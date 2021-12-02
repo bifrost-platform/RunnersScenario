@@ -33,7 +33,7 @@ assert(Q.bifi.getMaxBorrowAmount("btcb") >= amountBorrow, "Insufficient BTCB to 
 
 ### Proceed loaning
 
-- Now, borrow asset.
+- Now, proceed loaning in BiFi.
 
 ```taster
 Q.bifi.borrow("btcb", amountBorrow);
@@ -41,4 +41,5 @@ Q.bifi.borrow("btcb", amountBorrow);
 
 ### All steps are done successfully.
 
-- Check your balance in your connected wallet and [BiFi](https://app.bifi.finance/lend).
+- You have successfully borrowed BTCB in BiFi.
+- Check your balance in [BiFi App](https://app.bifi.finance/).

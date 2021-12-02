@@ -25,7 +25,7 @@ assert(interestRateMode == 1 || interestRateMode == 2, "Incorrect interest calcu
 
 ```output-Dynamic
 let amountRepayMax = Q.aaveV2.getAmountRepayMax("wbtc", interestRateMode);
-assert(amountRepayMax > 0.000001 wbtc, "인출 가능한 금액이 너무 적습니다.");
+assert(amountRepayMax > 0.000001 wbtc, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```
 

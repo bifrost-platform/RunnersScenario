@@ -1,9 +1,9 @@
 ```meta-Currency
 ```
 
-# Deposit Ether in Aave V2
+# Deposit ETH in Aave V2
 
-In this scenario, you will deposit Ether in Aave V2.
+In this scenario, you will deposit ETH in Aave V2.
 
 ### Deposit amount
 

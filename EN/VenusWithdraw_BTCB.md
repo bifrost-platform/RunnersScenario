@@ -29,7 +29,7 @@ let amountWithdraw = 0.01;
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value.");
-assert(Q.venus.getAmountWithdrawMax("btcb") >= amountWithdraw, "Insufficient BTCB.");
+assert(amountWithdrawMax >= amountWithdraw, "Insufficient BTCB.");
 ```
 
 ### Proceed withdrawal

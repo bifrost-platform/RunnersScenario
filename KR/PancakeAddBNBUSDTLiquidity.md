@@ -9,7 +9,7 @@ BNB의 절반을 USDT로 바꾸어 동일 금액의 BNB-USDT 쌍을 PancakeSwap�
 
 ### 사용할 BNB를 입력받습니다.
 
-- 유동성 풀에 공급할 BNB를 입력합니다. 입력받은 BNB의 절반은 USDT 교환됩니다.
+- 유동성 풀에 공급할 BNB를 입력합니다. 입력받은 BNB의 절반은 USDT로 교환됩니다.
 
 ```input BNB
 // BNB 수량을 결정해주세요.
@@ -41,5 +41,5 @@ Q.pancake.addLiquidityBNB ("usdt", amountIn / 2, amountUsdt);
 
 ### 모든 Step이 정상적으로 완료되었습니다.
 
-- 유동성 제공이 완료되었습니다.
-- [PancakeSwap](https://pancakeswap.finance/liquidity)에서 유동성 제공 현황을 확인할 수 있습니다.
+- 유동성 공급이 완료되었습니다.
+- [PancakeSwap](https://pancakeswap.finance/liquidity)에서 유동성 공급 현황을 확인할 수 있습니다.

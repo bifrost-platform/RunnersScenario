@@ -1,5 +1,5 @@
 ```meta-Currency
-bfc, bifi, 0x0beC54c89a7d9F15C4e7fAA8d47ADEdF374462eD
+bifi, 0x0beC54c89a7d9F15C4e7fAA8d47ADEdF374462eD
 ```
 
 # Deposit LP tokens of BiFi-WETH pair inside BiFi Pooling
@@ -55,4 +55,4 @@ Q.bifi.depositLp ("bifi", lpAmount);
 
 ### All steps are done successfully.
 
-- Check your pooling status in [BiFi](https://app.bifi.finance/pool/sushiswap/bfcEth?chainid=mainnet).
+- Check your pooling status in [BiFi](https://app.bifi.finance/pool/sushiswap/bifiEth?chainid=mainnet).

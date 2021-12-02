@@ -4,7 +4,7 @@ usdc
 
 # Sushiswap에서 BNB를 USDC로 교환하기
 
-Chainrunner Q는 이 문서의 내용대로, Sushiswap에서 BNB를 USDC로 교환합니다.
+Chainrunner Q는 이 문서의 내용대로 Sushiswap에서 BNB를 USDC로 교환합니다.
 
 ### 교환할 BNB의 수량을 입력합니다.
 
@@ -18,12 +18,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
-assert(amountIn <= getBalance (), "BNB 잔액이 부족합니다." );
+assert(amountIn <= getBalance(), "BNB 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic USDC
-let usdcAmount = Q.sushi.getAmountsOutFromExactIn ("usdc", amountIn);
-print (usdcAmount);
+let usdcAmount = Q.sushi.getAmountsOutFromExactIn("usdc", amountIn);
+print(usdcAmount);
 ```
 
 ### Sushiswap에서 BNB를 USDC로 교환합니다.
@@ -32,7 +32,7 @@ print (usdcAmount);
 
 ```taster
 // BNB를 USDC로 교환합니다.
-Q.sushi.swapExactBNBForTokens ("usdc", amountIn);
+Q.sushi.swapExactBNBForTokens("usdc", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

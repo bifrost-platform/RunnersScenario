@@ -1,9 +1,9 @@
 ```meta-Currency
 ```
 
-# Withdraw Ether from Aave V2
+# Withdraw ETH from Aave V2
 
-In this scenario, you will withdraw Ether from Aave V2.
+In this scenario, you will withdraw ETH from Aave V2.
 
 ### Confirm asset available to withdraw
 
@@ -11,7 +11,7 @@ In this scenario, you will withdraw Ether from Aave V2.
 
 ```output-Dynamic
 let amountWithdrawMax = Q.aaveV2.getAmountWithdrawMax("ether");
-assert(amountWithdrawMax > 0.000001 ether, "Insufficient asset to withdraw.");
+assert(amountWithdrawMax > 0.000001 eth, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
 
@@ -20,14 +20,14 @@ print("Asset available to withdraw: " + amountWithdrawMax.toString());
 - Type in amount of asset to withdraw.
 
 ```input ETH
-// Amount of Ether to withdraw
+// Amount of ETH to withdraw
 let amountOut = 0.1;
 ```
 
 ```input-Verify
 assert(amountOut > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountOut), "Invalid value");
-assert(amountWithdrawMax >= amountOut, "Insufficient Ether.");
+assert(amountWithdrawMax >= amountOut, "Insufficient ETH.");
 ```
 
 ### Proceed withdrawal

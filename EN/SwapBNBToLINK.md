@@ -18,12 +18,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(amountIn <= getBalance (), "Insufficient BNB." );
+assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic LINK
-let linkAmount = Q.sushi.getAmountsOutFromExactIn ("link", amountIn);
-print (linkAmount);
+let linkAmount = Q.sushi.getAmountsOutFromExactIn("link", amountIn);
+print(linkAmount);
 ```
 
 ### Swap BNB to LINK in Sushiswap.
@@ -32,7 +32,7 @@ print (linkAmount);
 
 ```taster
 // Swap BNB to LINK.
-Q.sushi.swapExactBNBForTokens ("link", amountIn);
+Q.sushi.swapExactBNBForTokens("link", amountIn);
 ```
 
 ### All steps are done successfully.

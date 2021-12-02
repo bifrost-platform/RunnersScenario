@@ -4,12 +4,12 @@ link
 
 # Sushiswap에서 ETH를 LINK로 교환하기
 
-Chainrunner Q는 이 문서의 내용대로, Sushiswap에서 ETH를 LINK로 교환합니다.
+Chainrunner Q는 이 문서의 내용대로 Sushiswap에서 ETH를 LINK로 교환합니다.
 
 ### 교환할 ETH의 수량을 입력합니다.
 
 - 입력된 ETH로 구매 가능한 LINK의 수량이 자동 계산됩니다.
-- 많은 량의 ETH를 입력하더라도, DEX(Sushiswap)에서 구매가능한 수량 부족시 최대 구매가능 LINK의 수량만 표시됩니다. (ETH를 많이 입력하더라도, 실제 구매에 사용된 ETH만 소비됩니다.)
+- 많은 양의 ETH를 입력하더라도, DEX(Sushiswap)에서 구매가능한 수량 부족시 최대 구매가능 LINK의 수량만 표시됩니다. (ETH를 많이 입력하더라도, 실제 구매에 사용된 ETH만 소비됩니다.)
 
 ```input-Dynamic ETH
 let amountIn = 0.1;
@@ -18,12 +18,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
-assert(amountIn <= getBalance (), "ETH 잔액이 부족합니다." );
+assert(amountIn <= getBalance(), "ETH 잔액이 부족합니다." );
 ```
 
 ```output-Dynamic LINK
-let linkAmount = Q.sushi.getAmountsOutFromExactIn ("link", amountIn);
-print (linkAmount);
+let linkAmount = Q.sushi.getAmountsOutFromExactIn("link", amountIn);
+print(linkAmount);
 ```
 
 ### Sushiswap에서 ETH를 LINK로 교환합니다.
@@ -32,7 +32,7 @@ print (linkAmount);
 
 ```taster
 // ETH를 LINK로 교환합니다.
-Q.sushi.swapExactETHForTokens ("link", amountIn);
+Q.sushi.swapExactETHForTokens("link", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

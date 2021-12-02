@@ -21,7 +21,7 @@ print ("Deposited USDT:" + assetAmount.toString());
 ### Withdraw USDT in Compound.
 
 ```taster
-Withdraw USDT in Compound.
+// Withdraw USDT in Compound.
 Q.compound.withdraw ("usdt", assetAmount);
 ```
 

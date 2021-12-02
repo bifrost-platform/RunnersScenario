@@ -29,10 +29,10 @@ assert(Q.erc20.balanceOf("btcb") >= amountDeposit, "보유한 BTCB가 부족합�
 Q.venus.deposit("btcb", amountDeposit);
 ```
 
-### 설정 한 금액을 담보로 설정하기
+### 설정한 금액을 담보로 설정하기
 
 - 예금한 자산을 담보로 설정하고 Venus에서 대출 받을 수 있습니다.
-- 예금만 한다면 이 단계는 생략해되됩니다. 담보 활성화 여부는 [Venus](https://app.venus.io/dashboard)에서 수정 가능합니다.
+- 예금만 한다면 이 단계는 생략해도 됩니다. 담보 활성화 여부는 [Venus](https://app.venus.io/dashboard)에서 수정 가능합니다.
 
 ```taster
 Q.venus.setUseReserveAsCollateral("btcb", true);

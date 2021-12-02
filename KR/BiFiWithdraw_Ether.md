@@ -23,14 +23,14 @@ print("출금 가능한 금액: " + amountWithdrawMax.toString());
 - 출금할 금액을 설정합니다.
 
 ```input ETH
-// 출금할 Ether 수량
+// 출금할 ETH 수량
 let amountWithdraw = 0.1;
 ```
 
 ```input-Verify
 assert(amountWithdraw > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountWithdraw), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.bifi.getMaxWithdrawAmount("ether") >= amountWithdraw, "출금 가능한 Ether가 부족합니다.");
+assert(Q.bifi.getMaxWithdrawAmount("ether") >= amountWithdraw, "출금 가능한 ETH가 부족합니다.");
 ```
 
 ### 설정한 금액 출금하기

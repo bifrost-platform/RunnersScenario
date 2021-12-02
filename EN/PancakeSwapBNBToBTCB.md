@@ -9,18 +9,18 @@ In this scenario, you will swap BNB to BTCB in PancakeSwap.
 ### Type in asset to swap.
 
 ```input-Dynamic BNB
-let amountIn = 1.0;
+let amountIn = 0.1;
 ```
 
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(amountIn <= getBalance(), "Insufficient BNB." );
+assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic BTCB
-let btcbAmount = Q.pancake.getAmountOutFromExactIn ("btcb", amountIn);
-print (btcbAmount);
+let btcbAmount = Q.pancake.getAmountOutFromExactIn("btcb", amountIn);
+print(btcbAmount);
 ```
 
 ### Swap BNB to BTCB.
@@ -29,7 +29,7 @@ print (btcbAmount);
 
 ```taster
 // Swap BNB to BTCB.
-Q.pancake.swapExactBNBForTokens ("btcb", amountIn);
+Q.pancake.swapExactBNBForTokens("btcb", amountIn);
 ```
 
 ### All steps are done successfully.

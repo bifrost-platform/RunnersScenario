@@ -8,14 +8,13 @@ usdt
 
 ### 상환 가능한 금액 확인하기
 
-AAVE는 이자 계산 방식에 따라 고정금리(stable) 대출과 변동금리(variable) 대출을 지원합니다.
-기존 대출의 금리 방식을 선택하고, 상환해야하는 최대 수량을 확인합니다.
-자세한 이자 계산 방식은 [여기](https://docs.aave.com/faq/borrowing#what-is-the-difference-between-stable-and-variable-rate)에서 확인할 수 있습니다.
+- AAVE는 이자 계산 방식에 따라 고정금리(stable) 대출과 변동금리(variable) 대출을 지원합니다. 기존 대출의 이자 계산 방식을 선택하고, 상환해야 하는 최대 수량을 확인합니다. 자세한 이자 계산 방식은 [여기](https://docs.aave.com/faq/borrowing#what-is-the-difference-between-stable-and-variable-rate)에서 확인할 수 있습니다.
+
 - 고정금리(stable): 1
 - 변동금리(varialbe): 2
 
 ```input-Dynamic
-// 상환 이자 방식
+// 이자 계산 방식
 let interestRateMode = 1;
 ```
 

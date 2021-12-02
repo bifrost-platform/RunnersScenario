@@ -17,7 +17,7 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
-assert(getBalance () >= amountIn, "보유한 ETH가 부족합니다.");
+assert(getBalance() >= amountIn, "보유한 ETH가 부족합니다.");
 ```
 
 ### 설정 한 금액 예금하기
@@ -25,7 +25,7 @@ assert(getBalance () >= amountIn, "보유한 ETH가 부족합니다.");
 - 설정한 금액만큼 예금합니다.
 
 ```taster
-Q.compound.deposit ("ether", amountIn);
+Q.compound.deposit("ether", amountIn);
 ```
 
 ### 설정 한 금액을 담보로 설정하기

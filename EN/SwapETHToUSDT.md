@@ -18,12 +18,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(amountIn <= getBalance (), "Insufficient ETH." );
+assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic USDT
-let usdtAmount = Q.sushi.getAmountsOutFromExactIn ("usdt", amountIn);
-print (usdtAmount);
+let usdtAmount = Q.sushi.getAmountsOutFromExactIn("usdt", amountIn);
+print(usdtAmount);
 ```
 
 ### Swap ETH to USDT in Sushiswap.
@@ -32,7 +32,7 @@ print (usdtAmount);
 
 ```taster
 // Swap ETH to USDT.
-Q.sushi.swapExactETHForTokens ("usdt", amountIn);
+Q.sushi.swapExactETHForTokens("usdt", amountIn);
 ```
 
 ### All steps are done successfully.

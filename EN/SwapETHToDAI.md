@@ -18,12 +18,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(amountIn <= getBalance (), "Insufficient ETH." );
+assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic DAI
-let daiAmount = Q.sushi.getAmountsOutFromExactIn ("dai", amountIn);
-print (daiAmount);
+let daiAmount = Q.sushi.getAmountsOutFromExactIn("dai", amountIn);
+print(daiAmount);
 ```
 
 ### Swap ETH to DAI in Sushiswap.
@@ -32,7 +32,7 @@ print (daiAmount);
 
 ```taster
 // Swap ETH to DAI.
-Q.sushi.swapExactETHForTokens ("dai", amountIn);
+Q.sushi.swapExactETHForTokens("dai", amountIn);
 ```
 
 ### All steps are done successfully.

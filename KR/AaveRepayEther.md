@@ -7,14 +7,13 @@
 
 ### 상환 가능한 금액 확인하기
 
-AAVE는 이자 계산 방식에 따라 고정금리(stable) 대출과 변동금리(variable) 대출을 지원합니다.
-기존 대출의 금리 방식을 선택하고, 상환해야하는 최대 수량을 확인합니다.
-자세한 이자 계산 방식은 [여기](https://docs.aave.com/faq/borrowing#what-is-the-difference-between-stable-and-variable-rate)에서 확인할 수 있습니다.
+- AAVE는 이자 계산 방식에 따라 고정금리(stable) 대출과 변동금리(variable) 대출을 지원합니다. 기존 대출의 이자 계산 방식을 선택하고, 상환해야 하는 최대 수량을 확인합니다. 자세한 이자 계산 방식은 [여기](https://docs.aave.com/faq/borrowing#what-is-the-difference-between-stable-and-variable-rate)에서 확인할 수 있습니다.
+
 - 고정금리(stable): 1
 - 변동금리(varialbe): 2
 
 ```input-Dynamic
-// 상환 이자 방식
+// 이자 계산 방식
 let interestRateMode = 1;
 ```
 
@@ -33,18 +32,18 @@ print("상환 가능한 금액: " + amountRepayMax.toString());
 - 상환할 금액을 설정합니다.
 
 ```input ETH
-// 상환할 Ether 수량
+// 상환할 ETH 수량
 let amount = 0.1;
 ```
 
 ```input-Verify
 assert(amount > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amount), "잘못된 형식의 값이 입력 되었습니다.");
-assert(getBalance() >= amount, "상환할 수 있는 Ether가 부족합니다.");
+assert(getBalance() >= amount, "상환할 수 있는 ETH가 부족합니다.");
 assert(amountRepayMax >= amount, "부채보다 많은 금액을 상환할수 없습니다.");
 ```
 
-### 설정 한 금액 상환하기
+### 설정한 금액 상환하기
 
 - 설정한 금액만큼 상환합니다.
 

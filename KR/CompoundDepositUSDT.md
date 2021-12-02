@@ -26,7 +26,7 @@ assert(Q.erc20.balanceOf("usdt") >= amountIn, "보유한 USDT가 부족합니다
 - 설정한 금액만큼 예금합니다.
 
 ```taster
-Q.compound.deposit ("usdt", amountIn);
+Q.compound.deposit("usdt", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

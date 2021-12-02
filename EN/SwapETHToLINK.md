@@ -18,12 +18,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(amountIn <= getBalance (), "Insufficient ETH." );
+assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic LINK
-let linkAmount = Q.sushi.getAmountsOutFromExactIn ("link", amountIn);
-print (linkAmount);
+let linkAmount = Q.sushi.getAmountsOutFromExactIn("link", amountIn);
+print(linkAmount);
 ```
 
 ### Swap ETH to LINK in Sushiswap.
@@ -32,7 +32,7 @@ print (linkAmount);
 
 ```taster
 // Swap ETH to LINK.
-Q.sushi.swapExactETHForTokens ("link", amountIn);
+Q.sushi.swapExactETHForTokens("link", amountIn);
 ```
 
 ### All steps are done successfully.

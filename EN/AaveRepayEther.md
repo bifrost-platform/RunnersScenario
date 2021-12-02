@@ -1,9 +1,9 @@
 ```meta-Currency
 ```
 
-# Repay Ether in Aave V2
+# Repay ETH in Aave V2
 
-In this scenario, you will repay Ether in Aave V2.
+In this scenario, you will repay ETH in Aave V2.
 
 ### Confirm your asset for repayment
 
@@ -40,7 +40,7 @@ let amount = 0.1;
 ```input-Verify
 assert(amount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amount), "Invalid value");
-assert(getBalance() >= amount, "Insufficient Ether available to repay.");
+assert(getBalance() >= amount, "Insufficient ETH available to repay.");
 assert(amountRepayMax >= amount, "You cannot repay more than your loan.");
 ```
 

@@ -6,7 +6,7 @@ usdc
 
 Chainrunner Q는 이 문서의 내용대로 Compound에 있는 나의 USDC 예금을 BiFi로 옮깁니다.
 
-### Compound에 예금된 USDC을 확인합니다.
+### Compound에 예금된 USDC를 확인합니다.
 
 - 반드시 예금된 USDC 수량을 확인하시고, 다음 step을 진행하세요.
 - 예금을 담보로 사용하고 있는 경우, 출금이 제한될 수 있습니다. [Compound](https://app.compound.finance/)에서 가능 여부를 확인하세요.

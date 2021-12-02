@@ -26,7 +26,7 @@ assert(Q.erc20.balanceOf("usdt") >= amountIn, "Insufficient USDT");
 - Now, deposit your asset.
 
 ```taster
-Q.compound.deposit ("usdt", amountIn);
+Q.compound.deposit("usdt", amountIn);
 ```
 
 ### All steps are done successfully.

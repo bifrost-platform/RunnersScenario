@@ -20,12 +20,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(amountIn <= getBalance (), "Insufficient ETH." );
+assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic BFC
-let bfcAmount = Q.sushi.getAmountsOutFromExactIn ("bfc", amountIn);
-print (bfcAmount);
+let bfcAmount = Q.sushi.getAmountsOutFromExactIn("bfc", amountIn);
+print(bfcAmount);
 ```
 
 ### Swap ETH to BFC in Sushiswap.
@@ -34,7 +34,7 @@ print (bfcAmount);
 
 ```taster
 // Swap ETH to BFC.
-Q.sushi.swapExactETHForTokens ("bfc", amountIn);
+Q.sushi.swapExactETHForTokens("bfc", amountIn);
 ```
 
 ### All steps are done successfully.

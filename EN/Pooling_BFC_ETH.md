@@ -1,5 +1,5 @@
 ```meta-Currency
-bfc, bifi, 0x281df7fc89294c84afa2a21ffee8f6807f9c9226
+bfc, 0x281df7fc89294c84afa2a21ffee8f6807f9c9226
 ```
 
 # Deposit LP tokens inside BiFi Pooling

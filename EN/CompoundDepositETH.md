@@ -17,7 +17,7 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(getBalance () >= amountIn, "Insufficient ETH");
+assert(getBalance() >= amountIn, "Insufficient ETH");
 ```
 
 ### Proceed deposit
@@ -25,7 +25,7 @@ assert(getBalance () >= amountIn, "Insufficient ETH");
 - Now, deposit your asset.
 
 ```taster
-Q.compound.deposit ("ether", amountIn);
+Q.compound.deposit("ether", amountIn);
 ```
 
 ### Set your deposit as collateral

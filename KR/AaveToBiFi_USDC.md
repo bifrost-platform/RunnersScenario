@@ -4,11 +4,11 @@ usdc
 
 # AAVE V2에서 BiFi로 USDC 자산 옮기기
 
-다음 과정에서 AAVE V2에 예금된 USDC를 인출하고, 곧바로 BiFi로 옮깁니다.
+다음 과정에서 AAVE V2에 예금된 USDC를 출금하고, 곧바로 BiFi로 옮깁니다.
 
 ### AAVE V2에 예금된 USDC를 확인합니다.
 
-- 반드시 예금된 DAI 수량을 확인하시고, 다음 step을 진행하세요.
+- 반드시 예금된 USDC 수량을 확인하시고, 다음 step을 진행하세요.
 - 예금을 담보로 사용하고 있는 경우, 출금이 제한될 수 있습니다. [AAVE](https://app.aave.com/#/dashboard)에서 가능 여부를 확인하세요.
 
 ```output-Dynamic

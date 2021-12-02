@@ -4,7 +4,7 @@ bifi
 
 # Sushiswap에서 ETH를 BiFi로 교환하기
 
-Chainrunner Q는 이 문서의 내용대로, Sushiswap에서 ETH를 BiFi로 교환합니다.
+Chainrunner Q는 이 문서의 내용대로 Sushiswap에서 ETH를 BiFi로 교환합니다.
 
 ![title](https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/imgs/ETHtoBIFI.jpg)
 
@@ -20,12 +20,12 @@ let amountIn = 0.1;
 ```input-Verify
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
-assert(amountIn <= getBalance (), "ETH 잔액이 부족합니다." );
+assert(amountIn <= getBalance(), "ETH 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic BIFI
-let bifiAmount = Q.sushi.getAmountsOutFromExactIn ("bifi", amountIn);
-print (bifiAmount);
+let bifiAmount = Q.sushi.getAmountsOutFromExactIn("bifi", amountIn);
+print(bifiAmount);
 ```
 
 ### Sushiswap에서 ETH를 BiFi로 교환합니다.

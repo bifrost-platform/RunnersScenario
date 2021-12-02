@@ -7,7 +7,7 @@ wbtc
 ![BiFi Logo](https://s3.ap-northeast-2.amazonaws.com/thebifrost.io/home/bifi/bifi_logo.svg)
 
 [BiFi](https://bifi.finance/) 는 다양한 네트워크에서 Lending 서비스를 지원합니다.
-Chainrunner Q는 이 문서의 내용대로 BiFi에서 WBTC를 대출 합니다.
+Chainrunner Q는 이 문서의 내용대로 BiFi에서 WBTC를 대출합니다.
 
 ### 대출 가능한 금액 확인하기
 

@@ -23,14 +23,14 @@ print("상환 가능한 금액: " + amountRepayMax.toString());
 - 상환할 금액을 설정합니다.
 
 ```input ETH
-// 상환할 Ether 수량
+// 상환할 ETH 수량
 let amountRepay = 0.1;
 ```
 
 ```input-Verify
 assert(amountRepay > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountRepay), "잘못된 형식의 값이 입력 되었습니다.");
-assert(getBalance() >= amountRepay, "상환할 수 있는 Ether가 부족합니다.");
+assert(getBalance() >= amountRepay, "상환할 수 있는 ETH가 부족합니다.");
 assert(Q.bifi.getMaxRepayAmount("ether") >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
 ```
 

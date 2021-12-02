@@ -7,7 +7,7 @@
 
 [BiFi](https://bifi.finance/) supports lending services in various networks to ultimately function as a multichain DeFi.
 
-In this scenario, you will borrow BNB from BiFi.
+In this scenario, you will deposit BNB in BiFi.
 
 ### Deposit amount
 

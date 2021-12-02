@@ -31,7 +31,7 @@ assert(getBalance() >= amountRepay, "상환할 BNB가 부족합니다.");
 assert(amountRepayMax >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
 ```
 
-### 설정 한 금액 상환하기
+### 설정한 금액 상환하기
 
 - 설정한 금액만큼 상환합니다.
 

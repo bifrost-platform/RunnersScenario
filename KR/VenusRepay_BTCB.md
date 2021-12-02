@@ -32,7 +32,7 @@ assert(Q.erc20.balanceOf("btcb") >= amountRepay, "상환할 BTCB가 부족합니
 assert(Q.venus.getAmountRepayMax("btcb") >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
 ```
 
-### 설정 한 금액 상환하기
+### 설정한 금액 상환하기
 
 - 설정한 금액만큼 상환합니다.
 

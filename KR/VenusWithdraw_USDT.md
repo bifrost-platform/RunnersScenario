@@ -29,7 +29,7 @@ let amountWithdraw = 100;
 ```input-Verify
 assert(amountWithdraw > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountWithdraw), "잘못된 형식의 값 입니다.");
-assert(Q.venus.getAmountWithdrawMax("usdt") >= amountWithdraw, "예치된 USDT가 부족합니다.");
+assert(amountWithdrawMax >= amountWithdraw, "예치된 USDT가 부족합니다.");
 ```
 
 ### 설정한 금액 출금하기

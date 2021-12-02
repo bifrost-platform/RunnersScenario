@@ -21,7 +21,7 @@ print("Asset available to withdraw: " + amountWithdrawMax.toString());
 - Type in amount of asset to withdraw.
 
 ```input WBTC
-// Amount of wbtc to withdraw
+// Amount of WBTC to withdraw
 let amountOut = 0.01;
 ```
 

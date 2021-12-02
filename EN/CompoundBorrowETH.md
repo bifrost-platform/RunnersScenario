@@ -11,9 +11,9 @@ In this scenario, you will borrow ETH in Compound.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Compound](https://app.compound.finance/).
 
 ```output-Dynamic
-let amountBorrowMax = Q.compound.getAvailableBorrows ("ether");
-assert (amountBorrowMax >= 0.000001 ether, "Insufficient ETH available to borrow in Compound.");
-print ("Loanable amount: " + amountBorrowMax.toString());
+let amountBorrowMax = Q.compound.getAvailableBorrows("ether");
+assert(amountBorrowMax >= 0.000001 ether, "Insufficient ETH available to borrow in Compound.");
+print("Loanable amount: " + amountBorrowMax.toString());
 ```
 
 ### Set amount of asset to borrow.
@@ -38,7 +38,7 @@ assert(amountBorrowMax >= amount, "Insufficient ETH available to borrow.");
 - Please check the status of your loan in [Compound](https://app.compound.finance/).
 
 ```taster
-Q.compound.borrow ("ether", amount);
+Q.compound.borrow("ether", amount);
 ```
 
 ### All steps are done successfully.

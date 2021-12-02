@@ -33,7 +33,7 @@ assert(Q.bifi.getMaxWithdrawAmount("btcb") >= amountWithdraw, "Insufficient BTCB
 
 ### Proceed withdrawal
 
-- Now, proceed withdrawal.
+- Now, proceed withdrawal in BiFi.
 
 ```taster
 Q.bifi.withdraw("btcb", amountWithdraw);
@@ -41,4 +41,5 @@ Q.bifi.withdraw("btcb", amountWithdraw);
 
 ### All steps are done successfully.
 
-- Check your balance in your connected wallet and [BiFi](https://app.bifi.finance/lend).
+- You have successfully withdrawn BTCB in BiFi.
+- Check your balance in [BiFi App](https://app.bifi.finance/).

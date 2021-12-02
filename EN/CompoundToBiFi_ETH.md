@@ -20,6 +20,7 @@ print ("Deposited ETH:" + assetAmount.toString());
 ### Withdraw ETH in Compound.
 
 ```taster
+// Withdraw ETH in Compound.
 Q.compound.withdraw ("ether", assetAmount);
 ```
 

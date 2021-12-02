@@ -8,7 +8,7 @@ wbtc
 
 ### 출금 가능한 최대 금액 확인
 
-- 대출 가능한 WBTC의 최대 수량을 확인합니다.
+- 출금 가능한 WBTC의 최대 수량을 확인합니다.
 - 정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
@@ -22,7 +22,7 @@ print("출금 가능한 금액: " + amountWithdrawMax.toString());
 - 출금할 금액을 설정합니다.
 
 ```input WBTC
-// 출금할 wbtc 수량
+// 출금할 WBTC 수량
 let amountOut = 0.01;
 ```
 

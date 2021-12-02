@@ -6,7 +6,7 @@
 ![BiFi Logo](https://s3.ap-northeast-2.amazonaws.com/thebifrost.io/home/bifi/bifi_logo.svg)
 
 [BiFi](https://bifi.finance/) 는 다양한 네트워크에서 Lending 서비스를 지원합니다.
-Chainrunner Q는 이 문서의 내용대로 BiFi에 ETH를 예금 합니다.
+Chainrunner Q는 이 문서의 내용대로 BiFi에 BNB를 예금합니다.
 
 ### 예금할 금액 설정하기
 
@@ -26,6 +26,7 @@ assert(getBalance() >= amountDeposit, "보유한 BNB가 부족합니다.");
 ### 설정 한 금액 예금하기
 
 - 설정한 금액만큼을 BiFi에 예금합니다.
+
 ```taster
 Q.bifi.deposit("bnb", amountDeposit);
 ```

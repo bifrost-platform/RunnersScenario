@@ -1,9 +1,9 @@
 ```meta-Currency
 ```
 
-# Borrow Ether from Aave V2
+# Borrow ETH from Aave V2
 
-In this scenario, you will borrow Ether in Aave V2.
+In this scenario, you will borrow ETH in Aave V2.
 
 ### Confirm loanable amount.
 
@@ -11,7 +11,7 @@ In this scenario, you will borrow Ether in Aave V2.
 
 ```output-Dynamic
 let amountBorrowMax = Q.aaveV2.getAmountBorrowMax("ether");
-assert(amountBorrowMax > 0.000001 ether, "Insufficient asset to borrow.");
+assert(amountBorrowMax > 0.000001 eth, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
 

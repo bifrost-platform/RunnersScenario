@@ -1,7 +1,7 @@
 ```meta-Currency
 ```
 
-# Withdraw Ether from BiFi
+# Withdraw ETH from BiFi
 
 ![BiFi Logo](https://s3.ap-northeast-2.amazonaws.com/thebifrost.io/home/bifi/bifi_logo.svg)
 
@@ -24,14 +24,14 @@ print("Asset available to withdraw: " + amountWithdrawMax.toString());
 - Type in amount of asset to withdraw.
 
 ```input ETH
-// Amount of Ether to withdraw
+// Amount of ETH to withdraw
 let amountWithdraw = 0.1;
 ```
 
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value");
-assert(Q.bifi.getMaxWithdrawAmount("ether") >= amountWithdraw, "Insufficient Ether to withdraw.");
+assert(Q.bifi.getMaxWithdrawAmount("ether") >= amountWithdraw, "Insufficient ETH to withdraw.");
 ```
 
 ### Proceed withdrawal

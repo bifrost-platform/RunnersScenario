@@ -29,7 +29,7 @@ let amountWithdraw = 100;
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value.");
-assert(Q.venus.getAmountWithdrawMax("usdt") >= amountWithdraw, "Insufficient USDT.");
+assert(amountWithdrawMax >= amountWithdraw, "Insufficient USDT.");
 ```
 
 ### Proceed withdrawal

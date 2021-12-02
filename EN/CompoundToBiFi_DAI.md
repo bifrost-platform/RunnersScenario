@@ -21,7 +21,7 @@ print ("Deposited DAI:" + assetAmount.toString());
 ### Withdraw DAI in Compound.
 
 ```taster
-Withdraw DAI in Compound.
+// Withdraw DAI in Compound.
 Q.compound.withdraw ("dai", assetAmount);
 ```
 

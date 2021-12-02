@@ -21,7 +21,7 @@ print ("Deposited LINK:" + assetAmount.toString());
 ### Withdraw LINK in AAVE v2.
 
 ```taster
-Withdraw LINK in AAVE.
+// Withdraw LINK in AAVE.
 Q.aaveV2.withdraw ("link", assetAmount);
 ```
 

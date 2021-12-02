@@ -8,9 +8,8 @@ wbtc
 
 ### 상환 가능한 금액 확인하기
 
-AAVE는 이자 계산 방식에 따라 고정금리(stable) 대출과 변동금리(variable) 대출을 지원합니다.
-기존 대출의 금리 방식을 선택하고, 상환해야하는 최대 수량을 확인합니다.
-자세한 이자 계산 방식은 [여기](https://docs.aave.com/faq/borrowing#what-is-the-difference-between-stable-and-variable-rate)에서 확인할 수 있습니다.
+- AAVE는 이자 계산 방식에 따라 고정금리(stable) 대출과 변동금리(variable) 대출을 지원합니다. 기존 대출의 이자 계산 방식을 선택하고, 상환해야 하는 최대 수량을 확인합니다. 자세한 이자 계산 방식은 [여기](https://docs.aave.com/faq/borrowing#what-is-the-difference-between-stable-and-variable-rate)에서 확인할 수 있습니다.
+
 - 고정금리(stable): 1
 - 변동금리(varialbe): 2
 
@@ -25,7 +24,7 @@ assert(interestRateMode == 1 || interestRateMode == 2, "잘못된 이자 계산 
 
 ```output-Dynamic
 let amountRepayMax = Q.aaveV2.getAmountRepayMax("wbtc", interestRateMode);
-assert(amountRepayMax > 0.000001 wbtc, "인출 가능한 금액이 너무 적습니다.");
+assert(amountRepayMax > 0.000001 wbtc, "상환 가능한 금액이 너무 적습니다.");
 print("상환 가능한 금액: " + amountRepayMax.toString());
 ```
 

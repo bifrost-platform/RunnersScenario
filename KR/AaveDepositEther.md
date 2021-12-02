@@ -10,14 +10,14 @@
 - 예금할 금액을 설정합니다.
 
 ```input ETH
-// 예금할 Ether 수량
+// 예금할 ETH 수량
 let amountIn = 0.1;
 ```
 
 ```input-Verify
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
-assert(getBalance() >= amountIn, "보유한 Ether가 부족합니다.");
+assert(getBalance() >= amountIn, "보유한 ETH가 부족합니다.");
 ```
 
 ### 설정한 금액 예금하기

@@ -18,12 +18,12 @@ let amountIn = 1.0;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(amountIn <= getBalance (), "Insufficient ETH." );
+assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic WBTC
-let wbtcAmount = Q.sushi.getAmountsOutFromExactIn ("wbtc", amountIn);
-print (wbtcAmount);
+let wbtcAmount = Q.sushi.getAmountsOutFromExactIn("wbtc", amountIn);
+print(wbtcAmount);
 ```
 
 ### Swap ETH to WBTC in Sushiswap.
@@ -32,7 +32,7 @@ print (wbtcAmount);
 
 ```taster
 // Swap ETH to WBTC.
-Q.sushi.swapExactETHForTokens ("wbtc", amountIn);
+Q.sushi.swapExactETHForTokens("wbtc", amountIn);
 ```
 
 ### All steps are done successfully.
