@@ -12,22 +12,16 @@
                   "Symbol":"BIFI",
                   "SubList":[
                      {
-                        "Class":"DAI 옮기기",
-                        "Symbol":"DAI",
-                        "Title":"Aave에서 BiFi로 DAI 옮기기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveToBiFi_DAI.md"
-                     },
-                     {
                         "Class":"ETH 옮기기",
                         "Symbol":"ETH",
                         "Title":"Aave에서 BiFi로 ETH 옮기기",
                         "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveToBiFi_ETH.md"
                      },
                      {
-                        "Class":"LINK 옮기기",
-                        "Symbol":"LINK",
-                        "Title":"Aave에서 BiFi로 LINK 옮기기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveToBiFi_LINK.md"
+                        "Class":"USDT 옮기기",
+                        "Symbol":"USDT",
+                        "Title":"Aave에서 BiFi로 USDT 옮기기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveToBiFi_USDT.md"
                      },
                      {
                         "Class":"USDC 옮기기",
@@ -36,10 +30,16 @@
                         "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveToBiFi_USDC.md"
                      },
                      {
-                        "Class":"USDT 옮기기",
-                        "Symbol":"USDT",
-                        "Title":"Aave에서 BiFi로 USDT 옮기기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveToBiFi_USDT.md"
+                        "Class":"DAI 옮기기",
+                        "Symbol":"DAI",
+                        "Title":"Aave에서 BiFi로 DAI 옮기기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveToBiFi_DAI.md"
+                     },
+                     {
+                        "Class":"LINK 옮기기",
+                        "Symbol":"LINK",
+                        "Title":"Aave에서 BiFi로 LINK 옮기기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveToBiFi_LINK.md"
                      }
                   ]
                }
@@ -54,22 +54,16 @@
                   "Symbol":"BIFI",
                   "SubList":[
                      {
-                        "Class":"DAI 옮기기",
-                        "Symbol":"DAI",
-                        "Title":"Compound에서 BiFi로 DAI 옮기기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundToBiFi_DAI.md"
-                     },
-                     {
                         "Class":"ETH 옮기기",
                         "Symbol":"ETH",
                         "Title":"Compound에서 BiFi로 ETH 옮기기",
                         "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundToBiFi_ETH.md"
                      },
                      {
-                        "Class":"LINK 옮기기",
-                        "Symbol":"LINK",
-                        "Title":"Compound에서 BiFi로 LINK 옮기기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundToBiFi_LINK.md"
+                        "Class":"USDT 옮기기",
+                        "Symbol":"USDT",
+                        "Title":"Compound에서 BiFi로 USDT 옮기기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundToBiFi_USDT.md"
                      },
                      {
                         "Class":"USDC 옮기기",
@@ -78,10 +72,16 @@
                         "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundToBiFi_USDC.md"
                      },
                      {
-                        "Class":"USDT 옮기기",
-                        "Symbol":"USDT",
-                        "Title":"Compound에서 BiFi로 USDT 옮기기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundToBiFi_USDT.md"
+                        "Class":"DAI 옮기기",
+                        "Symbol":"DAI",
+                        "Title":"Compound에서 BiFi로 DAI 옮기기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundToBiFi_DAI.md"
+                     },
+                     {
+                        "Class":"LINK 옮기기",
+                        "Symbol":"LINK",
+                        "Title":"Compound에서 BiFi로 LINK 옮기기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundToBiFi_LINK.md"
                      }
                   ]
                }
@@ -180,16 +180,10 @@
                         "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapETHToBiFi.md"
                      },
                      {
-                        "Class":"DAI 구매하기",
-                        "Symbol":"DAI",
-                        "Title":"Sushiswap에서 ETH로 DAI 구매하기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapETHToDAI.md"
-                     },
-                     {
-                        "Class":"LINK 구매하기",
-                        "Symbol":"LINK",
-                        "Title":"Sushiswap에서 ETH로 LINK 구매하기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapETHToLINK.md"
+                        "Class":"WBTC 구매하기",
+                        "Symbol":"WBTC",
+                        "Title":"Sushiswap에서 ETH로 WBTC 구매하기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapETHToWBTC.md"
                      },
                      {
                         "Class":"USDT 구매하기",
@@ -204,10 +198,16 @@
                         "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapETHToUSDC.md"
                      },
                      {
-                        "Class":"WBTC 구매하기",
-                        "Symbol":"WBTC",
-                        "Title":"Sushiswap에서 ETH로 WBTC 구매하기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapETHToWBTC.md"
+                        "Class":"DAI 구매하기",
+                        "Symbol":"DAI",
+                        "Title":"Sushiswap에서 ETH로 DAI 구매하기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapETHToDAI.md"
+                     },
+                     {
+                        "Class":"LINK 구매하기",
+                        "Symbol":"LINK",
+                        "Title":"Sushiswap에서 ETH로 LINK 구매하기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapETHToLINK.md"
                      }
                   ]
                }
@@ -230,16 +230,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiDeposit_Ether.md"
                },
                {
-                  "Class":"USDT 예금하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFi에 USDT 예금하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiDeposit_USDT.md"
-               },
-               {
                   "Class":"WBTC 예금하기",
                   "Symbol":"WBTC",
                   "Title":"BiFi에 WBTC 예금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiDeposit_WBTC.md"
+               },
+               {
+                  "Class":"USDT 예금하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFi에 USDT 예금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiDeposit_USDT.md"
                }
             ]
          },
@@ -254,16 +254,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveDepositEther.md"
                },
                {
-                  "Class":"USDT 예금하기",
-                  "Symbol":"USDT",
-                  "Title":"AaveV2에 USDT 예금하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveDepositUSDT.md"
-               },
-               {
                   "Class":"WBTC 예금하기",
                   "Symbol":"WBTC",
                   "Title":"AaveV2에 WBTC 예금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveDepositWBTC.md"
+               },
+               {
+                  "Class":"USDT 예금하기",
+                  "Symbol":"USDT",
+                  "Title":"AaveV2에 USDT 예금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveDepositUSDT.md"
                }
             ]
          },
@@ -302,16 +302,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiWithdraw_Ether.md"
                },
                {
-                  "Class":"USDT 출금하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFi에서 USDT 출금하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiWithdraw_USDT.md"
-               },
-               {
                   "Class":"WBTC 출금하기",
                   "Symbol":"WBTC",
                   "Title":"BiFi에서 WBTC 출금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiWithdraw_WBTC.md"
+               },
+               {
+                  "Class":"USDT 출금하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFi에서 USDT 출금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiWithdraw_USDT.md"
                }
             ]
          },
@@ -326,16 +326,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveWithdrawEther.md"
                },
                {
-                  "Class":"USDT 출금하기",
-                  "Symbol":"USDT",
-                  "Title":"AaveV2에서 USDT 출금하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveWithdrawUSDT.md"
-               },
-               {
                   "Class":"WBTC 출금하기",
                   "Symbol":"WBTC",
                   "Title":"AaveV2에서 WBTC 출금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveWithdrawWBTC.md"
+               },
+               {
+                  "Class":"USDT 출금하기",
+                  "Symbol":"USDT",
+                  "Title":"AaveV2에서 USDT 출금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveWithdrawUSDT.md"
                }
             ]
          },
@@ -374,16 +374,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiBorrow_Ether.md"
                },
                {
-                  "Class":"USDT 대출하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFi에서 USDT 대출하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiBorrow_USDT.md"
-               },
-               {
                   "Class":"WBTC 대출하기",
                   "Symbol":"WBTC",
                   "Title":"BiFi에서 WBTC 대출하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiBorrow_WBTC.md"
+               },
+               {
+                  "Class":"USDT 대출하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFi에서 USDT 대출하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiBorrow_USDT.md"
                }
             ]
          },
@@ -398,16 +398,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveBorrowEther.md"
                },
                {
-                  "Class":"USDT 대출하기",
-                  "Symbol":"USDT",
-                  "Title":"AaveV2에서 USDT 대출하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveBorrowUSDT.md"
-               },
-               {
                   "Class":"WBTC 대출하기",
                   "Symbol":"WBTC",
                   "Title":"AaveV2에서 WBTC 대출하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveBorrowWBTC.md"
+               },
+               {
+                  "Class":"USDT 대출하기",
+                  "Symbol":"USDT",
+                  "Title":"AaveV2에서 USDT 대출하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveBorrowUSDT.md"
                }
             ]
          },
@@ -446,16 +446,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiRepay_Ether.md"
                },
                {
-                  "Class":"USDT 상환하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFi에 USDT 상환하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiRepay_USDT.md"
-               },
-               {
                   "Class":"WBTC 상환하기",
                   "Symbol":"WBTC",
                   "Title":"BiFi에 WBTC 상환하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiRepay_WBTC.md"
+               },
+               {
+                  "Class":"USDT 상환하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFi에 USDT 상환하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiRepay_USDT.md"
                }
             ]
          },
@@ -470,16 +470,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveRepayEther.md"
                },
                {
-                  "Class":"USDT 상환하기",
-                  "Symbol":"USDT",
-                  "Title":"AaveV2에 USDT 상환하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveRepayUSDT.md"
-               },
-               {
                   "Class":"WBTC 상환하기",
                   "Symbol":"WBTC",
                   "Title":"AaveV2에 WBTC 상환하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveRepayWBTC.md"
+               },
+               {
+                  "Class":"USDT 상환하기",
+                  "Symbol":"USDT",
+                  "Title":"AaveV2에 USDT 상환하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/AaveRepayUSDT.md"
                }
             ]
          },

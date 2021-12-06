@@ -14,16 +14,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiX_BNB_Earn.md"
                },
                {
-                  "Class":"USDT로 이자농사 하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFiX에서 USDT로 이자농사 하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiX_USDT_Earn_BSC.md"
-               },
-               {
                   "Class":"BTCB로 이자농사 하기",
                   "Symbol":"BTCB",
                   "Title":"BiFiX에서 BTCB로 이자농사 하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiX_BTCB_Earn.md"
+               },
+               {
+                  "Class":"USDT로 이자농사 하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFiX에서 USDT로 이자농사 하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiX_USDT_Earn_BSC.md"
                }
             ]
          }
@@ -60,16 +60,10 @@
                   "Symbol":"BNB",
                   "SubList":[
                      {
-                        "Class":"DAI 구매하기",
-                        "Symbol":"DAI",
-                        "Title":"SushiSwap에서 BNB로 DAI 구매하기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapBNBToDAI.md"
-                     },
-                     {
-                        "Class":"LINK 구매하기",
-                        "Symbol":"LINK",
-                        "Title":"SushiSwap에서 BNB로 LINK 구매하기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapBNBToLINK.md"
+                        "Class":"BTCB 구매하기",
+                        "Symbol":"BTCB",
+                        "Title":"SushiSwap에서 BNB로 BTCB 구매하기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapBNBToBTCB.md"
                      },
                      {
                         "Class":"USDT 구매하기",
@@ -84,10 +78,16 @@
                         "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapBNBToUSDC.md"
                      },
                      {
-                        "Class":"BTCB 구매하기",
-                        "Symbol":"BTCB",
-                        "Title":"SushiSwap에서 BNB로 BTCB 구매하기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapBNBToBTCB.md"
+                        "Class":"DAI 구매하기",
+                        "Symbol":"DAI",
+                        "Title":"SushiSwap에서 BNB로 DAI 구매하기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapBNBToDAI.md"
+                     },
+                     {
+                        "Class":"LINK 구매하기",
+                        "Symbol":"LINK",
+                        "Title":"SushiSwap에서 BNB로 LINK 구매하기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/SwapBNBToLINK.md"
                      }
                   ]
                }
@@ -102,16 +102,16 @@
                   "Symbol":"BNB",
                   "SubList":[
                      {
-                        "Class":"USDT 구매하기",
-                        "Symbol":"USDT",
-                        "Title":"PancakeSwap에서 BNB로 USDT 구매하기",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/PancakeSwapBNBToUSDT.md"
-                     },
-                     {
                         "Class":"BTCB 구매하기",
                         "Symbol":"BTCB",
                         "Title":"PancakeSwap에서 BNB로 BTCB 구매하기",
                         "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/PancakeSwapBNBToBTCB.md"
+                     },
+                     {
+                        "Class":"USDT 구매하기",
+                        "Symbol":"USDT",
+                        "Title":"PancakeSwap에서 BNB로 USDT 구매하기",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/PancakeSwapBNBToUSDT.md"
                      }
                   ]
                }
@@ -134,16 +134,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiDeposit_BNB.md"
                },
                {
-                  "Class":"USDT 예금하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFi에 USDT 예금하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiDeposit_USDT.md"
-               },
-               {
                   "Class":"BTCB 예금하기",
                   "Symbol":"BTCB",
                   "Title":"BiFi에 BTCB 예금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiDeposit_BTCB.md"
+               },
+               {
+                  "Class":"USDT 예금하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFi에 USDT 예금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiDeposit_USDT.md"
                }
             ]
          },
@@ -158,16 +158,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusDeposit_BNB.md"
                },
                {
-                  "Class":"USDT 예금하기",
-                  "Symbol":"USDT",
-                  "Title":"Venus에 USDT 예금하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusDeposit_USDT.md"
-               },
-               {
                   "Class":"BTCB 예금하기",
                   "Symbol":"BTCB",
                   "Title":"Venus에 BTCB 예금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusDeposit_BTCB.md"
+               },
+               {
+                  "Class":"USDT 예금하기",
+                  "Symbol":"USDT",
+                  "Title":"Venus에 USDT 예금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusDeposit_USDT.md"
                }
             ]
          }
@@ -188,16 +188,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiWithdraw_BNB.md"
                },
                {
-                  "Class":"USDT 출금하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFi에서 USDT 출금하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiWithdraw_USDT.md"
-               },
-               {
                   "Class":"BTCB 출금하기",
                   "Symbol":"BTCB",
                   "Title":"BiFi에서 BTCB 출금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiWithdraw_BTCB.md"
+               },
+               {
+                  "Class":"USDT 출금하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFi에서 USDT 출금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiWithdraw_USDT.md"
                }
             ]
          },
@@ -212,16 +212,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusWithdraw_BNB.md"
                },
                {
-                  "Class":"USDT 출금하기",
-                  "Symbol":"USDT",
-                  "Title":"Venus에서 USDT 출금하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusWithdraw_USDT.md"
-               },
-               {
                   "Class":"BTCB 출금하기",
                   "Symbol":"BTCB",
                   "Title":"Venus에서 BTCB 출금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusWithdraw_BTCB.md"
+               },
+               {
+                  "Class":"USDT 출금하기",
+                  "Symbol":"USDT",
+                  "Title":"Venus에서 USDT 출금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusWithdraw_USDT.md"
                }
             ]
          }
@@ -242,16 +242,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiBorrow_BNB.md"
                },
                {
-                  "Class":"USDT 대출하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFi에서 USDT 대출하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiBorrow_USDT.md"
-               },
-               {
                   "Class":"BTCB 대출하기",
                   "Symbol":"BTCB",
                   "Title":"BiFi에서 BTCB 대출하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiBorrow_BTCB.md"
+               },
+               {
+                  "Class":"USDT 대출하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFi에서 USDT 대출하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiBorrow_USDT.md"
                }
             ]
          },
@@ -266,16 +266,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusBorrow_BNB.md"
                },
                {
-                  "Class":"USDT 대출하기",
-                  "Symbol":"USDT",
-                  "Title":"Venus에서 USDT 대출하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusBorrow_USDT.md"
-               },
-               {
                   "Class":"BTCB 대출하기",
                   "Symbol":"BTCB",
                   "Title":"Venus에서 BTCB 대출하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusBorrow_BTCB.md"
+               },
+               {
+                  "Class":"USDT 대출하기",
+                  "Symbol":"USDT",
+                  "Title":"Venus에서 USDT 대출하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusBorrow_USDT.md"
                }
             ]
          }
@@ -296,16 +296,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiRepay_BNB.md"
                },
                {
-                  "Class":"USDT 상환하기",
-                  "Symbol":"USDT",
-                  "Title":"BiFi에 USDT 상환하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiRepay_USDT.md"
-               },
-               {
                   "Class":"BTCB 상환하기",
                   "Symbol":"BTCB",
                   "Title":"BiFi에 BTCB 상환하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiRepay_BTCB.md"
+               },
+               {
+                  "Class":"USDT 상환하기",
+                  "Symbol":"USDT",
+                  "Title":"BiFi에 USDT 상환하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/BiFiRepay_USDT.md"
                }
             ]
          },
@@ -320,16 +320,16 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusRepay_BNB.md"
                },
                {
-                  "Class":"USDT 상환하기",
-                  "Symbol":"USDT",
-                  "Title":"Venus에 USDT 상환하기",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusRepay_USDT.md"
-               },
-               {
                   "Class":"BTCB 상환하기",
                   "Symbol":"BTCB",
                   "Title":"Venus에 BTCB 상환하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusRepay_BTCB.md"
+               },
+               {
+                  "Class":"USDT 상환하기",
+                  "Symbol":"USDT",
+                  "Title":"Venus에 USDT 상환하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/VenusRepay_USDT.md"
                }
             ]
          }

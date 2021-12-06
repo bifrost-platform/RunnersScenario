@@ -292,6 +292,24 @@
             ]
          },
          {
+            "Class":"Buy WBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"with ETH",
+                  "Symbol":"ETH",
+                  "SubList":[
+                     {
+                        "Class":"in SushiSwap",
+                        "Symbol":"SUSHISWAP",
+                        "Title":"Buy WBTC with ETH in SushiSwap",
+                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToWBTC.md"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
             "Class":"Buy USDT",
             "Symbol":"USDT",
             "SubList":[
@@ -362,24 +380,6 @@
                   ]
                }
             ]
-         },
-         {
-            "Class":"Buy WBTC",
-            "Symbol":"WBTC",
-            "SubList":[
-               {
-                  "Class":"with ETH",
-                  "Symbol":"ETH",
-                  "SubList":[
-                     {
-                        "Class":"in SushiSwap",
-                        "Symbol":"SUSHISWAP",
-                        "Title":"Buy WBTC with ETH in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToWBTC.md"
-                     }
-                  ]
-               }
-            ]
          }
       ]
    },
@@ -412,6 +412,24 @@
             ]
          },
          {
+            "Class":"Deposit WBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Deposit WBTC in BiFi",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiDeposit_WBTC.md"
+               },
+               {
+                  "Class":"in Aave V2",
+                  "Symbol":"AAVE",
+                  "Title":"Deposit WBTC in Aave V2",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveDepositWBTC.md"
+               }
+            ]
+         },
+         {
             "Class":"Deposit USDT",
             "Symbol":"USDT",
             "SubList":[
@@ -432,24 +450,6 @@
                   "Symbol":"COMPOUND",
                   "Title":"Deposit USDT in Compound",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundDepositUSDT.md"
-               }
-            ]
-         },
-         {
-            "Class":"Deposit WBTC",
-            "Symbol":"WBTC",
-            "SubList":[
-               {
-                  "Class":"in BiFi",
-                  "Symbol":"BIFI",
-                  "Title":"Deposit WBTC in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiDeposit_WBTC.md"
-               },
-               {
-                  "Class":"in Aave V2",
-                  "Symbol":"AAVE",
-                  "Title":"Deposit WBTC in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveDepositWBTC.md"
                }
             ]
          }
@@ -484,6 +484,24 @@
             ]
          },
          {
+            "Class":"Withdraw WBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"WIthdraw WBTC in BiFi",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiWithdraw_WBTC.md"
+               },
+               {
+                  "Class":"in Aave V2",
+                  "Symbol":"AAVE",
+                  "Title":"Withdraw WBTC in Aave V2",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveWithdrawWBTC.md"
+               }
+            ]
+         },
+         {
             "Class":"Withdraw USDT",
             "Symbol":"USDT",
             "SubList":[
@@ -504,24 +522,6 @@
                   "Symbol":"COMPOUND",
                   "Title":"Withdraw USDT in Compound",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundWithdrawUSDT.md"
-               }
-            ]
-         },
-         {
-            "Class":"Withdraw WBTC",
-            "Symbol":"WBTC",
-            "SubList":[
-               {
-                  "Class":"in BiFi",
-                  "Symbol":"BIFI",
-                  "Title":"WIthdraw WBTC in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiWithdraw_WBTC.md"
-               },
-               {
-                  "Class":"in Aave V2",
-                  "Symbol":"AAVE",
-                  "Title":"Withdraw WBTC in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveWithdrawWBTC.md"
                }
             ]
          }
@@ -556,6 +556,24 @@
             ]
          },
          {
+            "Class":"Borrow WBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Borrow WBTC in BiFi",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiBorrow_WBTC.md"
+               },
+               {
+                  "Class":"in Aave V2",
+                  "Symbol":"AAVE",
+                  "Title":"Borrow WBTC in Aave V2",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveBorrowWBTC.md"
+               }
+            ]
+         },
+         {
             "Class":"Borrow USDT",
             "Symbol":"USDT",
             "SubList":[
@@ -576,24 +594,6 @@
                   "Symbol":"COMPOUND",
                   "Title":"Borrow USDT in Compound",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundBorrowUSDT.md"
-               }
-            ]
-         },
-         {
-            "Class":"Borrow WBTC",
-            "Symbol":"WBTC",
-            "SubList":[
-               {
-                  "Class":"in BiFi",
-                  "Symbol":"BIFI",
-                  "Title":"Borrow WBTC in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiBorrow_WBTC.md"
-               },
-               {
-                  "Class":"in Aave V2",
-                  "Symbol":"AAVE",
-                  "Title":"Borrow WBTC in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveBorrowWBTC.md"
                }
             ]
          }
@@ -628,6 +628,24 @@
             ]
          },
          {
+            "Class":"Repay WBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Repay WBTC in BiFi",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiRepay_WBTC.md"
+               },
+               {
+                  "Class":"in Aave V2",
+                  "Symbol":"AAVE",
+                  "Title":"Repay WBTC in Aave V2",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveRepayWBTC.md"
+               }
+            ]
+         },
+         {
             "Class":"Repay USDT",
             "Symbol":"USDT",
             "SubList":[
@@ -648,24 +666,6 @@
                   "Symbol":"COMPOUND",
                   "Title":"Repay USDT in Compound",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundRepayUSDT.md"
-               }
-            ]
-         },
-         {
-            "Class":"Repay WBTC",
-            "Symbol":"WBTC",
-            "SubList":[
-               {
-                  "Class":"in BiFi",
-                  "Symbol":"BIFI",
-                  "Title":"Repay WBTC in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiRepay_WBTC.md"
-               },
-               {
-                  "Class":"in Aave V2",
-                  "Symbol":"AAVE",
-                  "Title":"Repay WBTC in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveRepayWBTC.md"
                }
             ]
          }
