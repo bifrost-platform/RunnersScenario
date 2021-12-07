@@ -33,10 +33,14 @@ let usdtAmount = Q.sushi.swapExactETHForTokens ("usdt", amount);
 ### Sushiswap에서 ETH를 BiFi로 교환합니다.
 
 - Sushiswap 기본 슬리피지 값(0.5%)을 사용합니다.
+- 충분한 양의 BiFi를 보유하고 있다면, 해당 스텝은 실행되지 않습니다.
 
 ```taster
+let bifiBalance = Q.erc20.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
-Q.sushi.swapETHForExactTokens ("bifi", bifiFee);
+if (bifiBalance < bifiFee) {
+    Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);
+}
 ```
 
 ### BiFi-X에서 수수료로 BiFi를 지불할 수 있도록 승인해 줍니다.

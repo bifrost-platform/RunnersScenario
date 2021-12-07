@@ -29,10 +29,14 @@ let usdtAmount = Q.sushi.swapExactETHForTokens ("usdt", amount);
 ### Swap ETH to BiFi in Sushiswap.
 
 - Use default Sushiswap slippage (0.5%)
+- This step will not be processed if you're already holding enough balance of BiFi tokens
 
 ```taster
+let bifiBalance = Q.erc20.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
-Q.sushi.swapETHForExactTokens ("bifi", bifiFee);
+if (bifiBalance < bifiFee) {
+    Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);
+}
 ```
 
 ### Confirm BiFi to be used for service fee in BiFi-X.
