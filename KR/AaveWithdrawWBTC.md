@@ -4,7 +4,7 @@ wbtc
 
 # AAVE에서 WBTC 출금하기
 
-다음 과정은 AAVE V2에서 예금된 WBTC를 출금합니다.
+다음 과정은 AAVE V2에서 예금된 WBTC를 출금합니다. 해당 서비스는 Aave의 상태에 따라서 사용이 제한될 수 있습니다.
 
 ### 출금 가능한 최대 금액 확인
 
@@ -12,6 +12,7 @@ wbtc
 - 정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
+assert(Q.aaveV2.getIsActive("wbtc"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
 let amountWithdrawMax = Q.aaveV2.getAmountWithdrawMax("wbtc");
 assert(amountWithdrawMax > 0.000001 wbtc, "출금 가능한 금액이 너무 적습니다.");
 print("출금 가능한 금액: " + amountWithdrawMax.toString());

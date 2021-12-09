@@ -4,26 +4,21 @@ bifi, usdc
 
 # Earn USDC in BiFi-X
 
-Swap ETH to USDC, and start yield farming(Earn) after leveraging at maximum boost in BiFi-X.
+Start yield farming(Earn) after leveraging at maximum boost in BiFi-X.
 
-### Set amount of ETH to use.
+### Set amount of USDC to use.
 
-```input ETH
-let amount = 1;
+- Please check your deposit of USDC and enter the amount to use.
+- If you do not have any deposit of USDC, use the **Buy Tokens** menu.
+
+```input USDC
+let amount = 1000;
 ```
 
 ```input-Verify
 assert(amount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (amount), "Invalid value");
-assert(amount <= getBalance (), "Insufficient ETH." );
-```
-
-### Swap ETH to USDC in Sushiswap.
-
-- Use default Sushiswap slippage (0.5%)
-
-```taster
-let usdcAmount = Q.sushi.swapExactETHForTokens ("usdc", amount);
+assert(amount <= Q.erc20.balanceOf ("usdc"), "Insufficient USDC." );
 ```
 
 ### Swap ETH to BiFi in Sushiswap.
@@ -54,10 +49,10 @@ let maxBoost = Q.bifiX.getMaxBoost ("usdc");
 // Approve USDC before starting position.
 let usdcTokenAddr = erc20.getTokenAddr ("usdc");
 let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (usdcTokenAddr, xFactoryAddr, usdcAmount);
+erc20.approve (usdcTokenAddr, xFactoryAddr, amount);
 
 // Start Earn postion
-Q.bifiX.createEarnPosition ("usdc", usdcAmount, maxBoost);
+Q.bifiX.createEarnPosition ("usdc", amount, maxBoost);
 ```
 
 ### All steps are done successfully.

@@ -426,6 +426,12 @@
                   "Symbol":"AAVE",
                   "Title":"Deposit WBTC in Aave V2",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveDepositWBTC.md"
+               },
+               {
+                  "Class":"in Compound",
+                  "Symbol":"COMPOUND",
+                  "Title":"Deposit WBTC in Compound",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundDepositWBTC.md"
                }
             ]
          },
@@ -498,6 +504,12 @@
                   "Symbol":"AAVE",
                   "Title":"Withdraw WBTC in Aave V2",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveWithdrawWBTC.md"
+               },
+               {
+                  "Class":"in Compound",
+                  "Symbol":"COMPOUND",
+                  "Title":"Withdraw WBTC in Compound",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundWithdrawWBTC.md"
                }
             ]
          },
@@ -570,6 +582,12 @@
                   "Symbol":"AAVE",
                   "Title":"Borrow WBTC in Aave V2",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveBorrowWBTC.md"
+               },
+               {
+                  "Class":"in Compound",
+                  "Symbol":"COMPOUND",
+                  "Title":"Borrow WBTC in Compound",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundBorrowWBTC.md"
                }
             ]
          },
@@ -642,6 +660,12 @@
                   "Symbol":"AAVE",
                   "Title":"Repay WBTC in Aave V2",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveRepayWBTC.md"
+               },
+               {
+                  "Class":"in Compound",
+                  "Symbol":"COMPOUND",
+                  "Title":"Repay WBTC in Compound",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundRepayWBTC.md"
                }
             ]
          },

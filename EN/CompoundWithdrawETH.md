@@ -11,9 +11,9 @@ In this scenario, you will withdraw ETH in Compound.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Compound](https://app.compound.finance/).
 
 ```output-Dynamic
-let amountDepositMax = Q.compound.getDepositAssetAmount ("ether");
-assert(amountDepositMax >= 0.000001 ether,"Insufficient asset to withdraw.");
-print ("Asset available to withdraw: " + amountDepositMax.toString());
+let amountWithdrawMax = Q.compound.getDepositAssetAmount ("ether");
+assert(amountWithdrawMax >= 0.000001 ether,"Insufficient asset to withdraw.");
+print ("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
 
 ### Withdrawal amount
@@ -28,7 +28,7 @@ let amountOut = 0.1;
 ```input-Verify
 assert(amountOut > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountOut));
-assert(amountDepositMax >= amountOut, "Insufficient ETH.");
+assert(amountWithdrawMax >= amountOut, "Insufficient ETH.");
 ```
 
 ### Proceed withdrawal

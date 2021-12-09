@@ -1,9 +1,9 @@
 ```meta-Currency
 ```
 
-# AAVE에서 Ether 대출하기
+# AAVE에서 ETH 대출하기
 
-다음 과정은 AAVE V2의 예금을 담보로 ETH를 대출합니다.
+다음 과정은 AAVE V2의 예금을 담보로 ETH를 대출합니다. 해당 서비스는 Aave의 상태에 따라서 사용이 제한될 수 있습니다.
 
 ### 대출 가능한 금액 확인하기
 
@@ -11,6 +11,7 @@
 - 정확한 수량은 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
+assert(Q.aaveV2.getIsActive("ether") && !Q.aaveV2.getIsFrozen("ether"), "시장 설정으로 인해 현재 대출할 수 없습니다.");
 let amountBorrowMax = Q.aaveV2.getAmountBorrowMax("ether");
 assert(amountBorrowMax > 0.000001 ether, "대출 가능한 금액이 너무 적습니다.");
 print("대출 가능한 금액: " + amountBorrowMax.toString());
@@ -46,6 +47,7 @@ let interestRateMode = 1;
 
 ```input-Verify
 assert(interestRateMode == 1 || interestRateMode == 2, "잘못된 이자 계산 방식입니다.");
+assert(Q.aaveV2.getBorrowEnabled("ether", interestRateMode), "현재 선택한 이자 계산 방식으로 대출할 수 없습니다.");
 ```
 
 ### 설정 한 금액 대출하기

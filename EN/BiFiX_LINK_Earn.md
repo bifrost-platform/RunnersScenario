@@ -4,26 +4,21 @@ bifi, link
 
 # Earn LINK in BiFi-X
 
-Swap ETH to LINK, and start yield farming(Earn) after leveraging at maximum boost in BiFi-X.
+Start yield farming(Earn) after leveraging at maximum boost in BiFi-X.
 
-### Set amount of ETH to use.
+### Set amount of LINK to use.
 
-```input ETH
-let amount = 1;
+- Please check your deposit of LINK and enter the amount to use.
+- If you do not have any deposit of LINK, use the **Buy Tokens** menu.
+
+```input LINK
+let amount = 100;
 ```
 
 ```input-Verify
 assert(amount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (amount), "Invalid value");
-assert(amount <= getBalance (), "Insufficient ETH." );
-```
-
-### Swap ETH to LINK in Sushiswap.
-
-- Use default Sushiswap slippage (0.5%)
-
-```taster
-let linkAmount = Q.sushi.swapExactETHForTokens ("link", amount);
+assert(amount <= Q.erc20.balanceOf ("link"), "Insufficient LINK." );
 ```
 
 ### Swap ETH to BiFi in Sushiswap.
@@ -54,10 +49,10 @@ let maxBoost = Q.bifiX.getMaxBoost ("link");
 // Approve LINK before starting position.
 let linkTokenAddr = erc20.getTokenAddr ("link");
 let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (linkTokenAddr, xFactoryAddr, linkAmount);
+erc20.approve (linkTokenAddr, xFactoryAddr, amount);
 
 // Start Earn postion
-Q.bifiX.createEarnPosition ("link", linkAmount, maxBoost);
+Q.bifiX.createEarnPosition ("link", amount, maxBoost);
 ```
 
 ### All steps are done successfully.

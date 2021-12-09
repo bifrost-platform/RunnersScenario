@@ -4,7 +4,7 @@ usdt
 
 # AAVE V2에서 BiFi로 USDT 자산 옮기기
 
-다음 과정에서 AAVE V2에 예금된 USDT를 출금하고, 곧바로 BiFi로 옮깁니다.
+다음 과정에서 AAVE V2에 예금된 USDT를 출금하고, 곧바로 BiFi로 옮깁니다. 해당 서비스는 Aave의 상태에 따라서 사용이 제한될 수 있습니다.
 
 ### AAVE V2에 예금된 USDT를 확인합니다.
 
@@ -12,6 +12,7 @@ usdt
 - 예금을 담보로 사용하고 있는 경우, 출금이 제한될 수 있습니다. [AAVE](https://app.aave.com/#/dashboard)에서 가능 여부를 확인하세요.
 
 ```output-Dynamic
+assert(Q.aaveV2.getIsActive("usdt"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
 // AAVE에 예금된 USDT의 양을 확인합니다
 let assetAmount = Q.aaveV2.getUserReserve ("usdt");
 assert (assetAmount >= 0.000001 usdt, "AAVE v2에 USDT 예금이 없거나 너무 작습니다.");

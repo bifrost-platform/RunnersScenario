@@ -4,26 +4,21 @@ bifi, dai
 
 # Earn DAI in BiFi-X
 
-Swap ETH to DAI, and start yield farming(Earn) after leveraging at maximum boost in BiFi-X.
+Start yield farming(Earn) after leveraging at maximum boost in BiFi-X.
 
-### Set amount of ETH to use.
+### Set amount of DAI to use.
 
-```input ETH
-let amount = 1;
+- Please check your deposit of DAI and enter the amount to use.
+- If you do not have any deposit of DAI, use the **Buy Tokens** menu.
+
+```input DAI
+let amount = 100;
 ```
 
 ```input-Verify
 assert(amount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (amount), "Invalid value");
-assert(amount <= getBalance (), "Insufficient ETH." );
-```
-
-### Swap ETH to DAI in Sushiswap.
-
-- Use default Sushiswap slippage (0.5%)
-
-```taster
-let daiAmount = Q.sushi.swapExactETHForTokens ("dai", amount);
+assert(amount <= Q.erc20.balanceOf ("dai"), "Insufficient DAI." );
 ```
 
 ### Swap ETH to BiFi in Sushiswap.
@@ -54,10 +49,10 @@ let maxBoost = Q.bifiX.getMaxBoost ("dai");
 // Approve DAI before starting position.
 let daiTokenAddr = erc20.getTokenAddr ("dai");
 let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (daiTokenAddr, xFactoryAddr, daiAmount);
+erc20.approve (daiTokenAddr, xFactoryAddr, amount);
 
 // Start Earn postion
-Q.bifiX.createEarnPosition ("dai", daiAmount, maxBoost);
+Q.bifiX.createEarnPosition ("dai", amount, maxBoost);
 ```
 
 ### All steps are done successfully.

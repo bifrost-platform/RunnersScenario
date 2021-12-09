@@ -4,7 +4,7 @@ usdt
 
 # AAVE에서 대출한 USDT 상환하기
 
-다음 과정은 AAVE V2에서 대출한 USDT를 상환합니다.
+다음 과정은 AAVE V2에서 대출한 USDT를 상환합니다. 해당 서비스는 Aave의 상태에 따라서 사용이 제한될 수 있습니다.
 
 ### 상환 가능한 금액 확인하기
 
@@ -23,6 +23,7 @@ assert(interestRateMode == 1 || interestRateMode == 2, "잘못된 이자 계산 
 ```
 
 ```output-Dynamic
+assert(Q.aaveV2.getIsActive("usdt"), "시장 설정으로 인해 현재 상환할 수 없습니다.");
 let amountRepayMax = Q.aaveV2.getAmountRepayMax("usdt", interestRateMode);
 assert(amountRepayMax > 0.000001 usdt, "상환 가능한 금액이 너무 적습니다.");
 print("상환 가능한 금액: " + amountRepayMax.toString());

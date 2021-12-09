@@ -3,13 +3,14 @@
 
 # Borrow ETH from Aave V2
 
-In this scenario, you will borrow ETH in Aave V2.
+In this scenario, you will borrow ETH in Aave V2. This service may be limited according to the status of Aave V2.
 
 ### Confirm loanable amount.
 
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Aave V2](https://app.aave.com/#/dashboard).
 
 ```output-Dynamic
+assert(Q.aaveV2.getIsActive("ether") && !Q.aaveV2.getIsFrozen("ether"), "Loaning is limited due to the circuit status of the market.");
 let amountBorrowMax = Q.aaveV2.getAmountBorrowMax("ether");
 assert(amountBorrowMax > 0.000001 eth, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
@@ -44,6 +45,7 @@ let interestRateMode = 1;
 
 ```input-Verify
 assert(interestRateMode == 1 || interestRateMode == 2, "Incorrect interest calculation.");
+assert(Q.aaveV2.getBorrowEnabled("ether", interestRateMode), "Cannot proceed loaning with the selected type of interest rate");
 ```
 
 ### Proceed loaning

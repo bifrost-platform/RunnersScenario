@@ -278,6 +278,12 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundDepositETH.md"
                },
                {
+                  "Class":"WBTC 예금하기",
+                  "Symbol":"WBTC",
+                  "Title":"Compound에 WBTC 예금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundDepositWBTC.md"
+               },
+               {
                   "Class":"USDT 예금하기",
                   "Symbol":"USDT",
                   "Title":"Compound에 USDT 예금하기",
@@ -348,6 +354,12 @@
                   "Symbol":"ETH",
                   "Title":"Compound에서 ETH 출금하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundWithdrawETH.md"
+               },
+               {
+                  "Class":"WBTC 출금하기",
+                  "Symbol":"WBTC",
+                  "Title":"Compound에서 WBTC 출금하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundWithdrawWBTC.md"
                },
                {
                   "Class":"USDT 출금하기",
@@ -422,6 +434,12 @@
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundBorrowETH.md"
                },
                {
+                  "Class":"WBTC 대출하기",
+                  "Symbol":"WBTC",
+                  "Title":"Compound에서 WBTC 대출하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundBorrowWBTC.md"
+               },
+               {
                   "Class":"USDT 대출하기",
                   "Symbol":"USDT",
                   "Title":"Compound에서 USDT 대출하기",
@@ -492,6 +510,12 @@
                   "Symbol":"ETH",
                   "Title":"Compound에 ETH 상환하기",
                   "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundRepayETH.md"
+               },
+               {
+                  "Class":"WBTC 상환하기",
+                  "Symbol":"WBTC",
+                  "Title":"Compound에 WBTC 상환하기",
+                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/KR/CompoundRepayWBTC.md"
                },
                {
                   "Class":"USDT 상환하기",

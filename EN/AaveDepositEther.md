@@ -3,7 +3,7 @@
 
 # Deposit ETH in Aave V2
 
-In this scenario, you will deposit ETH in Aave V2.
+In this scenario, you will deposit ETH in Aave V2. This service may be limited according to the status of Aave V2.
 
 ### Deposit amount
 
@@ -15,6 +15,7 @@ let amountIn = 0.1;
 ```
 
 ```input-Verify
+assert(Q.aaveV2.getIsActive("ether") && !Q.aaveV2.getIsFrozen("ether"), "Deposit is limited due to the circuit status of the market.");
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
 assert(getBalance() >= amountIn, "Insufficient number of ETH");

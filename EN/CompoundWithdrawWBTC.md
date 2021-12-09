@@ -1,10 +1,10 @@
 ```meta-Currency
-usdt
+wbtc
 ```
 
-# Withdraw USDT from Compound
+# Withdraw WBTC from Compound
 
-In this scenario, you will withdraw USDT in Compound.
+In this scenario, you will withdraw WBTC in Compound.
 
 ### Confirm the amount available to withdraw
 
@@ -12,8 +12,8 @@ In this scenario, you will withdraw USDT in Compound.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Compound](https://app.compound.finance/).
 
 ```output-Dynamic
-let amountWithdrawMax = Q.compound.getDepositAssetAmount ("usdt");
-assert(amountWithdrawMax >= 0.000001 usdt,"Insufficient asset to withdraw.");
+let amountWithdrawMax = Q.compound.getDepositAssetAmount ("wbtc");
+assert(amountWithdrawMax >= 0.000001 wbtc,"Insufficient asset to withdraw.");
 print ("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
 
@@ -21,15 +21,15 @@ print ("Asset available to withdraw: " + amountWithdrawMax.toString());
 
 - Type in amount of asset to withdraw.
 
-```input USDT
-// Amount of USDT to withdraw
-let amountOut = 100;
+```input WBTC
+// Amount of WBTC to withdraw
+let amountOut = 0.01;
 ```
 
 ```input-Verify
 assert(amountOut > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountOut));
-assert(amountWithdrawMax >= amountOut, "Insufficient USDT.");
+assert(amountWithdrawMax >= amountOut, "Insufficient WBTC.");
 ```
 
 ### Proceed withdrawal
@@ -37,9 +37,9 @@ assert(amountWithdrawMax >= amountOut, "Insufficient USDT.");
 - Now, proceed withdrawal.
 
 ```taster
-Q.compound.withdraw ("usdt", amountOut);
+Q.compound.withdraw ("wbtc", amountOut);
 ```
 
 ### All steps are done successfully.
 
-- Check your USDT balance in [Compound](https://app.compound.finance/) and your connected wallet.
+- Check your WBTC balance in [Compound](https://app.compound.finance/) and your connected wallet.

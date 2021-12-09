@@ -3,7 +3,7 @@
 
 # Move ETH from Aave V2 to BiFi
 
-In this scenario, you will move ETH from Aave V2 to BiFi.
+In this scenario, you will move ETH from Aave V2 to BiFi. This service may be limited according to the status of Aave V2.
 
 ### Confirm the amount of ETH in AAVE v2
 
@@ -11,6 +11,7 @@ In this scenario, you will move ETH from Aave V2 to BiFi.
 - If you are using deposits as collateral, withdrawals may be limited. Check availability in [Aave V2](https://app.aave.com/#/dashboard).
 
 ```output-Dynamic
+assert(Q.aaveV2.getIsActive("ether"), "Withdrawal is limited to the circuit status of the market.");
 // Confirm the amount of ETH in Aave V2.
 let assetAmount = Q.aaveV2.getUserReserve ("ether");
 assert (assetAmount >= 0.000001 ether, "Confirm the amount of ETH in AAVE v2.");
