@@ -12,29 +12,25 @@ In this scenario, you will use BiFi pooling service.
 
 FIrst, provide liquidity of BFC-WETH pool (5:5) of SushiSwap V2, and deposit the according LP tokens inside BiFi.
 
-### Set amount of ETH to use.
+### Set amount of BFC to use.
 
-- In this step, you will swap half of your ETH to BFC and provide liquidity inside BFC-WETH pool of SushiSwap V2. WETH(Wrapped WTH) is ERC20 token made to swap ETH and ERC20 tokens. Sushiswap provides BFC-WETH pool to provide liquidity of BFC-ETH pair.
+- In this step, you will provide liquidity of BFC-WETH pair in Sushiswap V2 and deposit the according LP tokens inside BiFi staking pool.
+- WETH(Wrapped WTH) is ERC20 token made to swap ETH and ERC20 tokens. Sushiswap provides BFC-WETH pool to provide liquidity of BFC-ETH pair.
+- Please check your deposit of BiFi and enter the amount to use.
+- If you do not have any deposit of BiFi, use the **Buy Tokens** menu.
 
-```input ETH
-// Total ETH.
-let amount = 0.1;
+```input BFC
+// Total BFC.
+let bfcAmount = 10000;
 ```
 
 ```input-Verify
-assert(amount > 0, "Incorrect value. Please enter value more than 0.");
-assert(isCurrency (amount), "Invalid value");
-assert(amount <= getBalance (), "Insufficient ETH." );
-```
-
-### Swap ETH to BFC in SushiSwap.
-
-- In this step, you will swap ETH to BFC to provide liquidity inside SushiSwap. Use default Sushiswap slippage (0.5%)
-
-```taster
-// Swap half of your ETH to BFC
-let bfcAmount = Q.sushi.swapExactETHForTokens ("bfc", amount / 2);
-assert (bfcAmount > 0, "BFC balance: 0");
+assert(bfcAmount > 0, "Incorrect value. Please enter value more than 0.");
+assert(isCurrency (bfcAmount), "Invalid value");
+assert(bfcAmount <= Q.erc20.balanceOf ("bfc"), "Insufficient BFC." );
+let ethBalance = getBalance ();
+let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bfc", bfcAmount);
+assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BFC." );
 ```
 
 ### Provide liquidity of BFC-WETH pair in SushiSwap.
@@ -42,7 +38,7 @@ assert (bfcAmount > 0, "BFC balance: 0");
 - Use default Sushiswap slippage (0.5%)
 
 ```taster
-let lpAmount = Q.sushi.addLiquidityETH ("bfc", bfcAmount, amount / 2);
+let lpAmount = Q.sushi.addLiquidityETH ("bfc", bfcAmount, ethAmount);
 assert (lpAmount > 0, "Liquidity token balance: 0");
 ```
 

@@ -12,29 +12,25 @@ In this scenario, you will use BiFi pooling service.
 
 FIrst, provide liquidity of BiFi-WETH pool (5:5) of SushiSwap V2, and deposit the according LP tokens inside BiFi.
 
-### Set amount of ETH to use.
+### Set amount of BiFi to use.
 
-- In this step, you will swap half of your ETH to BiFi and provide liquidity inside BiFi-WETH pool of SushiSwap V2. WETH(Wrapped WTH) is ERC20 token made to swap ETH and ERC20 tokens. Sushiswap provides BiFi-WETH pool to provide liquidity of BiFi-ETH pair.
+- In this step, you will provide liquidity of BiFi-WETH pair in Sushiswap V2 and deposit the according LP tokens inside BiFi staking pool.
+- WETH(Wrapped WTH) is ERC20 token made to swap ETH and ERC20 tokens. Sushiswap provides BiFi-WETH pool to provide liquidity of BiFi-ETH pair.
+- Please check your deposit of BiFi and enter the amount to use.
+- If you do not have any deposit of BiFi, use the **Buy Tokens** menu.
 
-```input ETH
-// Total ETH.
-let amount = 0.1;
+```input BiFi
+// Total BiFi.
+let bifiAmount = 0.1;
 ```
 
 ```input-Verify
-assert(amount > 0, "Incorrect value. Please enter value more than 0.");
-assert(isCurrency (amount), "Invalid value");
-assert(amount <= getBalance (), "Insufficient ETH." );
-```
-
-### Swap ETH to BiFi in SushiSwap.
-
-- In this step, you will swap ETH to BiFi to provide liquidity inside SushiSwap. Use default Sushiswap slippage (0.5%)
-
-```taster
-// Swap half of your ETH to BiFi
-let bifiAmount = Q.sushi.swapExactETHForTokens ("bifi", amount / 2);
-assert (bifiAmount > 0, "BiFi balance: 0");
+assert(bifiAmount > 0, "Incorrect value. Please enter value more than 0.");
+assert(isCurrency (bifiAmount), "Invalid value");
+assert(bifiAmount <= Q.erc20.balanceOf ("bifi"), "Insufficient BIFI." );
+let ethBalance = getBalance ();
+let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bifi", bifiAmount);
+assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BiFi." );
 ```
 
 ### Provide liquidity of BiFi-WETH pair in SushiSwap.
@@ -42,7 +38,7 @@ assert (bifiAmount > 0, "BiFi balance: 0");
 - Use default Sushiswap slippage (0.5%)
 
 ```taster
-let lpAmount = Q.sushi.addLiquidityETH ("bifi", bifiAmount, amount / 2);
+let lpAmount = Q.sushi.addLiquidityETH ("bifi", bifiAmount, ethAmount);
 assert (lpAmount > 0, "Liquidity token balance: 0");
 ```
 
