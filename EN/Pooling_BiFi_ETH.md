@@ -21,15 +21,22 @@ FIrst, provide liquidity of BiFi-WETH pool (5:5) of SushiSwap V2, and deposit th
 
 ```input BiFi
 // Total BiFi.
-let bifiAmount = 0.1;
+let bifiAmount = 1000;
 ```
 
 ```input-Verify
+proc getETHAmountsOutFromExactIn (tokenName, amountIn) {
+  let tokenAddr = erc20.getTokenAddr (tokenName);
+  let path = [tokenAddr, sushiswapV2.router02.getWethAddress()];
+  let results = sushiswapV2.router02.getAmountsOut (amountIn, path);
+  return numToCurrency (results[1], "eth", 18);
+}
+
 assert(bifiAmount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (bifiAmount), "Invalid value");
 assert(bifiAmount <= Q.erc20.balanceOf ("bifi"), "Insufficient BIFI." );
 let ethBalance = getBalance ();
-let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bifi", bifiAmount);
+let ethAmount = getETHAmountsOutFromExactIn("bifi", bifiAmount);
 assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BiFi." );
 ```
 

@@ -21,15 +21,22 @@ FIrst, provide liquidity of BFC-WETH pool (5:5) of SushiSwap V2, and deposit the
 
 ```input BFC
 // Total BFC.
-let bfcAmount = 10000;
+let bfcAmount = 1000;
 ```
 
 ```input-Verify
+proc getETHAmountsOutFromExactIn (tokenName, amountIn) {
+  let tokenAddr = erc20.getTokenAddr (tokenName);
+  let path = [tokenAddr, sushiswapV2.router02.getWethAddress()];
+  let results = sushiswapV2.router02.getAmountsOut (amountIn, path);
+  return numToCurrency (results[1], "eth", 18);
+}
+
 assert(bfcAmount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (bfcAmount), "Invalid value");
 assert(bfcAmount <= Q.erc20.balanceOf ("bfc"), "Insufficient BFC." );
 let ethBalance = getBalance ();
-let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bfc", bfcAmount);
+let ethAmount = getETHAmountsOutFromExactIn("bfc", bfcAmount);
 assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BFC." );
 ```
 
