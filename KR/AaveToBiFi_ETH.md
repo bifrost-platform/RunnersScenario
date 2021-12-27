@@ -29,7 +29,7 @@ Q.aaveV2.withdraw ("ether", assetAmount);
 
 ```taster
 // BiFi에 ETH를 다시 예금합니다
-bifi.eth.deposit (assetAmount);
+bifi.coin.deposit (assetAmount);
 print (assetAmount.toString () + " 를 AAVE에서 BiFi로 옮겼습니다.");
 ```
 
