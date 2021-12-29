@@ -9,8 +9,6 @@ btcb
 [BiFi](https://bifi.finance/) 는 다양한 네트워크에서 Lending 서비스를 지원합니다.
 Chainrunner Q는 이 문서의 내용대로 BiFi에서 대출한 BTCB를 상환합니다.
 
-### 상환 가능한 최대 금액 확인하기
-
 ### 상환 가능한 금액 확인하기
 
 - 상환 가능한 최대 금액을 확인합니다.
