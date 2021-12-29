@@ -1,5 +1,5 @@
 ```meta-Currency
-bifi
+bifib
 ```
 
 # BiFi-X에서 BNB Earn하기
@@ -16,7 +16,7 @@ Chainrunner Q는 이 문서의 내용대로, BNB 토큰을 가지고 BiFi-X Earn
 
 ```output-Dynamic
 let bifiFee = Q.bifiX.getFee ();
-let bifiBalance = Q.erc20.balanceOf ("bifi");
+let bifiBalance = Q.erc20.balanceOf ("bifib");
 assert(bifiBalance >= bifiFee, "BiFi 수량이 부족합니다.");
 print ("수수료로 필요한 BiFi 수량: " + bifiFee.toString ());
 ```

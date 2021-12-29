@@ -35,5 +35,5 @@ Q.bifi.deposit("wbtc", amountDeposit);
 
 ### All steps are done successfully.
 
-- You have successfully deposited USDT in BiFi.
+- You have successfully deposited WBTC in BiFi.
 - Check your balance in [BiFi App](https://app.bifi.finance/).

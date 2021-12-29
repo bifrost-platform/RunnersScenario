@@ -1,5 +1,5 @@
 ```meta-Currency
-bifi, usdt
+bifib, usdt
 ```
 
 # Earn USDT in BiFi-X
@@ -12,7 +12,7 @@ In this scenario, you will start yield farming(Earn) after leveraging at maximum
 
 ```output-Dynamic
 let bifiFee = Q.bifiX.getFee ();
-let bifiBalance = Q.erc20.balanceOf ("bifi");
+let bifiBalance = Q.erc20.balanceOf ("bifib");
 assert(bifiBalance >= bifiFee, "Insufficient BiFi.");
 print ("BiFi tokens needed for service fee: " + bifiFee.toString ());
 ```
