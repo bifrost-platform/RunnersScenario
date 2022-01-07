@@ -32,7 +32,7 @@ assert(amount <= getBalance (), "Insufficient BNB");
 ### BiFi-X confirms fee payment of BiFi tokens.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifib", bifiFee);
 ```
 
 ### Leverage BNB to BiFi-X at the maximum boost and Earn.

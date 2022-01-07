@@ -37,7 +37,7 @@ if (bifiBalance < bifiFee) {
 ### Confirm BiFi to be used for service fee in BiFi-X.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifi", bifiFee);
 ```
 
 ### Leverage LINK to BiFi-X at the maximum boost and Earn.
@@ -47,9 +47,7 @@ Q.bifiX.approveBiFi (bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("link");
 
 // Approve LINK before starting position.
-let linkTokenAddr = erc20.getTokenAddr ("link");
-let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (linkTokenAddr, xFactoryAddr, amount);
+Q.bifiX.approve("link", amount);
 
 // Start Earn postion
 Q.bifiX.createEarnPosition ("link", amount, maxBoost);

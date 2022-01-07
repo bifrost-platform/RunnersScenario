@@ -35,7 +35,7 @@ assert(amount <= Q.erc20.balanceOf ("btcb"), "Insufficient BTCB." );
 ### Confirm BiFi to be used for service fee in BiFi-X.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifib", bifiFee);
 ```
 
 ### Leverage BTCB to BiFi-X at the maximum boost and Earn.
@@ -45,9 +45,7 @@ Q.bifiX.approveBiFi (bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("btcb");
 
 // Approve BTCB before starting position.
-let btcbTokenAddr = erc20.getTokenAddr ("btcb");
-let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (btcbTokenAddr, xFactoryAddr, amount);
+Q.bifiX.approve("btcb", amount);
 
 // Start Earn position
 Q.bifiX.createEarnPosition ("btcb", amount, maxBoost);

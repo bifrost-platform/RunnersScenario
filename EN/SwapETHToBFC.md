@@ -6,7 +6,7 @@ bfc
 
 In this scenario, you will swap ETH to BFC.
 
-![title](https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/imgs/ETHtoBFC.jpg)
+![title](/imgs/ETHtoBFC.jpg)
 
 ### Set the amount of ETH to swap.
 

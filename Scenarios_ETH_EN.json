@@ -15,7 +15,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move ETH from Aave V2 to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveToBiFi_ETH.md"
+                        "File":"/EN/AaveToBiFi_ETH.md"
                      }
                   ]
                },
@@ -27,7 +27,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move ETH from Compund to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundToBiFi_ETH.md"
+                        "File":"/EN/CompoundToBiFi_ETH.md"
                      }
                   ]
                }
@@ -45,7 +45,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move USDT from Aave V2 to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveToBiFi_USDT.md"
+                        "File":"/EN/AaveToBiFi_USDT.md"
                      }
                   ]
                },
@@ -57,7 +57,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move USDT from Compound to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundToBiFi_USDT.md"
+                        "File":"/EN/CompoundToBiFi_USDT.md"
                      }
                   ]
                }
@@ -75,7 +75,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move USDC from Aave V2 to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveToBiFi_USDC.md"
+                        "File":"/EN/AaveToBiFi_USDC.md"
                      }
                   ]
                },
@@ -87,7 +87,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move USDC from Compound to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundToBiFi_USDC.md"
+                        "File":"/EN/CompoundToBiFi_USDC.md"
                      }
                   ]
                }
@@ -105,7 +105,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move DAI from Aave V2 to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveToBiFi_DAI.md"
+                        "File":"/EN/AaveToBiFi_DAI.md"
                      }
                   ]
                },
@@ -117,7 +117,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move DAI from Compound to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundToBiFi_DAI.md"
+                        "File":"/EN/CompoundToBiFi_DAI.md"
                      }
                   ]
                }
@@ -135,7 +135,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move LINK from Aave V2 to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveToBiFi_LINK.md"
+                        "File":"/EN/AaveToBiFi_LINK.md"
                      }
                   ]
                },
@@ -147,7 +147,7 @@
                         "Class":"to BiFi",
                         "Symbol":"BIFI",
                         "Title":"Move LINK from Compound to BiFi",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundToBiFi_LINK.md"
+                        "File":"/EN/CompoundToBiFi_LINK.md"
                      }
                   ]
                }
@@ -167,7 +167,7 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"ETH Yield Farming in BiFi X",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiX_ETH_Earn.md"
+                  "File":"/EN/ETH_BiFiX_Earn_ETH.md"
                }
             ]
          },
@@ -179,7 +179,7 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"USDT Yield Farming in BiFi X",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiX_USDT_Earn_ETH.md"
+                  "File":"/EN/ETH_BiFiX_Earn_USDT.md"
                }
             ]
          },
@@ -191,7 +191,7 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"USDC Yield Farming in BiFi X",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiX_USDC_Earn.md"
+                  "File":"/EN/ETH_BiFiX_Earn_USDC.md"
                }
             ]
          },
@@ -203,7 +203,7 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"DAI Yield Farming in BiFi X",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiX_DAI_Earn.md"
+                  "File":"/EN/ETH_BiFiX_Earn_DAI.md"
                }
             ]
          },
@@ -215,7 +215,7 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"LINK Yield Farming in BiFi X",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiX_LINK_Earn.md"
+                  "File":"/EN/ETH_BiFiX_Earn_LINK.md"
                }
             ]
          }
@@ -233,7 +233,7 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"BFC-ETH Pooling in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/Pooling_BFC_ETH.md"
+                  "File":"/EN/Pooling_BFC_ETH.md"
                }
             ]
          },
@@ -245,7 +245,7 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"BiFi-ETH Pooling in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/Pooling_BiFi_ETH.md"
+                  "File":"/EN/Pooling_BiFi_ETH.md"
                }
             ]
          }
@@ -267,7 +267,7 @@
                         "Class":"in SushiSwap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy BFC with ETH in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToBFC.md"
+                        "File":"/EN/SwapETHToBFC.md"
                      }
                   ]
                }
@@ -285,7 +285,7 @@
                         "Class":"in SushiSwap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy BiFi with ETH in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToBiFi.md"
+                        "File":"/EN/SwapETHToBiFi.md"
                      }
                   ]
                }
@@ -303,7 +303,7 @@
                         "Class":"in SushiSwap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy WBTC with ETH in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToWBTC.md"
+                        "File":"/EN/SwapETHToWBTC.md"
                      }
                   ]
                }
@@ -321,7 +321,7 @@
                         "Class":"in SushiSwap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy USDT with ETH in Sushiswap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToUSDT.md"
+                        "File":"/EN/SwapETHToUSDT.md"
                      }
                   ]
                }
@@ -339,7 +339,7 @@
                         "Class":"in SushiSwap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy USDC with ETH in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToUSDC.md"
+                        "File":"/EN/SwapETHToUSDC.md"
                      }
                   ]
                }
@@ -357,7 +357,7 @@
                         "Class":"in SushiSwap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy DAI with ETH in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToDAI.md"
+                        "File":"/EN/SwapETHToDAI.md"
                      }
                   ]
                }
@@ -375,7 +375,7 @@
                         "Class":"in SushiSwap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy LINK with ETH in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapETHToLINK.md"
+                        "File":"/EN/SwapETHToLINK.md"
                      }
                   ]
                }
@@ -395,19 +395,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Deposit ETH in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiDeposit_Ether.md"
+                  "File":"/EN/BiFiDeposit_Ether.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Deposit ETH in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveDepositEther.md"
+                  "File":"/EN/AaveDepositEther.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Deposit ETH in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundDepositETH.md"
+                  "File":"/EN/CompoundDepositETH.md"
                }
             ]
          },
@@ -419,19 +419,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Deposit WBTC in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiDeposit_WBTC.md"
+                  "File":"/EN/BiFiDeposit_WBTC.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Deposit WBTC in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveDepositWBTC.md"
+                  "File":"/EN/AaveDepositWBTC.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Deposit WBTC in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundDepositWBTC.md"
+                  "File":"/EN/CompoundDepositWBTC.md"
                }
             ]
          },
@@ -443,19 +443,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Deposit USDT in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiDeposit_USDT.md"
+                  "File":"/EN/BiFiDeposit_USDT.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Deposit USDT in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveDepositUSDT.md"
+                  "File":"/EN/AaveDepositUSDT.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Deposit USDT in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundDepositUSDT.md"
+                  "File":"/EN/CompoundDepositUSDT.md"
                }
             ]
          }
@@ -473,19 +473,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Withdraw ETH in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiWithdraw_Ether.md"
+                  "File":"/EN/BiFiWithdraw_Ether.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Withdraw ETH in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveWithdrawEther.md"
+                  "File":"/EN/AaveWithdrawEther.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Withdraw ETH in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundWithdrawETH.md"
+                  "File":"/EN/CompoundWithdrawETH.md"
                }
             ]
          },
@@ -497,19 +497,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"WIthdraw WBTC in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiWithdraw_WBTC.md"
+                  "File":"/EN/BiFiWithdraw_WBTC.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Withdraw WBTC in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveWithdrawWBTC.md"
+                  "File":"/EN/AaveWithdrawWBTC.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Withdraw WBTC in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundWithdrawWBTC.md"
+                  "File":"/EN/CompoundWithdrawWBTC.md"
                }
             ]
          },
@@ -521,19 +521,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Withdraw USDT in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiWithdraw_USDT.md"
+                  "File":"/EN/BiFiWithdraw_USDT.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"WIthdraw USDT in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveWithdrawUSDT.md"
+                  "File":"/EN/AaveWithdrawUSDT.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Withdraw USDT in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundWithdrawUSDT.md"
+                  "File":"/EN/CompoundWithdrawUSDT.md"
                }
             ]
          }
@@ -551,19 +551,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Borrow ETH in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiBorrow_Ether.md"
+                  "File":"/EN/BiFiBorrow_Ether.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Borrow ETH in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveBorrowEther.md"
+                  "File":"/EN/AaveBorrowEther.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Borrow ETH in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundBorrowETH.md"
+                  "File":"/EN/CompoundBorrowETH.md"
                }
             ]
          },
@@ -575,19 +575,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Borrow WBTC in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiBorrow_WBTC.md"
+                  "File":"/EN/BiFiBorrow_WBTC.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Borrow WBTC in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveBorrowWBTC.md"
+                  "File":"/EN/AaveBorrowWBTC.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Borrow WBTC in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundBorrowWBTC.md"
+                  "File":"/EN/CompoundBorrowWBTC.md"
                }
             ]
          },
@@ -599,19 +599,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Borrow USDT in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiBorrow_USDT.md"
+                  "File":"/EN/BiFiBorrow_USDT.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Borrow USDT in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveBorrowUSDT.md"
+                  "File":"/EN/AaveBorrowUSDT.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Borrow USDT in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundBorrowUSDT.md"
+                  "File":"/EN/CompoundBorrowUSDT.md"
                }
             ]
          }
@@ -629,19 +629,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Repay ETH in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiRepay_Ether.md"
+                  "File":"/EN/BiFiRepay_Ether.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Repay ETH in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveRepayEther.md"
+                  "File":"/EN/AaveRepayEther.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Repay ETH in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundRepayETH.md"
+                  "File":"/EN/CompoundRepayETH.md"
                }
             ]
          },
@@ -653,19 +653,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Repay WBTC in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiRepay_WBTC.md"
+                  "File":"/EN/BiFiRepay_WBTC.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Repay WBTC in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveRepayWBTC.md"
+                  "File":"/EN/AaveRepayWBTC.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Repay WBTC in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundRepayWBTC.md"
+                  "File":"/EN/CompoundRepayWBTC.md"
                }
             ]
          },
@@ -677,19 +677,19 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Repay USDT in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiRepay_USDT.md"
+                  "File":"/EN/BiFiRepay_USDT.md"
                },
                {
                   "Class":"in Aave V2",
                   "Symbol":"AAVE",
                   "Title":"Repay USDT in Aave V2",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/AaveRepayUSDT.md"
+                  "File":"/EN/AaveRepayUSDT.md"
                },
                {
                   "Class":"in Compound",
                   "Symbol":"COMPOUND",
                   "Title":"Repay USDT in Compound",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/CompoundRepayUSDT.md"
+                  "File":"/EN/CompoundRepayUSDT.md"
                }
             ]
          }

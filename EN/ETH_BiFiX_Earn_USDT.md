@@ -1,24 +1,24 @@
 ```meta-Currency
-bifi, dai
+bifi, usdt
 ```
 
-# Earn DAI in BiFi-X
+# Earn USDT in BiFi-X
 
 Start yield farming(Earn) after leveraging at maximum boost in BiFi-X.
 
-### Set amount of DAI to use.
+### Set amount of USDT to use.
 
-- Please check your deposit of DAI and enter the amount to use.
-- If you do not have any deposit of DAI, use the **Buy Tokens** menu.
+- Please check your deposit of USDT and enter the amount to use.
+- If you do not have any deposit of USDT, use the **Buy Tokens** menu.
 
-```input DAI
+```input USDT
 let amount = 100;
 ```
 
 ```input-Verify
 assert(amount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (amount), "Invalid value");
-assert(amount <= Q.erc20.balanceOf ("dai"), "Insufficient DAI." );
+assert(amount <= Q.erc20.balanceOf ("usdt"), "Insufficient USDT." );
 ```
 
 ### Swap ETH to BiFi in Sushiswap.
@@ -37,22 +37,20 @@ if (bifiBalance < bifiFee) {
 ### Confirm BiFi to be used for service fee in BiFi-X.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifi", bifiFee);
 ```
 
-### Leverage DAI to BiFi-X at the maximum boost and Earn.
+### Leverage USDT to BiFi-X at the maximum boost and Earn.
 
 ```taster
-// Confirm the maximum boost of DAI to leverage in BiFi-X.
-let maxBoost = Q.bifiX.getMaxBoost ("dai");
+// Confirm the maximum boost of USDT to leverage in BiFi-X.
+let maxBoost = Q.bifiX.getMaxBoost ("usdt");
 
-// Approve DAI before starting position.
-let daiTokenAddr = erc20.getTokenAddr ("dai");
-let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (daiTokenAddr, xFactoryAddr, amount);
+// Approve USDT before starting position.
+Q.bifiX.approve("usdt", amount);
 
 // Start Earn postion
-Q.bifiX.createEarnPosition ("dai", amount, maxBoost);
+Q.bifiX.createEarnPosition ("usdt", amount, maxBoost);
 ```
 
 ### All steps are done successfully.

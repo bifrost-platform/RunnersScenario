@@ -37,7 +37,7 @@ if (bifiBalance < bifiFee) {
 ### Confirm BiFi to be used for service fee in BiFi-X.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifi", bifiFee);
 ```
 
 ### Leverage USDC to BiFi-X at the maximum boost and Earn.
@@ -47,9 +47,7 @@ Q.bifiX.approveBiFi (bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("usdc");
 
 // Approve USDC before starting position.
-let usdcTokenAddr = erc20.getTokenAddr ("usdc");
-let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (usdcTokenAddr, xFactoryAddr, amount);
+Q.bifiX.approve("usdc", amount);
 
 // Start Earn postion
 Q.bifiX.createEarnPosition ("usdc", amount, maxBoost);

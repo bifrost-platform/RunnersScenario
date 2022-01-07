@@ -35,7 +35,7 @@ assert(amount <= Q.erc20.balanceOf ("usdt"), "Insufficient USDT." );
 ### Confirm BiFi to be used for service fee in BiFi-X.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifib", bifiFee);
 ```
 
 ### Leverage USDT to BiFi-X at the maximum boost and Earn.
@@ -45,9 +45,7 @@ Q.bifiX.approveBiFi (bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("usdt");
 
 // Approve USDT before starting position.
-let usdtTokenAddr = erc20.getTokenAddr ("usdt");
-let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (usdtTokenAddr, xFactoryAddr, amount);
+Q.bifiX.approve("usdt", amount);
 
 // Start Earn position
 Q.bifiX.createEarnPosition ("usdt", amount, maxBoost);

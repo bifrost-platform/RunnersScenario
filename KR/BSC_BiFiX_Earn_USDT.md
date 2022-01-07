@@ -39,7 +39,7 @@ assert(amount <= Q.erc20.balanceOf ("usdt"), "USDT 잔액이 부족합니다." )
 ### BiFi-X에서 수수료로 BiFi를 지불할 수 있도록 승인해 줍니다.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifib", bifiFee);
 ```
 
 ### BiFi-X에 USDT를 최대 배율로 레버리지하고 Earn을 합니다.
@@ -49,9 +49,7 @@ Q.bifiX.approveBiFi (bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("usdt");
 
 // 포지션을 생성하기 앞서, USDT 토큰을 승인합니다.
-let usdtTokenAddr = erc20.getTokenAddr ("usdt");
-let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (usdtTokenAddr, xFactoryAddr, amount);
+Q.bifiX.approve("usdt", amount);
 
 // Earn 포지션을 생성합니다
 Q.bifiX.createEarnPosition ("usdt", amount, maxBoost);

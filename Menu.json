@@ -1,0 +1,14 @@
+[
+    {
+       "ChainID":1,
+       "Title":"Ethereum mainnet",
+       "Scenarios-EN":"Scenarios_ETH_EN.json",
+       "Scenarios-KR":"Scenarios_ETH_KR.json"
+    },
+    {
+       "ChainID":56,
+       "Title":"BSC mainnet",
+       "Scenarios-EN":"Scenarios_BSC_EN.json",
+       "Scenarios-KR":"Scenarios_BSC_KR.json"
+    }
+ ]

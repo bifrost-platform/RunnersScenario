@@ -34,7 +34,7 @@ if (bifiBalance < bifiFee) {
 ### Confirm BiFi to be used for service fee in BiFi-X.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifi", bifiFee);
 ```
 
 ### Leverage ETH to BiFi-X at the maximum boost and Earn.

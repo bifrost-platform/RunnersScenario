@@ -6,7 +6,7 @@ bfc
 
 Chainrunner Q는 이 문서의 내용대로 Sushiswap에서 ETH를 BFC로 교환합니다.
 
-![title](https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/imgs/ETHtoBFC.jpg)
+![title](/imgs/ETHtoBFC.jpg)
 
 ### 교환할 ETH의 수량을 입력합니다.
 

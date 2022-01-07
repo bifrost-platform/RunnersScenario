@@ -41,7 +41,7 @@ if (bifiBalance < bifiFee) {
 ### BiFi-X에서 수수료로 BiFi를 지불할 수 있도록 승인해 줍니다.
 
 ```taster
-Q.bifiX.approveBiFi (bifiFee);
+Q.bifiX.approve("bifi", bifiFee);
 ```
 
 ### BiFi-X에 DAI를 최대 배율로 레버리지하고 Earn을 합니다.
@@ -51,9 +51,7 @@ Q.bifiX.approveBiFi (bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("dai");
 
 // 포지션을 생성하기 앞서, DAI 토큰을 승인합니다.
-let daiTokenAddr = erc20.getTokenAddr ("dai");
-let xFactoryAddr = bifiX.xFactory.getAddress ();
-erc20.approve (daiTokenAddr, xFactoryAddr, amount);
+Q.bifiX.approve("dai", amount);
 
 // Earn 포지션을 생성합니다
 Q.bifiX.createEarnPosition ("dai", amount, maxBoost);

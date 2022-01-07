@@ -6,7 +6,7 @@ bifi
 
 In this scenario, you will swap ETH to BiFi.
 
-![title](https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/imgs/ETHtoBIFI.jpg)
+![title](/imgs/ETHtoBIFI.jpg)
 
 ### Set the amount of ETH to swap.
 

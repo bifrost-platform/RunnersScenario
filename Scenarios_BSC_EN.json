@@ -11,7 +11,7 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"BNB Yield Farming in BiFi X",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiX_BNB_Earn.md"
+                  "File":"/EN/BSC_BiFiX_Earn_BNB.md"
                }
             ]
          },
@@ -23,7 +23,7 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"BTCB Yield Farming in BiFi X",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiX_BTCB_Earn.md"
+                  "File":"/EN/BSC_BiFiX_Earn_BTCB.md"
                }
             ]
          },
@@ -35,7 +35,7 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"USDT Yield Farming in BiFi X",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiX_USDT_Earn_BSC.md"
+                  "File":"/EN/BSC_BiFiX_Earn_USDT.md"
                }
             ]
          }
@@ -53,7 +53,7 @@
                   "Class":"Provide liquidity of BNB-USDT",
                   "Symbol":"BNB-USDT",
                   "Title":"Provide liquidity of BNB-USDT in PancakeSwap",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/PancakeAddBNBUSDTLiquidity.md"
+                  "File":"/EN/PancakeAddBNBUSDTLiquidity.md"
                }
             ]
          }
@@ -75,13 +75,13 @@
                         "Class":"in PancakeSwap",
                         "Symbol":"PANCAKESWAP",
                         "Title":"Buy BTCB with BNB in PancakeSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/PancakeSwapBNBToBTCB.md"
+                        "File":"/EN/PancakeSwapBNBToBTCB.md"
                      },
                      {
                         "Class":"in Sushiswap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy BTCB with BNB in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapBNBToBTCB.md"
+                        "File":"/EN/SwapBNBToBTCB.md"
                      }
                   ]
                }
@@ -99,13 +99,13 @@
                         "Class":"in PancakeSwap",
                         "Symbol":"PANCAKESWAP",
                         "Title":"Buy USDT with BNB in PancakeSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/PancakeSwapBNBToUSDT.md"
+                        "File":"/EN/PancakeSwapBNBToUSDT.md"
                      },
                      {
                         "Class":"in Sushiswap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy USDT with BNB in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapBNBToUSDT.md"
+                        "File":"/EN/SwapBNBToUSDT.md"
                      }
                   ]
                }
@@ -123,7 +123,7 @@
                         "Class":"in Sushiswap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy USDC with BNB in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapBNBToUSDC.md"
+                        "File":"/EN/SwapBNBToUSDC.md"
                      }
                   ]
                }
@@ -141,7 +141,7 @@
                         "Class":"in Sushiswap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy DAI with BNB in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapBNBToDAI.md"
+                        "File":"/EN/SwapBNBToDAI.md"
                      }
                   ]
                }
@@ -159,7 +159,7 @@
                         "Class":"in Sushiswap",
                         "Symbol":"SUSHISWAP",
                         "Title":"Buy LINK with BNB in SushiSwap",
-                        "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/SwapBNBToLINK.md"
+                        "File":"/EN/SwapBNBToLINK.md"
                      }
                   ]
                }
@@ -179,13 +179,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Deposit BNB in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiDeposit_BNB.md"
+                  "File":"/EN/BiFiDeposit_BNB.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Deposit BNB in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusDeposit_BNB.md"
+                  "File":"/EN/VenusDeposit_BNB.md"
                }
             ]
          },
@@ -197,13 +197,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Deposit BTCB in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiDeposit_BTCB.md"
+                  "File":"/EN/BiFiDeposit_BTCB.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Deposit BTCB in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusDeposit_BTCB.md"
+                  "File":"/EN/VenusDeposit_BTCB.md"
                }
             ]
          },
@@ -215,13 +215,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Deposit USDT in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiDeposit_USDT.md"
+                  "File":"/EN/BiFiDeposit_USDT.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Deposit USDT in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusDeposit_USDT.md"
+                  "File":"/EN/VenusDeposit_USDT.md"
                }
             ]
          }
@@ -239,13 +239,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Withdraw BNB in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiWithdraw_BNB.md"
+                  "File":"/EN/BiFiWithdraw_BNB.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Withdraw BNB in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusWithdraw_BNB.md"
+                  "File":"/EN/VenusWithdraw_BNB.md"
                }
             ]
          },
@@ -257,13 +257,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Withdraw BTCB in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiWithdraw_BTCB.md"
+                  "File":"/EN/BiFiWithdraw_BTCB.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Withdraw BTCB in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusWithdraw_BTCB.md"
+                  "File":"/EN/VenusWithdraw_BTCB.md"
                }
             ]
          },
@@ -275,13 +275,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Withdraw USDT in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiWithdraw_USDT.md"
+                  "File":"/EN/BiFiWithdraw_USDT.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Withdraw USDT in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusWithdraw_USDT.md"
+                  "File":"/EN/VenusWithdraw_USDT.md"
                }
             ]
          }
@@ -299,13 +299,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Borrow BNB in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiBorrow_BNB.md"
+                  "File":"/EN/BiFiBorrow_BNB.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Borrow BNB in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusBorrow_BNB.md"
+                  "File":"/EN/VenusBorrow_BNB.md"
                }
             ]
          },
@@ -317,13 +317,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Borrow BTCB in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiBorrow_BTCB.md"
+                  "File":"/EN/BiFiBorrow_BTCB.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Borrow BTCB in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusBorrow_BTCB.md"
+                  "File":"/EN/VenusBorrow_BTCB.md"
                }
             ]
          },
@@ -335,13 +335,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Borrow USDT in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiBorrow_USDT.md"
+                  "File":"/EN/BiFiBorrow_USDT.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Borrow USDT in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusBorrow_USDT.md"
+                  "File":"/EN/VenusBorrow_USDT.md"
                }
             ]
          }
@@ -359,13 +359,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Repay BNB in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiRepay_BNB.md"
+                  "File":"/EN/BiFiRepay_BNB.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Repay BNB in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusRepay_BNB.md"
+                  "File":"/EN/VenusRepay_BNB.md"
                }
             ]
          },
@@ -377,13 +377,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Repay BTCB in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiRepay_BTCB.md"
+                  "File":"/EN/BiFiRepay_BTCB.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Repay BTCB in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusRepay_BTCB.md"
+                  "File":"/EN/VenusRepay_BTCB.md"
                }
             ]
          },
@@ -395,13 +395,13 @@
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
                   "Title":"Repay USDT in BiFi",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/BiFiRepay_USDT.md"
+                  "File":"/EN/BiFiRepay_USDT.md"
                },
                {
                   "Class":"in Venus",
                   "Symbol":"VENUS",
                   "Title":"Repay USDT in Venus",
-                  "File":"https://raw.githubusercontent.com/bifrost-platform/RunnersScenario/master/EN/VenusRepay_USDT.md"
+                  "File":"/EN/VenusRepay_USDT.md"
                }
             ]
          }
