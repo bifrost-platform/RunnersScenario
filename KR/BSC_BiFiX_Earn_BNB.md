@@ -46,7 +46,7 @@ Q.bifiX.approve("bifib", bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("bnb");
 
 // Earn 포지션을 생성합니다
-Q.bifiX.createEarnPosition ("bnb", amount, maxBoost);
+Q.bifiX.earn("bnb", amount, maxBoost);
 ```
 
 ### 모든 step이 정상적으로 완료되었습니다.

@@ -50,7 +50,7 @@ let maxBoost = Q.bifiX.getMaxBoost ("usdc");
 Q.bifiX.approve("usdc", amount);
 
 // Start Earn postion
-Q.bifiX.createEarnPosition ("usdc", amount, maxBoost);
+Q.bifiX.earn("usdc", amount, maxBoost);
 ```
 
 ### All steps are done successfully.

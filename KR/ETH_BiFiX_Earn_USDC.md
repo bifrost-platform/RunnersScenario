@@ -54,7 +54,7 @@ let maxBoost = Q.bifiX.getMaxBoost ("usdc");
 Q.bifiX.approve("usdc", amount);
 
 // Earn 포지션을 생성합니다
-Q.bifiX.createEarnPosition ("usdc", amount, maxBoost);
+Q.bifiX.earn("usdc", amount, maxBoost);
 ```
 
 ### 모든 step이 정상적으로 완료되었습니다.

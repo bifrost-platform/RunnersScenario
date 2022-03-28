@@ -216,6 +216,60 @@
       ]
    },
    {
+      "Class":"토큰 최적 구매하기",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"ETH로",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"BFC 구매하기",
+                  "Symbol":"BFC",
+                  "Title":"ETH로 BFC 구매하기",
+                  "File":"/KR/OptimizedSwapETHToBFC.md"
+               },
+               {
+                  "Class":"BiFi 구매하기",
+                  "Symbol":"BIFIT",
+                  "Title":"ETH로 BiFi 구매하기",
+                  "File":"/KR/OptimizedSwapETHToBIFI.md"
+               },
+               {
+                  "Class":"WBTC 구매하기",
+                  "Symbol":"WBTC",
+                  "Title":"ETH로 WBTC 구매하기",
+                  "File":"/KR/OptimizedSwapETHToWBTC.md"
+               },
+               {
+                  "Class":"USDT 구매하기",
+                  "Symbol":"USDT",
+                  "Title":"ETH로 USDT 구매하기",
+                  "File":"/KR/OptimizedSwapETHToUSDT.md"
+               },
+               {
+                  "Class":"USDC 구매하기",
+                  "Symbol":"USDC",
+                  "Title":"ETH로 USDC 구매하기",
+                  "File":"/KR/OptimizedSwapETHToUSDC.md"
+               },
+               {
+                  "Class":"DAI 구매하기",
+                  "Symbol":"DAI",
+                  "Title":"ETH로 DAI 구매하기",
+                  "File":"/KR/OptimizedSwapETHToDAI.md"
+               },
+               {
+                  "Class":"LINK 구매하기",
+                  "Symbol":"LINK",
+                  "Title":"ETH로 LINK 구매하기",
+                  "File":"/KR/OptimizedSwapETHToLINK.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
       "Class":"예금하기",
       "Depth":2,
       "SubList":[

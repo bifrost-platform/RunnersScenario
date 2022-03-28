@@ -384,6 +384,96 @@
       ]
    },
    {
+      "Class":"Buy Tokens at Best Rates",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"Buy BFC",
+            "Symbol":"BFC",
+            "SubList":[
+               {
+                  "Class":"with ETH",
+                  "Symbol":"ETH",
+                  "Title":"Buy BFC with ETH",
+                  "File":"/EN/OptimizedSwapETHToBFC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy BiFi",
+            "Symbol":"BIFIT",
+            "SubList":[
+               {
+                  "Class":"with ETH",
+                  "Symbol":"ETH",
+                  "Title":"Buy BiFi with ETH",
+                  "File":"/EN/OptimizedSwapETHToBIFI.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy WBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"with ETH",
+                  "Symbol":"ETH",
+                  "Title":"Buy WBTC with ETH",
+                  "File":"/EN/OptimizedSwapETHToWBTC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy USDT",
+            "Symbol":"USDT",
+            "SubList":[
+               {
+                  "Class":"with ETH",
+                  "Symbol":"ETH",
+                  "Title":"Buy USDT with ETH",
+                  "File":"/EN/OptimizedSwapETHToUSDT.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy USDC",
+            "Symbol":"USDC",
+            "SubList":[
+               {
+                  "Class":"with ETH",
+                  "Symbol":"ETH",
+                  "Title":"Buy USDC with ETH",
+                  "File":"/EN/OptimizedSwapETHToUSDC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy DAI",
+            "Symbol":"DAI",
+            "SubList":[
+               {
+                  "Class":"with ETH",
+                  "Symbol":"ETH",
+                  "Title":"Buy DAI with ETH",
+                  "File":"/EN/OptimizedSwapETHToDAI.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy LINK",
+            "Symbol":"LINK",
+            "SubList":[
+               {
+                  "Class":"with ETH",
+                  "Symbol":"ETH",
+                  "Title":"Buy LINK with ETH",
+                  "File":"/EN/OptimizedSwapETHToLINK.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
       "Class":"Deposit",
       "Depth":2,
       "SubList":[

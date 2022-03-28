@@ -10,5 +10,11 @@
        "Title":"BSC mainnet",
        "Scenarios-EN":"Scenarios_BSC_EN.json",
        "Scenarios-KR":"Scenarios_BSC_KR.json"
+    },
+    {
+       "ChainID":8217,
+       "Title":"Klaytn mainnet (Cypress)",
+       "Scenarios-EN":"Scenarios_KLAYTN_EN.json",
+       "Scenarios-KR":"Scenarios_KLAYTN_KR.json"
     }
  ]

@@ -1,0 +1,639 @@
+[
+   {
+      "Class":"Yield Farming/Trading",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"KLAY Yield Farming",
+            "Symbol":"KLAY",
+            "SubList":[
+               {
+                  "Class":"in BiFi X",
+                  "Symbol":"BIFIX",
+                  "Title":"KLAY Yield Farming in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Earn_KLAY.md"
+               }
+            ]
+         },
+         {
+            "Class":"KWBTC Yield Farming",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi X",
+                  "Symbol":"BIFIX",
+                  "Title":"KWBTC Yield Farming in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Earn_KWBTC.md"
+               }
+            ]
+         },
+         {
+            "Class":"KUSDT Yield Farming",
+            "Symbol":"USDT",
+            "SubList":[
+               {
+                  "Class":"in BiFi X",
+                  "Symbol":"BIFIX",
+                  "Title":"KUSDT Yield Farming in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Earn_KUSDT.md"
+               }
+            ]
+         },
+         {
+            "Class":"Start a long position with KLAY",
+            "Symbol":"KLAY",
+            "SubList":[
+               {
+                  "Class":"in BiFi X",
+                  "Symbol":"BIFIX",
+                  "Title":"Start a long position with KLAY in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Bet_KLAY_KUSDC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Start a long position with KETH",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"in BiFi X",
+                  "Symbol":"BIFIX",
+                  "Title":"Start a long position with KETH in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Bet_KETH_KUSDC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Start a short position with KLAY",
+            "Symbol":"KLAY",
+            "SubList":[
+               {
+                  "Class":"in BiFi X",
+                  "Symbol":"BIFIX",
+                  "Title":"Start a short position with KLAY in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Bet_KUSDC_KLAY.md"
+               }
+            ]
+         },
+         {
+            "Class":"Start a short position with KETH",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"in BiFi X",
+                  "Symbol":"BIFIX",
+                  "Title":"Start a short position with KETH in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Bet_KUSDC_KETH.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "Class":"Buy Tokens",
+      "Depth":3,
+      "SubList":[
+         {
+            "Class":"Buy KWBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "SubList":[
+                     {
+                        "Class":"in KLAYswap",
+                        "Symbol":"KLAYSWAP",
+                        "Title":"Buy KWBTC with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToKWBTC.md"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Class":"Buy KETH",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "SubList":[
+                     {
+                        "Class":"in KLAYswap",
+                        "Symbol":"KLAYSWAP",
+                        "Title":"Buy KETH with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToKETH.md"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Class":"Buy KUSDT",
+            "Symbol":"USDT",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "SubList":[
+                     {
+                        "Class":"in KLAYswap",
+                        "Symbol":"KLAYSWAP",
+                        "Title":"Buy KUSDT with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToKUSDT.md"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Class":"Buy KUSDC",
+            "Symbol":"USDC",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "SubList":[
+                     {
+                        "Class":"in KLAYswap",
+                        "Symbol":"KLAYSWAP",
+                        "Title":"Buy KUSDC with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToKUSDC.md"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Class":"Buy KDAI",
+            "Symbol":"DAI",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "SubList":[
+                     {
+                        "Class":"in KLAYswap",
+                        "Symbol":"KLAYSWAP",
+                        "Title":"Buy KDAI with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToKDAI.md"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Class":"Buy KXRP",
+            "Symbol":"XRP",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "SubList":[
+                     {
+                        "Class":"in KLAYswap",
+                        "Symbol":"KLAYSWAP",
+                        "Title":"Buy KXRP with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToKXRP.md"
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "Class":"Buy Tokens at Best Rates",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"Buy KETH",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "Title":"Buy KETH with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToKETH.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy KUSDT",
+            "Symbol":"USDT",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "Title":"Buy KUSDT with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToKUSDT.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy KUSDC",
+            "Symbol":"USDC",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "Title":"Buy KUSDC with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToKUSDC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy KDAI",
+            "Symbol":"DAI",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "Title":"Buy KDAI with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToKDAI.md"
+               }
+            ]
+         },
+         {
+            "Class":"Buy KXRP",
+            "Symbol":"XRP",
+            "SubList":[
+               {
+                  "Class":"with KLAY",
+                  "Symbol":"KLAY",
+                  "Title":"Buy KXRP with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToKXRP.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "Class":"Deposit",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"Deposit KLAY",
+            "Symbol":"KLAY",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Deposit KLAY in BiFi",
+                  "File":"/EN/BiFiDeposit_KLAY.md"
+               }
+            ]
+         },
+         {
+            "Class":"Deposit KWBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Deposit KWBTC in BiFi",
+                  "File":"/EN/BiFiDeposit_KWBTC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Deposit KETH",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Deposit KETH in BiFi",
+                  "File":"/EN/BiFiDeposit_KETH.md"
+               }
+            ]
+         },
+         {
+            "Class":"Deposit KUSDT",
+            "Symbol":"USDT",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Deposit KUSDT in BiFi",
+                  "File":"/EN/BiFiDeposit_KUSDT.md"
+               }
+            ]
+         },
+         {
+            "Class":"Deposit KUSDC",
+            "Symbol":"USDC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Deposit KUSDC in BiFi",
+                  "File":"/EN/BiFiDeposit_KUSDC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Deposit KDAI",
+            "Symbol":"DAI",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Deposit KDAI in BiFi",
+                  "File":"/EN/BiFiDeposit_KDAI.md"
+               }
+            ]
+         },
+         {
+            "Class":"Deposit KXRP",
+            "Symbol":"XRP",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Deposit KXRP in BiFi",
+                  "File":"/EN/BiFiDeposit_KXRP.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "Class":"Withdraw",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"Withdraw KLAY",
+            "Symbol":"KLAY",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Withdraw KLAY in BiFi",
+                  "File":"/EN/BiFiWithdraw_KLAY.md"
+               }
+            ]
+         },
+         {
+            "Class":"Withdraw KWBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Withdraw KWBTC in BiFi",
+                  "File":"/EN/BiFiWithdraw_KWBTC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Withdraw KETH",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Withdraw KETH in BiFi",
+                  "File":"/EN/BiFiWithdraw_KETH.md"
+               }
+            ]
+         },
+         {
+            "Class":"Withdraw KUSDT",
+            "Symbol":"USDT",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Withdraw KUSDT in BiFi",
+                  "File":"/EN/BiFiWithdraw_KUSDT.md"
+               }
+            ]
+         },
+         {
+            "Class":"Withdraw KUSDC",
+            "Symbol":"USDC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Withdraw KUSDC in BiFi",
+                  "File":"/EN/BiFiWithdraw_KUSDC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Withdraw KDAI",
+            "Symbol":"DAI",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Withdraw KDAI in BiFi",
+                  "File":"/EN/BiFiWithdraw_KDAI.md"
+               }
+            ]
+         },
+         {
+            "Class":"Withdraw KXRP",
+            "Symbol":"XRP",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Withdraw KXRP in BiFi",
+                  "File":"/EN/BiFiWithdraw_KXRP.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "Class":"Borrow",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"Borrow KLAY",
+            "Symbol":"KLAY",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Borrow KLAY in BiFi",
+                  "File":"/EN/BiFiBorrow_KLAY.md"
+               }
+            ]
+         },
+         {
+            "Class":"Borrow KWBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Borrow KWBTC in BiFi",
+                  "File":"/EN/BiFiBorrow_KWBTC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Borrow KETH",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Borrow KETH in BiFi",
+                  "File":"/EN/BiFiBorrow_KETH.md"
+               }
+            ]
+         },
+         {
+            "Class":"Borrow KUSDT",
+            "Symbol":"USDT",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Borrow KUSDT in BiFi",
+                  "File":"/EN/BiFiBorrow_KUSDT.md"
+               }
+            ]
+         },
+         {
+            "Class":"Borrow KUSDC",
+            "Symbol":"USDC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Borrow KUSDC in BiFi",
+                  "File":"/EN/BiFiBorrow_KUSDC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Borrow KDAI",
+            "Symbol":"DAI",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Borrow KDAI in BiFi",
+                  "File":"/EN/BiFiBorrow_KDAI.md"
+               }
+            ]
+         },
+         {
+            "Class":"Borrow KXRP",
+            "Symbol":"XRP",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Borrow KXRP in BiFi",
+                  "File":"/EN/BiFiBorrow_KXRP.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "Class":"Repay",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"Repay KLAY",
+            "Symbol":"KLAY",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Repay KLAY in BiFi",
+                  "File":"/EN/BiFiRepay_KLAY.md"
+               }
+            ]
+         },
+         {
+            "Class":"Repay KWBTC",
+            "Symbol":"WBTC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Repay KWBTC in BiFi",
+                  "File":"/EN/BiFiRepay_KWBTC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Repay KETH",
+            "Symbol":"ETH",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Repay KETH in BiFi",
+                  "File":"/EN/BiFiRepay_KETH.md"
+               }
+            ]
+         },
+         {
+            "Class":"Repay KUSDT",
+            "Symbol":"USDT",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Repay KUSDT in BiFi",
+                  "File":"/EN/BiFiRepay_KUSDT.md"
+               }
+            ]
+         },
+         {
+            "Class":"Repay KUSDC",
+            "Symbol":"USDC",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Repay KUSDC in BiFi",
+                  "File":"/EN/BiFiRepay_KUSDC.md"
+               }
+            ]
+         },
+         {
+            "Class":"Repay KDAI",
+            "Symbol":"DAI",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Repay KDAI in BiFi",
+                  "File":"/EN/BiFiRepay_KDAI.md"
+               }
+            ]
+         },
+         {
+            "Class":"Repay KXRP",
+            "Symbol":"XRP",
+            "SubList":[
+               {
+                  "Class":"in BiFi",
+                  "Symbol":"BIFI",
+                  "Title":"Repay KXRP in BiFi",
+                  "File":"/EN/BiFiRepay_KXRP.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "Class":"More scenarios to come",
+      "Depth":0,
+      "SubList":[
+
+      ]
+   }
+]

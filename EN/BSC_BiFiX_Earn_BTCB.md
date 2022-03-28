@@ -48,7 +48,7 @@ let maxBoost = Q.bifiX.getMaxBoost ("btcb");
 Q.bifiX.approve("btcb", amount);
 
 // Start Earn position
-Q.bifiX.createEarnPosition ("btcb", amount, maxBoost);
+Q.bifiX.earn("btcb", amount, maxBoost);
 ```
 
 ### All steps are done successfully.

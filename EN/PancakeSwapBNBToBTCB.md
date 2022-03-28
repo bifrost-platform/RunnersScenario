@@ -19,7 +19,7 @@ assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic BTCB
-let btcbAmount = Q.pancake.getAmountOutFromExactIn("btcb", amountIn);
+let btcbAmount = Q.pancake.getAmountsOutFromExactIn("btcb", amountIn);
 print(btcbAmount);
 ```
 

@@ -120,6 +120,48 @@
       ]
    },
    {
+      "Class":"토큰 최적 구매하기",
+      "Depth":2,
+      "SubList":[
+         {
+            "Class":"BNB로",
+            "Symbol":"BNB",
+            "SubList":[
+               {
+                  "Class":"BTCB 구매하기",
+                  "Symbol":"BTCB",
+                  "Title":"BNB로 BTCB 구매하기",
+                  "File":"/KR/OptimizedSwapBNBToBTCB.md"
+               },
+               {
+                  "Class":"USDT 구매하기",
+                  "Symbol":"USDT",
+                  "Title":"BNB로 USDT 구매하기",
+                  "File":"/KR/OptimizedSwapBNBToUSDT.md"
+               },
+               {
+                  "Class":"USDC 구매하기",
+                  "Symbol":"USDC",
+                  "Title":"BNB로 USDC 구매하기",
+                  "File":"/KR/OptimizedSwapBNBToUSDC.md"
+               },
+               {
+                  "Class":"DAI 구매하기",
+                  "Symbol":"DAI",
+                  "Title":"BNB로 DAI 구매하기",
+                  "File":"/KR/OptimizedSwapBNBToDAI.md"
+               },
+               {
+                  "Class":"LINK 구매하기",
+                  "Symbol":"LINK",
+                  "Title":"BNB로 LINK 구매하기",
+                  "File":"/KR/OptimizedSwapBNBToLINK.md"
+               }
+            ]
+         }
+      ]
+   },
+   {
       "Class":"예금하기",
       "Depth":2,
       "SubList":[

@@ -42,7 +42,7 @@ Q.bifiX.approve("bifib", bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("bnb");
 
 // Start Earn position
-Q.bifiX.createEarnPosition ("bnb", amount, maxBoost);
+Q.bifiX.earn("bnb", amount, maxBoost);
 ```
 
 ### All steps are done successfully.

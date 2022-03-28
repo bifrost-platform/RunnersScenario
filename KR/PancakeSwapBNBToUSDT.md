@@ -19,7 +19,7 @@ assert(amountIn <= getBalance(), "BNB 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic USDT
-let usdtAmount = Q.pancake.getAmountOutFromExactIn("usdt", amountIn);
+let usdtAmount = Q.pancake.getAmountsOutFromExactIn("usdt", amountIn);
 print(usdtAmount);
 ```
 

@@ -44,7 +44,7 @@ Q.bifiX.approve("bifi", bifiFee);
 let maxBoost = Q.bifiX.getMaxBoost ("ether");
 
 // Start Earn postion
-Q.bifiX.createEarnPosition ("ether", amount, maxBoost);
+Q.bifiX.earn("ether", amount, maxBoost);
 ```
 
 ### All steps are done successfully.
