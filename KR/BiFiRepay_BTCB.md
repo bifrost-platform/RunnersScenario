@@ -31,7 +31,7 @@ let amountRepay = 0.01;
 ```input-Verify
 assert(amountRepay > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountRepay), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.erc20.balanceOf("btcb") >= amountRepay, "상환할 수 있는 BTCB가 부족합니다.");
+assert(Q.Token.balanceOf("btcb") >= amountRepay, "상환할 수 있는 BTCB가 부족합니다.");
 assert(Q.bifi.getMaxRepayAmount("btcb") >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
 ```
 

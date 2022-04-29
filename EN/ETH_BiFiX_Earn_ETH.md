@@ -24,7 +24,7 @@ assert(amount <= getBalance (), "Insufficient ETH." );
 - This step will not be processed if you're already holding enough balance of BiFi tokens
 
 ```taster
-let bifiBalance = Q.erc20.balanceOf ("bifi");
+let bifiBalance = Q.Token.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
 if (bifiBalance < bifiFee) {
     Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);

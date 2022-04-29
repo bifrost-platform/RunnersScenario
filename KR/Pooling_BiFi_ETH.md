@@ -25,7 +25,7 @@ let bifiAmount = 1000;
 ```input-Verify
 assert(bifiAmount > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency (bifiAmount), "잘못된 형식의 값이 입력 되었습니다.");
-assert(bifiAmount <= Q.erc20.balanceOf ("bifi"), "BiFi 잔액이 부족합니다.");
+assert(bifiAmount <= Q.Token.balanceOf ("bifi"), "BiFi 잔액이 부족합니다.");
 let ethBalance = getBalance ();
 let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bifi", bifiAmount);
 assert(ethAmount <= ethBalance, "ETH 잔액이 부족합니다. BiFi의 수량을 낮게 조절하십시요." );

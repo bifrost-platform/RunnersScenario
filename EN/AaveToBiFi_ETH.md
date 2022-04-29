@@ -29,7 +29,7 @@ Q.aaveV2.withdraw ("ether", assetAmount);
 
 ```taster
 // Deposit ETH in BiFi.
-bifi.coin.deposit (assetAmount);
+Q.bifi.deposit (assetAmount);
 print (assetAmount.toString () + " moved from Aave V2 to BiFi.");
 ```
 

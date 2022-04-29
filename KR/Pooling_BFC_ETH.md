@@ -25,7 +25,7 @@ let bfcAmount = 1000;
 ```input-Verify
 assert(bfcAmount > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency (bfcAmount), "잘못된 형식의 값이 입력 되었습니다.");
-assert(bfcAmount <= Q.erc20.balanceOf ("bfc"), "BFC 잔액이 부족합니다.");
+assert(bfcAmount <= Q.Token.balanceOf ("bfc"), "BFC 잔액이 부족합니다.");
 let ethBalance = getBalance ();
 let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bfc", bfcAmount);
 assert(ethAmount <= ethBalance, "ETH 잔액이 부족합니다. BFC의 수량을 낮게 조절하십시요." );

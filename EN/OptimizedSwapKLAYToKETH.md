@@ -15,7 +15,13 @@ ChainRunner Q compares DEXes to swap KLAY to KETH in the most price efficient wa
 ```output-Dynamic
 let outputs = Q.optimizedSwap.klay.getOutputs("keth", 1 klay);
 let target = Q.optimizedSwap.getBest (outputs);
-Q.optimizedSwap.printOutputs (outputs);
+let (bestAmount, target) = outputs[0];
+print("Best DEX is " + target + ". (" + bestAmount.toString() + ")\n");
+print ("\nDifferences from Best DEX\n");
+print ("\nCurrent Chain : \n");
+Q.optimizedSwap.printOutputs (bestAmount, outputs);
+print ("\nOther Chain : ");
+Q.optimizedSwap.klay.printOtherChainOutputs (bestAmount, "keth", 1 klay);
 ```
 
 ### Set the amount of KLAY to swap.

@@ -12,7 +12,7 @@ In this scenario, you will start yield farming(Earn) after leveraging at maximum
 
 ```output-Dynamic
 let bifiFee = Q.bifiX.getFee ();
-let bifiBalance = Q.erc20.balanceOf ("bifib");
+let bifiBalance = Q.Token.balanceOf ("bifib");
 assert(bifiBalance >= bifiFee, "Insufficient BiFi");
 print ("BiFi tokens needed for service fee: " + bifiFee.toString ());
 ```
@@ -29,7 +29,7 @@ let amount = 1;
 ```input-Verify
 assert(amount > 0, "Incorrect value.");
 assert(isCurrency (amount), "Incorrect format.");
-assert(amount <= Q.erc20.balanceOf ("btcb"), "Insufficient BTCB." );
+assert(amount <= Q.Token.balanceOf ("btcb"), "Insufficient BTCB." );
 ```
 
 ### Confirm BiFi to be used for service fee in BiFi-X.

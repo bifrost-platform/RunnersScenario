@@ -42,7 +42,7 @@ let amount = 100;
 ```input-Verify
 assert(amount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amount), "Invalid value");
-assert(Q.erc20.balanceOf("usdt") >= amount, "Insufficient USDT available to repay.");
+assert(Q.Token.balanceOf("usdt") >= amount, "Insufficient USDT available to repay.");
 assert(amountRepayMax >= amount, "You cannot repay more than your loan.");
 ```
 

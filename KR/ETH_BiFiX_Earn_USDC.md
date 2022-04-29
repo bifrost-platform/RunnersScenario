@@ -22,7 +22,7 @@ let amount = 1000;
 ```input-Verify
 assert(amount > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency (amount), "잘못된 형식의 값이 입력 되었습니다.");
-assert(amount <= Q.erc20.balanceOf ("usdc"), "USDC 잔액이 부족합니다." );
+assert(amount <= Q.Token.balanceOf ("usdc"), "USDC 잔액이 부족합니다." );
 ```
 
 ### Sushiswap에서 ETH를 BiFi로 교환합니다.
@@ -31,7 +31,7 @@ assert(amount <= Q.erc20.balanceOf ("usdc"), "USDC 잔액이 부족합니다." )
 - 충분한 양의 BiFi를 보유하고 있다면, 해당 스텝은 실행되지 않습니다.
 
 ```taster
-let bifiBalance = Q.erc20.balanceOf ("bifi");
+let bifiBalance = Q.Token.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
 if (bifiBalance < bifiFee) {
     Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);

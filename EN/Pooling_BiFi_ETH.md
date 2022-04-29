@@ -27,7 +27,7 @@ let bifiAmount = 1000;
 ```input-Verify
 assert(bifiAmount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (bifiAmount), "Invalid value");
-assert(bifiAmount <= Q.erc20.balanceOf ("bifi"), "Insufficient BIFI." );
+assert(bifiAmount <= Q.Token.balanceOf ("bifi"), "Insufficient BIFI." );
 let ethBalance = getBalance ();
 let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bifi", bifiAmount);
 assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BiFi." );

@@ -18,7 +18,7 @@ let amountIn = 100;
 ```input-Verify
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.erc20.balanceOf("usdt") >= amountIn, "보유한 USDT가 부족합니다.");
+assert(Q.Token.balanceOf("usdt") >= amountIn, "보유한 USDT가 부족합니다.");
 ```
 
 ### 설정 한 금액 예금하기

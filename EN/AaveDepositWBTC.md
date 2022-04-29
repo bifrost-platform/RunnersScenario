@@ -19,7 +19,7 @@ let amountIn = 0.01;
 assert(Q.aaveV2.getIsActive("wbtc") && !Q.aaveV2.getIsFrozen("wbtc"), "Deposit is limited due to the circuit status of the market.");
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(Q.erc20.balanceOf("wbtc") >= amountIn, "Insufficient WBTC");
+assert(Q.Token.balanceOf("wbtc") >= amountIn, "Insufficient WBTC");
 ```
 
 ### Proceed deposit

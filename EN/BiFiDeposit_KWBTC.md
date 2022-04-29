@@ -22,7 +22,7 @@ let amountDeposit = 0.01;
 ```input-Verify
 assert(amountDeposit > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountDeposit), "Invalid value");
-assert(Q.kip7.balanceOf("kwbtc") >= amountDeposit, "Insufficient KWBTC");
+assert(Q.Token.balanceOf("kwbtc") >= amountDeposit, "Insufficient KWBTC");
 ```
 
 ### Deposit in BiFi

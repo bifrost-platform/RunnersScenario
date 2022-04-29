@@ -28,7 +28,7 @@ Q.compound.withdraw ("ether", assetAmount);
 
 ```taster
 // Deposit ETH in BiFi.
-bifi.coin.deposit (assetAmount);
+Q.bifi.deposit (assetAmount);
 print (assetAmount.toString () + " moved from Compound to BiFi.");
 ```
 

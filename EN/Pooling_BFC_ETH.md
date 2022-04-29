@@ -27,7 +27,7 @@ let bfcAmount = 1000;
 ```input-Verify
 assert(bfcAmount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (bfcAmount), "Invalid value");
-assert(bfcAmount <= Q.erc20.balanceOf ("bfc"), "Insufficient BFC." );
+assert(bfcAmount <= Q.Token.balanceOf ("bfc"), "Insufficient BFC." );
 let ethBalance = getBalance ();
 let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bfc", bfcAmount);
 assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BFC." );

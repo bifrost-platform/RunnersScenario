@@ -15,7 +15,13 @@ ChainRunner Q compares DEXes to swap ETH to DAI in the most price efficient way.
 ```output-Dynamic
 let outputs = Q.optimizedSwap.eth.getOutputs("dai", 1 ether);
 let target = Q.optimizedSwap.getBest (outputs);
-Q.optimizedSwap.printOutputs (outputs);
+let (bestAmount, target) = outputs[0];
+print("Best DEX is " + target + ". (" + bestAmount.toString() + ")\n");
+print ("\nDifferences from Best DEX\n");
+print ("\nCurrent Chain : \n");
+Q.optimizedSwap.printOutputs (bestAmount, outputs);
+print ("\nOther Chain : ");
+Q.optimizedSwap.eth.printOtherChainOutputs (bestAmount, "dai", 1 ether);
 ```
 
 ### Set the amount of ETH to swap.

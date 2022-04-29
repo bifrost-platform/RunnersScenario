@@ -29,7 +29,7 @@ Q.compound.withdraw ("usdc", assetAmount);
 
 ```taster
 // Deposit USDC in BiFi.
-bifi.token.deposit ("usdc", assetAmount);
+Q.bifi.deposit ("usdc", assetAmount);
 print (assetAmount.toString () + " moved from Compound to BiFi.");
 ```
 

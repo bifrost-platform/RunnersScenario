@@ -15,7 +15,13 @@ ChainRunner Q compares DEXes to swap BNB to LINK in the most price efficient way
 ```output-Dynamic
 let outputs = Q.optimizedSwap.bsc.getOutputs("link", 1 bnb);
 let target = Q.optimizedSwap.getBest (outputs);
-Q.optimizedSwap.printOutputs (outputs);
+let (bestAmount, target) = outputs[0];
+print("Best DEX is " + target + ". (" + bestAmount.toString() + ")\n");
+print ("\nDifferences from Best DEX\n");
+print ("\nCurrent Chain : \n");
+Q.optimizedSwap.printOutputs (bestAmount, outputs);
+print ("\nOther Chain : ");
+Q.optimizedSwap.bsc.printOtherChainOutputs (bestAmount, "link", 1 bnb);
 ```
 
 ### Set the amount of BNB to swap.

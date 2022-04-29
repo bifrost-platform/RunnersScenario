@@ -28,7 +28,7 @@ let amount = 0.01;
 ```input-Verify
 assert(amount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amount), "Invalid value");
-assert(Q.erc20.balanceOf("wbtc") >= amount, "Insufficient WBTC to repay.");
+assert(Q.Token.balanceOf("wbtc") >= amount, "Insufficient WBTC to repay.");
 assert(amountRepayMax >= amount, "You cannot repay more than your loan.");
 ```
 

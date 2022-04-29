@@ -15,7 +15,13 @@ Chainrunner Q는 이 문서의 내용대로 최적의 DEX에서 KLAY를 KXRP로 
 ```output-Dynamic
 let outputs = Q.optimizedSwap.klay.getOutputs("kxrp", 1 klay);
 let target = Q.optimizedSwap.getBest (outputs);
-Q.optimizedSwap.printOutputs (outputs);
+let (bestAmount, target) = outputs[0];
+print("최적 DEX는 " + target + " 입니다. (" + bestAmount.toString() + ")\n");
+print ("\n최적 DEX 대비 손익 비교\n");
+print ("\n현재 체인 : \n");
+Q.optimizedSwap.printOutputs (bestAmount, outputs);
+print ("\n다른 체인 : ");
+Q.optimizedSwap.klay.printOtherChainOutputs (bestAmount, "kxrp", 1 klay);
 ```
 
 ### 교환할 KLAY의 수량을 입력합니다.

@@ -28,7 +28,7 @@ let amountRepay = 100;
 ```input-Verify
 assert(amountRepay > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountRepay), "잘못된 형식의 값 입니다.");
-assert(Q.erc20.balanceOf("usdt") >= amountRepay, "상환할 USDT가 부족합니다.");
+assert(Q.Token.balanceOf("usdt") >= amountRepay, "상환할 USDT가 부족합니다.");
 assert(Q.venus.getAmountRepayMax("usdt") >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
 ```
 

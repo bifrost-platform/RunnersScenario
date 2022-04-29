@@ -12,7 +12,7 @@ In this scenario, you will start yield farming(Earn) after leveraging BNB at the
 
 ```output-Dynamic
 let bifiFee = Q.bifiX.getFee ();
-let bifiBalance = Q.erc20.balanceOf ("bifib");
+let bifiBalance = Q.Token.balanceOf ("bifib");
 assert(bifiBalance >= bifiFee, "Insufficient BNB.");
 print ("BiFi tokens needed for service fee: " + bifiFee.toString ());
 ```

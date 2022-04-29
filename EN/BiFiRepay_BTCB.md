@@ -28,7 +28,7 @@ let amountRepay = 0.01;
 ```input-Verify
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value");
-assert(Q.erc20.balanceOf("btcb") >= amountRepay, "Insufficient BTCB available to repay.");
+assert(Q.Token.balanceOf("btcb") >= amountRepay, "Insufficient BTCB available to repay.");
 assert(Q.bifi.getMaxRepayAmount("btcb") >= amountRepay, "You cannot repay more than your loan.");
 ```
 

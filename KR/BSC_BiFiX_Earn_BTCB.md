@@ -16,7 +16,7 @@ Chainrunner Q는 이 문서의 내용대로, BTCB 토큰을 가지고 BiFi-X Ear
 
 ```output-Dynamic
 let bifiFee = Q.bifiX.getFee ();
-let bifiBalance = Q.erc20.balanceOf ("bifib");
+let bifiBalance = Q.Token.balanceOf ("bifib");
 assert(bifiBalance >= bifiFee, "BiFi 수량이 부족합니다.");
 print ("수수료로 필요한 BiFi 수량: " + bifiFee.toString ());
 ```
@@ -33,7 +33,7 @@ let amount = 0.001;
 ```input-Verify
 assert(amount > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency (amount), "잘못된 형식의 값이 입력 되었습니다.");
-assert(amount <= Q.erc20.balanceOf ("btcb"), "BTCB 잔액이 부족합니다." );
+assert(amount <= Q.Token.balanceOf ("btcb"), "BTCB 잔액이 부족합니다." );
 ```
 
 ### BiFi-X에서 수수료로 BiFi를 지불할 수 있도록 승인해 줍니다.

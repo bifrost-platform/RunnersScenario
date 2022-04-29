@@ -19,7 +19,7 @@ let amountIn = 100;
 assert(Q.aaveV2.getIsActive("usdt") && !Q.aaveV2.getIsFrozen("usdt"), "Deposit is limited due to the circuit status of the market.");
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(Q.erc20.balanceOf("usdt") >= amountIn, "Insufficient USDT");
+assert(Q.Token.balanceOf("usdt") >= amountIn, "Insufficient USDT");
 ```
 
 ### Proceed deposit

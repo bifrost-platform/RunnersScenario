@@ -18,7 +18,7 @@ let amountIn = 0.01;
 ```input-Verify
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.erc20.balanceOf("wbtc") >= amountIn, "보유한 WBTC가 부족합니다.");
+assert(Q.Token.balanceOf("wbtc") >= amountIn, "보유한 WBTC가 부족합니다.");
 ```
 
 ### 설정 한 금액 예금하기

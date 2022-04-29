@@ -22,7 +22,7 @@ let amountDeposit = 0.01;
 ```input-Verify
 assert(amountDeposit > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountDeposit), "Invalid value");
-assert(Q.erc20.balanceOf("wbtc") >= amountDeposit, "Insufficient WBTC");
+assert(Q.Token.balanceOf("wbtc") >= amountDeposit, "Insufficient WBTC");
 ```
 
 ### Deposit in BiFi

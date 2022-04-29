@@ -15,7 +15,13 @@ ChainRunner Q compares DEXes to swap KLAY to KWBTC in the most price efficient w
 ```output-Dynamic
 let outputs = Q.optimizedSwap.klay.getOutputs("kwbtc", 1 klay);
 let target = Q.optimizedSwap.getBest (outputs);
-Q.optimizedSwap.printOutputs (outputs);
+let (bestAmount, target) = outputs[0];
+print("Best DEX is " + target + ". (" + bestAmount.toString() + ")\n");
+print ("\nDifferences from Best DEX\n");
+print ("\nCurrent Chain : \n");
+Q.optimizedSwap.printOutputs (bestAmount, outputs);
+print ("\nOther Chain : ");
+Q.optimizedSwap.klay.printOtherChainOutputs (bestAmount, "kwbtc", 1 klay);
 ```
 
 ### Set the amount of KLAY to swap.

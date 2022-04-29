@@ -18,7 +18,7 @@ let amountDeposit = 0.01;
 ```input-Verify
 assert(amountDeposit > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountDeposit), "잘못된 형식의 값 입니다.");
-assert(Q.erc20.balanceOf("btcb") >= amountDeposit, "보유한 BTCB가 부족합니다.");
+assert(Q.Token.balanceOf("btcb") >= amountDeposit, "보유한 BTCB가 부족합니다.");
 ```
 
 ### 설정한 금액 예금하기

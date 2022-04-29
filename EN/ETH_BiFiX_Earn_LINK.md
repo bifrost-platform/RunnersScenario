@@ -18,7 +18,7 @@ let amount = 100;
 ```input-Verify
 assert(amount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (amount), "Invalid value");
-assert(amount <= Q.erc20.balanceOf ("link"), "Insufficient LINK." );
+assert(amount <= Q.Token.balanceOf ("link"), "Insufficient LINK." );
 ```
 
 ### Swap ETH to BiFi in Sushiswap.
@@ -27,7 +27,7 @@ assert(amount <= Q.erc20.balanceOf ("link"), "Insufficient LINK." );
 - This step will not be processed if you're already holding enough balance of BiFi tokens
 
 ```taster
-let bifiBalance = Q.erc20.balanceOf ("bifi");
+let bifiBalance = Q.Token.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
 if (bifiBalance < bifiFee) {
     Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);

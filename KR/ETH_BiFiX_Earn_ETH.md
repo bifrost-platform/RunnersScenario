@@ -28,7 +28,7 @@ assert(amount <= getBalance (), "ETH 잔액이 부족합니다." );
 - 충분한 양의 BiFi를 보유하고 있다면, 해당 스텝은 실행되지 않습니다.
 
 ```taster
-let bifiBalance = Q.erc20.balanceOf ("bifi");
+let bifiBalance = Q.Token.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
 if (bifiBalance < bifiFee) {
     Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);

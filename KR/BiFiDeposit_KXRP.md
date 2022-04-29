@@ -21,7 +21,7 @@ let amountDeposit = 100;
 ```input-Verify
 assert(amountDeposit > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountDeposit), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.kip7.balanceOf("kxrp") >= amountDeposit, "보유한 KXRP가 부족합니다.");
+assert(Q.Token.balanceOf("kxrp") >= amountDeposit, "보유한 KXRP가 부족합니다.");
 ```
 
 ### BiFi에 예금하기

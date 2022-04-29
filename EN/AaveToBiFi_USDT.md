@@ -30,7 +30,7 @@ Q.aaveV2.withdraw ("usdt", assetAmount);
 
 ```taster
 // Deposit USDT in BiFi.
-bifi.token.deposit ("usdt", assetAmount);
+Q.bifi.deposit ("usdt", assetAmount);
 print (assetAmount.toString () + " moved from Aave V2 to BiFi.");
 ```
 

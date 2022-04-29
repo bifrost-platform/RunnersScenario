@@ -32,7 +32,7 @@ let amountRepay = 100;
 ```input-Verify
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value");
-assert(Q.kip7.balanceOf("kusdt") >= amountRepay, "Insufficient KUSDT available to repay.");
+assert(Q.Token.balanceOf("kusdt") >= amountRepay, "Insufficient KUSDT available to repay.");
 assert(Q.bifi.getMaxRepayAmount("kusdt") >= amountRepay, "You cannot repay more than your loan.");
 ```
 

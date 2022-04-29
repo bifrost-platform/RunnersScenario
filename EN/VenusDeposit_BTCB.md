@@ -18,7 +18,7 @@ let amountDeposit = 0.01;
 ```input-Verify
 assert(amountDeposit > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountDeposit), "Invalid value.");
-assert(Q.erc20.balanceOf("btcb") >= amountDeposit, "Insufficient BTCB");
+assert(Q.Token.balanceOf("btcb") >= amountDeposit, "Insufficient BTCB");
 ```
 
 ### Proceed deposit

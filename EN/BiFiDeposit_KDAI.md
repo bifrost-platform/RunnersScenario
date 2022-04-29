@@ -22,7 +22,7 @@ let amountDeposit = 100;
 ```input-Verify
 assert(amountDeposit > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountDeposit), "Invalid value");
-assert(Q.kip7.balanceOf("kdai") >= amountDeposit, "Insufficient KDAI");
+assert(Q.Token.balanceOf("kdai") >= amountDeposit, "Insufficient KDAI");
 ```
 
 ### Deposit in BiFi

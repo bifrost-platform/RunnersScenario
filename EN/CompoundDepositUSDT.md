@@ -18,7 +18,7 @@ let amountIn = 100;
 ```input-Verify
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
-assert(Q.erc20.balanceOf("usdt") >= amountIn, "Insufficient USDT");
+assert(Q.Token.balanceOf("usdt") >= amountIn, "Insufficient USDT");
 ```
 
 ### Proceed deposit

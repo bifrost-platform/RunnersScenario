@@ -30,7 +30,7 @@ Q.aaveV2.withdraw ("link", assetAmount);
 
 ```taster
 // Deposit LINK in BiFi.
-bifi.token.deposit ("link", assetAmount);
+Q.bifi.deposit ("link", assetAmount);
 print (assetAmount.toString () + " moved from Aave V2 to BiFi.");
 ```
 

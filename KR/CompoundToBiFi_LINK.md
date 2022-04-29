@@ -29,7 +29,7 @@ Q.compound.withdraw ("link", assetAmount);
 
 ```taster
 // BiFi에 LINK를 다시 예금합니다
-bifi.token.deposit ("link", assetAmount);
+Q.bifi.deposit ("link", assetAmount);
 print (assetAmount.toString () + " 를 Compound에서 BiFi로 옮겼습니다.");
 ```
 
