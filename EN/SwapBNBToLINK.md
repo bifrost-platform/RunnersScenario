@@ -9,7 +9,7 @@ In this scenario, you will swap BNB to LINK.
 ### Set the amount of BNB to swap.
 
 - The amount of LINK available with your BNB will be automatically calculated.
-- Only the maximum amount of LINK available for swap will be displayed if the token pool in DEX (Sushiswap) is insufficient. (BNB will be consumed according to the available balance to swap.)
+- Only the maximum amount of LINK available for swap will be displayed if the token pool in DEX (Sushiswap) is insufficient.
 
 ```input-Dynamic BNB
 let amountIn = 0.1;

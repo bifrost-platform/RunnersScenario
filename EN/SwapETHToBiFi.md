@@ -11,7 +11,7 @@ In this scenario, you will swap ETH to BiFi.
 ### Set the amount of ETH to swap.
 
 - The amount of BiFi available with your ETH will be automatically calculated.
-- Only the maximum amount of BiFi available for swap will be displayed if the token pool in DEX (Sushiswap) is insufficient. (ETH will be consumed according to the available balance to swap.)
+- Only the maximum amount of BiFi available for swap will be displayed if the token pool in DEX (Sushiswap) is insufficient.
 
 ```input-Dynamic ETH
 let amountIn = 0.1;

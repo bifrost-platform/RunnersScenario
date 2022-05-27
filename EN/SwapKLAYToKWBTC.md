@@ -9,7 +9,7 @@ In this scenario, you will swap KLAY to KWBTC.
 ### Set the amount of KLAY to swap.
 
 - The amount of KWBTC available with your KLAY will be automatically calculated.
-- Only the maximum amount of KWBTC available for swap will be displayed if the token pool in DEX (KLAYswap) is insufficient. (KLAY will be consumed according to the available balance to swap.)
+- Only the maximum amount of KWBTC available for swap will be displayed if the token pool in DEX (KLAYswap) is insufficient.
 - As there is currently no pool for KLAY/KWBTC pair, you will exchange through one of KSP, KETH, or KUSDT tokens.
 - ChainRunner Q will automatically choose the swap method for the highest amount of KWBTC in return.
 

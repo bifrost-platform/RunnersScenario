@@ -9,7 +9,7 @@ In this scenario, you will swap KLAY to KXRP.
 ### Set the amount of KLAY to swap.
 
 - The amount of KXRP available with your KLAY will be automatically calculated.
-- Only the maximum amount of KXRP available for swap will be displayed if the token pool in DEX (KLAYswap) is insufficient. (KLAY will be consumed according to the available balance to swap.)
+- Only the maximum amount of KXRP available for swap will be displayed if the token pool in DEX (KLAYswap) is insufficient.
 
 ```input-Dynamic KLAY
 let amountIn = 10;

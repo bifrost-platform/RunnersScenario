@@ -9,7 +9,7 @@ Chainrunner Q는 이 문서의 내용대로 KLAYswap에서 KLAY를 KETH로 교�
 ### 교환할 KLAY의 수량을 입력합니다.
 
 - 입력된 KLAY로 구매 가능한 KETH의 수량이 자동 계산됩니다.
-- 많은 양의 KLAY를 입력하더라도, DEX(KLAYswap)에서 구매가능한 수량 부족시 최대 구매가능 KETH의 수량만 표시됩니다. (KLAY를 많이 입력하더라도, 실제 구매에 사용된 KLAY만 소비됩니다.)
+- 많은 양의 KLAY를 입력하더라도, DEX(KLAYswap)에서 구매가능한 수량 부족시 최대 구매가능 KETH의 수량만 표시됩니다.
 
 ```input-Dynamic KLAY
 let amountIn = 10;
