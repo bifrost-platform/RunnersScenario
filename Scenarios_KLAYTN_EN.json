@@ -16,26 +16,26 @@
             ]
          },
          {
-            "Class":"KWBTC Yield Farming",
+            "Class":"oWBTC Yield Farming",
             "Symbol":"WBTC",
             "SubList":[
                {
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
-                  "Title":"KWBTC Yield Farming in BiFi X",
-                  "File":"/EN/KLAY_BiFiX_Earn_KWBTC.md"
+                  "Title":"oWBTC Yield Farming in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Earn_OWBTC.md"
                }
             ]
          },
          {
-            "Class":"KUSDT Yield Farming",
+            "Class":"oUSDT Yield Farming",
             "Symbol":"USDT",
             "SubList":[
                {
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
-                  "Title":"KUSDT Yield Farming in BiFi X",
-                  "File":"/EN/KLAY_BiFiX_Earn_KUSDT.md"
+                  "Title":"oUSDT Yield Farming in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Earn_OUSDT.md"
                }
             ]
          },
@@ -47,19 +47,19 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"Start a long position with KLAY in BiFi X",
-                  "File":"/EN/KLAY_BiFiX_Bet_KLAY_KUSDC.md"
+                  "File":"/EN/KLAY_BiFiX_Bet_KLAY_OUSDC.md"
                }
             ]
          },
          {
-            "Class":"Start a long position with KETH",
+            "Class":"Start a long position with oETH",
             "Symbol":"ETH",
             "SubList":[
                {
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
-                  "Title":"Start a long position with KETH in BiFi X",
-                  "File":"/EN/KLAY_BiFiX_Bet_KETH_KUSDC.md"
+                  "Title":"Start a long position with oETH in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Bet_OETH_OUSDC.md"
                }
             ]
          },
@@ -71,19 +71,19 @@
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
                   "Title":"Start a short position with KLAY in BiFi X",
-                  "File":"/EN/KLAY_BiFiX_Bet_KUSDC_KLAY.md"
+                  "File":"/EN/KLAY_BiFiX_Bet_OUSDC_KLAY.md"
                }
             ]
          },
          {
-            "Class":"Start a short position with KETH",
+            "Class":"Start a short position with oETH",
             "Symbol":"ETH",
             "SubList":[
                {
                   "Class":"in BiFi X",
                   "Symbol":"BIFIX",
-                  "Title":"Start a short position with KETH in BiFi X",
-                  "File":"/EN/KLAY_BiFiX_Bet_KUSDC_KETH.md"
+                  "Title":"Start a short position with oETH in BiFi X",
+                  "File":"/EN/KLAY_BiFiX_Bet_OUSDC_OETH.md"
                }
             ]
          }
@@ -94,7 +94,7 @@
       "Depth":3,
       "SubList":[
          {
-            "Class":"Buy KWBTC",
+            "Class":"Buy oWBTC",
             "Symbol":"WBTC",
             "SubList":[
                {
@@ -104,15 +104,15 @@
                      {
                         "Class":"in KLAYswap",
                         "Symbol":"KLAYSWAP",
-                        "Title":"Buy KWBTC with KLAY in KLAYswap",
-                        "File":"/EN/SwapKLAYToKWBTC.md"
+                        "Title":"Buy oWBTC with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToOWBTC.md"
                      }
                   ]
                }
             ]
          },
          {
-            "Class":"Buy KETH",
+            "Class":"Buy oETH",
             "Symbol":"ETH",
             "SubList":[
                {
@@ -122,15 +122,15 @@
                      {
                         "Class":"in KLAYswap",
                         "Symbol":"KLAYSWAP",
-                        "Title":"Buy KETH with KLAY in KLAYswap",
-                        "File":"/EN/SwapKLAYToKETH.md"
+                        "Title":"Buy oETH with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToOETH.md"
                      }
                   ]
                }
             ]
          },
          {
-            "Class":"Buy KUSDT",
+            "Class":"Buy oUSDT",
             "Symbol":"USDT",
             "SubList":[
                {
@@ -140,15 +140,15 @@
                      {
                         "Class":"in KLAYswap",
                         "Symbol":"KLAYSWAP",
-                        "Title":"Buy KUSDT with KLAY in KLAYswap",
-                        "File":"/EN/SwapKLAYToKUSDT.md"
+                        "Title":"Buy oUSDT with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToOUSDT.md"
                      }
                   ]
                }
             ]
          },
          {
-            "Class":"Buy KUSDC",
+            "Class":"Buy oUSDC",
             "Symbol":"USDC",
             "SubList":[
                {
@@ -158,8 +158,8 @@
                      {
                         "Class":"in KLAYswap",
                         "Symbol":"KLAYSWAP",
-                        "Title":"Buy KUSDC with KLAY in KLAYswap",
-                        "File":"/EN/SwapKLAYToKUSDC.md"
+                        "Title":"Buy oUSDC with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToOUSDC.md"
                      }
                   ]
                }
@@ -184,7 +184,7 @@
             ]
          },
          {
-            "Class":"Buy KXRP",
+            "Class":"Buy oXRP",
             "Symbol":"XRP",
             "SubList":[
                {
@@ -194,8 +194,8 @@
                      {
                         "Class":"in KLAYswap",
                         "Symbol":"KLAYSWAP",
-                        "Title":"Buy KXRP with KLAY in KLAYswap",
-                        "File":"/EN/SwapKLAYToKXRP.md"
+                        "Title":"Buy oXRP with KLAY in KLAYswap",
+                        "File":"/EN/SwapKLAYToOXRP.md"
                      }
                   ]
                }
@@ -208,38 +208,38 @@
       "Depth":2,
       "SubList":[
          {
-            "Class":"Buy KETH",
+            "Class":"Buy oETH",
             "Symbol":"ETH",
             "SubList":[
                {
                   "Class":"with KLAY",
                   "Symbol":"KLAY",
-                  "Title":"Buy KETH with KLAY",
-                  "File":"/EN/OptimizedSwapKLAYToKETH.md"
+                  "Title":"Buy oETH with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToOETH.md"
                }
             ]
          },
          {
-            "Class":"Buy KUSDT",
+            "Class":"Buy oUSDT",
             "Symbol":"USDT",
             "SubList":[
                {
                   "Class":"with KLAY",
                   "Symbol":"KLAY",
-                  "Title":"Buy KUSDT with KLAY",
-                  "File":"/EN/OptimizedSwapKLAYToKUSDT.md"
+                  "Title":"Buy oUSDT with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToOUSDT.md"
                }
             ]
          },
          {
-            "Class":"Buy KUSDC",
+            "Class":"Buy oUSDC",
             "Symbol":"USDC",
             "SubList":[
                {
                   "Class":"with KLAY",
                   "Symbol":"KLAY",
-                  "Title":"Buy KUSDC with KLAY",
-                  "File":"/EN/OptimizedSwapKLAYToKUSDC.md"
+                  "Title":"Buy oUSDC with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToOUSDC.md"
                }
             ]
          },
@@ -256,14 +256,14 @@
             ]
          },
          {
-            "Class":"Buy KXRP",
+            "Class":"Buy oXRP",
             "Symbol":"XRP",
             "SubList":[
                {
                   "Class":"with KLAY",
                   "Symbol":"KLAY",
-                  "Title":"Buy KXRP with KLAY",
-                  "File":"/EN/OptimizedSwapKLAYToKXRP.md"
+                  "Title":"Buy oXRP with KLAY",
+                  "File":"/EN/OptimizedSwapKLAYToOXRP.md"
                }
             ]
          }
@@ -286,50 +286,50 @@
             ]
          },
          {
-            "Class":"Deposit KWBTC",
+            "Class":"Deposit oWBTC",
             "Symbol":"WBTC",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Deposit KWBTC in BiFi",
-                  "File":"/EN/BiFiDeposit_KWBTC.md"
+                  "Title":"Deposit oWBTC in BiFi",
+                  "File":"/EN/BiFiDeposit_OWBTC.md"
                }
             ]
          },
          {
-            "Class":"Deposit KETH",
+            "Class":"Deposit oETH",
             "Symbol":"ETH",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Deposit KETH in BiFi",
-                  "File":"/EN/BiFiDeposit_KETH.md"
+                  "Title":"Deposit oETH in BiFi",
+                  "File":"/EN/BiFiDeposit_OETH.md"
                }
             ]
          },
          {
-            "Class":"Deposit KUSDT",
+            "Class":"Deposit oUSDT",
             "Symbol":"USDT",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Deposit KUSDT in BiFi",
-                  "File":"/EN/BiFiDeposit_KUSDT.md"
+                  "Title":"Deposit oUSDT in BiFi",
+                  "File":"/EN/BiFiDeposit_OUSDT.md"
                }
             ]
          },
          {
-            "Class":"Deposit KUSDC",
+            "Class":"Deposit oUSDC",
             "Symbol":"USDC",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Deposit KUSDC in BiFi",
-                  "File":"/EN/BiFiDeposit_KUSDC.md"
+                  "Title":"Deposit oUSDC in BiFi",
+                  "File":"/EN/BiFiDeposit_OUSDC.md"
                }
             ]
          },
@@ -346,14 +346,14 @@
             ]
          },
          {
-            "Class":"Deposit KXRP",
+            "Class":"Deposit oXRP",
             "Symbol":"XRP",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Deposit KXRP in BiFi",
-                  "File":"/EN/BiFiDeposit_KXRP.md"
+                  "Title":"Deposit oXRP in BiFi",
+                  "File":"/EN/BiFiDeposit_OXRP.md"
                }
             ]
          }
@@ -376,50 +376,50 @@
             ]
          },
          {
-            "Class":"Withdraw KWBTC",
+            "Class":"Withdraw oWBTC",
             "Symbol":"WBTC",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Withdraw KWBTC in BiFi",
-                  "File":"/EN/BiFiWithdraw_KWBTC.md"
+                  "Title":"Withdraw oWBTC in BiFi",
+                  "File":"/EN/BiFiWithdraw_OWBTC.md"
                }
             ]
          },
          {
-            "Class":"Withdraw KETH",
+            "Class":"Withdraw oETH",
             "Symbol":"ETH",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Withdraw KETH in BiFi",
-                  "File":"/EN/BiFiWithdraw_KETH.md"
+                  "Title":"Withdraw oETH in BiFi",
+                  "File":"/EN/BiFiWithdraw_OETH.md"
                }
             ]
          },
          {
-            "Class":"Withdraw KUSDT",
+            "Class":"Withdraw oUSDT",
             "Symbol":"USDT",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Withdraw KUSDT in BiFi",
-                  "File":"/EN/BiFiWithdraw_KUSDT.md"
+                  "Title":"Withdraw oUSDT in BiFi",
+                  "File":"/EN/BiFiWithdraw_OUSDT.md"
                }
             ]
          },
          {
-            "Class":"Withdraw KUSDC",
+            "Class":"Withdraw oUSDC",
             "Symbol":"USDC",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Withdraw KUSDC in BiFi",
-                  "File":"/EN/BiFiWithdraw_KUSDC.md"
+                  "Title":"Withdraw oUSDC in BiFi",
+                  "File":"/EN/BiFiWithdraw_OUSDC.md"
                }
             ]
          },
@@ -436,14 +436,14 @@
             ]
          },
          {
-            "Class":"Withdraw KXRP",
+            "Class":"Withdraw oXRP",
             "Symbol":"XRP",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Withdraw KXRP in BiFi",
-                  "File":"/EN/BiFiWithdraw_KXRP.md"
+                  "Title":"Withdraw oXRP in BiFi",
+                  "File":"/EN/BiFiWithdraw_OXRP.md"
                }
             ]
          }
@@ -466,50 +466,50 @@
             ]
          },
          {
-            "Class":"Borrow KWBTC",
+            "Class":"Borrow oWBTC",
             "Symbol":"WBTC",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Borrow KWBTC in BiFi",
-                  "File":"/EN/BiFiBorrow_KWBTC.md"
+                  "Title":"Borrow oWBTC in BiFi",
+                  "File":"/EN/BiFiBorrow_OWBTC.md"
                }
             ]
          },
          {
-            "Class":"Borrow KETH",
+            "Class":"Borrow oETH",
             "Symbol":"ETH",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Borrow KETH in BiFi",
-                  "File":"/EN/BiFiBorrow_KETH.md"
+                  "Title":"Borrow oETH in BiFi",
+                  "File":"/EN/BiFiBorrow_OETH.md"
                }
             ]
          },
          {
-            "Class":"Borrow KUSDT",
+            "Class":"Borrow oUSDT",
             "Symbol":"USDT",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Borrow KUSDT in BiFi",
-                  "File":"/EN/BiFiBorrow_KUSDT.md"
+                  "Title":"Borrow oUSDT in BiFi",
+                  "File":"/EN/BiFiBorrow_OUSDT.md"
                }
             ]
          },
          {
-            "Class":"Borrow KUSDC",
+            "Class":"Borrow oUSDC",
             "Symbol":"USDC",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Borrow KUSDC in BiFi",
-                  "File":"/EN/BiFiBorrow_KUSDC.md"
+                  "Title":"Borrow oUSDC in BiFi",
+                  "File":"/EN/BiFiBorrow_OUSDC.md"
                }
             ]
          },
@@ -526,14 +526,14 @@
             ]
          },
          {
-            "Class":"Borrow KXRP",
+            "Class":"Borrow oXRP",
             "Symbol":"XRP",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Borrow KXRP in BiFi",
-                  "File":"/EN/BiFiBorrow_KXRP.md"
+                  "Title":"Borrow oXRP in BiFi",
+                  "File":"/EN/BiFiBorrow_OXRP.md"
                }
             ]
          }
@@ -556,50 +556,50 @@
             ]
          },
          {
-            "Class":"Repay KWBTC",
+            "Class":"Repay oWBTC",
             "Symbol":"WBTC",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Repay KWBTC in BiFi",
-                  "File":"/EN/BiFiRepay_KWBTC.md"
+                  "Title":"Repay oWBTC in BiFi",
+                  "File":"/EN/BiFiRepay_OWBTC.md"
                }
             ]
          },
          {
-            "Class":"Repay KETH",
+            "Class":"Repay oETH",
             "Symbol":"ETH",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Repay KETH in BiFi",
-                  "File":"/EN/BiFiRepay_KETH.md"
+                  "Title":"Repay oETH in BiFi",
+                  "File":"/EN/BiFiRepay_OETH.md"
                }
             ]
          },
          {
-            "Class":"Repay KUSDT",
+            "Class":"Repay oUSDT",
             "Symbol":"USDT",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Repay KUSDT in BiFi",
-                  "File":"/EN/BiFiRepay_KUSDT.md"
+                  "Title":"Repay oUSDT in BiFi",
+                  "File":"/EN/BiFiRepay_OUSDT.md"
                }
             ]
          },
          {
-            "Class":"Repay KUSDC",
+            "Class":"Repay oUSDC",
             "Symbol":"USDC",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Repay KUSDC in BiFi",
-                  "File":"/EN/BiFiRepay_KUSDC.md"
+                  "Title":"Repay oUSDC in BiFi",
+                  "File":"/EN/BiFiRepay_OUSDC.md"
                }
             ]
          },
@@ -616,14 +616,14 @@
             ]
          },
          {
-            "Class":"Repay KXRP",
+            "Class":"Repay oXRP",
             "Symbol":"XRP",
             "SubList":[
                {
                   "Class":"in BiFi",
                   "Symbol":"BIFI",
-                  "Title":"Repay KXRP in BiFi",
-                  "File":"/EN/BiFiRepay_KXRP.md"
+                  "Title":"Repay oXRP in BiFi",
+                  "File":"/EN/BiFiRepay_OXRP.md"
                }
             ]
          }

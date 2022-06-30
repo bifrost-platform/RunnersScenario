@@ -14,40 +14,40 @@
                   "File":"/KR/KLAY_BiFiX_Earn_KLAY.md"
                },
                {
-                  "Class":"KWBTC로 이자농사 하기",
+                  "Class":"oWBTC로 이자농사 하기",
                   "Symbol":"WBTC",
                   "Title":"BiFiX에서 BTCB로 이자농사 하기",
-                  "File":"/KR/KLAY_BiFiX_Earn_KWBTC.md"
+                  "File":"/KR/KLAY_BiFiX_Earn_OWBTC.md"
                },
                {
-                  "Class":"KUSDT로 이자농사 하기",
+                  "Class":"oUSDT로 이자농사 하기",
                   "Symbol":"USDT",
-                  "Title":"BiFiX에서 KUSDT로 이자농사 하기",
-                  "File":"/KR/KLAY_BiFiX_Earn_KUSDT.md"
+                  "Title":"BiFiX에서 oUSDT로 이자농사 하기",
+                  "File":"/KR/KLAY_BiFiX_Earn_OUSDT.md"
                },
                {
                   "Class":"KLAY 롱 포지션 잡기",
                   "Symbol":"KLAY",
                   "Title":"BiFi X에서 KLAY 롱 포지션 잡기",
-                  "File":"/KR/KLAY_BiFiX_Bet_KLAY_KUSDC.md"
+                  "File":"/KR/KLAY_BiFiX_Bet_KLAY_OUSDC.md"
                },
                {
-                  "Class":"KETH 롱 포지션 잡기",
+                  "Class":"oETH 롱 포지션 잡기",
                   "Symbol":"ETH",
-                  "Title":"BiFi X에서 KETH 롱 포지션 잡기",
-                  "File":"/KR/KLAY_BiFiX_Bet_KETH_KUSDC.md"
+                  "Title":"BiFi X에서 oETH 롱 포지션 잡기",
+                  "File":"/KR/KLAY_BiFiX_Bet_OETH_OUSDC.md"
                },
                {
                   "Class":"KLAY 숏 포지션 잡기",
                   "Symbol":"KLAY",
                   "Title":"BiFi X에서 KLAY 숏 포지션 잡기",
-                  "File":"/KR/KLAY_BiFiX_Bet_KUSDC_KLAY.md"
+                  "File":"/KR/KLAY_BiFiX_Bet_OUSDC_KLAY.md"
                },
                {
-                  "Class":"KETH 숏 포지션 잡기",
+                  "Class":"oETH 숏 포지션 잡기",
                   "Symbol":"ETH",
-                  "Title":"BiFi X에서 KETH 숏 포지션 잡기",
-                  "File":"/KR/KLAY_BiFiX_Bet_KUSDC_KETH.md"
+                  "Title":"BiFi X에서 oETH 숏 포지션 잡기",
+                  "File":"/KR/KLAY_BiFiX_Bet_OUSDC_OETH.md"
                }
             ]
          }
@@ -66,28 +66,28 @@
                "Symbol":"KLAY",
                "SubList":[
                      {
-                        "Class":"KWBTC 구매하기",
+                        "Class":"oWBTC 구매하기",
                         "Symbol":"WBTC",
-                        "Title":"KlaySwap에서 KLAY로 KWBTC 구매하기",
-                        "File":"/KR/SwapKLAYToKWBTC.md"
+                        "Title":"KlaySwap에서 KLAY로 oWBTC 구매하기",
+                        "File":"/KR/SwapKLAYToOWBTC.md"
                      },
                      {
-                        "Class":"KETH 구매하기",
+                        "Class":"oETH 구매하기",
                         "Symbol":"ETH",
-                        "Title":"KlaySwap에서 KLAY로 KETH 구매하기",
-                        "File":"/KR/SwapKLAYToKETH.md"
+                        "Title":"KlaySwap에서 KLAY로 oETH 구매하기",
+                        "File":"/KR/SwapKLAYToOETH.md"
                      },
                      {
-                        "Class":"KUSDT 구매하기",
+                        "Class":"oUSDT 구매하기",
                         "Symbol":"USDT",
-                        "Title":"KlaySwap에서 KLAY로 KUSDT 구매하기",
-                        "File":"/KR/SwapKLAYToKUSDT.md"
+                        "Title":"KlaySwap에서 KLAY로 oUSDT 구매하기",
+                        "File":"/KR/SwapKLAYToOUSDT.md"
                      },
                      {
-                        "Class":"KUSDC 구매하기",
+                        "Class":"oUSDC 구매하기",
                         "Symbol":"USDC",
-                        "Title":"KlaySwap에서 KLAY로 KUSDC 구매하기",
-                        "File":"/KR/SwapKLAYToKUSDC.md"
+                        "Title":"KlaySwap에서 KLAY로 oUSDC 구매하기",
+                        "File":"/KR/SwapKLAYToOUSDC.md"
                      },
                      {
                         "Class":"KDAI 구매하기",
@@ -96,10 +96,10 @@
                         "File":"/KR/SwapKLAYToKDAI.md"
                      },
                      {
-                        "Class":"KXRP 구매하기",
+                        "Class":"oXRP 구매하기",
                         "Symbol":"XRP",
-                        "Title":"KlaySwap에서 KLAY로 KXRP 구매하기",
-                        "File":"/KR/SwapKLAYToKXRP.md"
+                        "Title":"KlaySwap에서 KLAY로 oXRP 구매하기",
+                        "File":"/KR/SwapKLAYToOXRP.md"
                      }
                   ]
                }
@@ -116,22 +116,22 @@
             "Symbol":"KLAY",
             "SubList":[
                {
-                  "Class":"KETH 구매하기",
+                  "Class":"oETH 구매하기",
                   "Symbol":"ETH",
-                  "Title":"KLAY로 KETH 구매하기",
-                  "File":"/KR/OptimizedSwapKLAYToKETH.md"
+                  "Title":"KLAY로 oETH 구매하기",
+                  "File":"/KR/OptimizedSwapKLAYToOETH.md"
                },
                {
-                  "Class":"KUSDT 구매하기",
+                  "Class":"oUSDT 구매하기",
                   "Symbol":"USDT",
-                  "Title":"KLAY로 KUSDT 구매하기",
-                  "File":"/KR/OptimizedSwapKLAYToKUSDT.md"
+                  "Title":"KLAY로 oUSDT 구매하기",
+                  "File":"/KR/OptimizedSwapKLAYToOUSDT.md"
                },
                {
-                  "Class":"KUSDC 구매하기",
+                  "Class":"oUSDC 구매하기",
                   "Symbol":"USDC",
-                  "Title":"KLAY로 KUSDC 구매하기",
-                  "File":"/KR/OptimizedSwapKLAYToKUSDC.md"
+                  "Title":"KLAY로 oUSDC 구매하기",
+                  "File":"/KR/OptimizedSwapKLAYToOUSDC.md"
                },
                {
                   "Class":"KDAI 구매하기",
@@ -140,10 +140,10 @@
                   "File":"/KR/OptimizedSwapKLAYToKDAI.md"
                },
                {
-                  "Class":"KXRP 구매하기",
+                  "Class":"oXRP 구매하기",
                   "Symbol":"XRP",
-                  "Title":"KLAY로 KXRP 구매하기",
-                  "File":"/KR/OptimizedSwapKLAYToKXRP.md"
+                  "Title":"KLAY로 oXRP 구매하기",
+                  "File":"/KR/OptimizedSwapKLAYToOXRP.md"
                }
             ]
          }
@@ -164,28 +164,28 @@
                   "File":"/KR/BiFiDeposit_KLAY.md"
                },
                {
-                  "Class":"KWBTC 예금하기",
+                  "Class":"oWBTC 예금하기",
                   "Symbol":"WBTC",
-                  "Title":"BiFi에 KWBTC 예금하기",
-                  "File":"/KR/BiFiDeposit_KWBTC.md"
+                  "Title":"BiFi에 oWBTC 예금하기",
+                  "File":"/KR/BiFiDeposit_OWBTC.md"
                },
                {
-                  "Class":"KETH 예금하기",
+                  "Class":"oETH 예금하기",
                   "Symbol":"ETH",
-                  "Title":"BiFi에 KETH 예금하기",
-                  "File":"/KR/BiFiDeposit_KETH.md"
+                  "Title":"BiFi에 oETH 예금하기",
+                  "File":"/KR/BiFiDeposit_OETH.md"
                },
                {
-                  "Class":"KUSDT 예금하기",
+                  "Class":"oUSDT 예금하기",
                   "Symbol":"USDT",
-                  "Title":"BiFi에 KUSDT 예금하기",
-                  "File":"/KR/BiFiDeposit_KUSDT.md"
+                  "Title":"BiFi에 oUSDT 예금하기",
+                  "File":"/KR/BiFiDeposit_OUSDT.md"
                },
                {
-                  "Class":"KUSDC 예금하기",
+                  "Class":"oUSDC 예금하기",
                   "Symbol":"USDC",
-                  "Title":"BiFi에 KUSDC 예금하기",
-                  "File":"/KR/BiFiDeposit_KUSDC.md"
+                  "Title":"BiFi에 oUSDC 예금하기",
+                  "File":"/KR/BiFiDeposit_OUSDC.md"
                },
                {
                   "Class":"KDAI 예금하기",
@@ -194,10 +194,10 @@
                   "File":"/KR/BiFiDeposit_KDAI.md"
                },
                {
-                  "Class":"KXRP 예금하기",
+                  "Class":"oXRP 예금하기",
                   "Symbol":"XRP",
-                  "Title":"BiFi에 KXRP 예금하기",
-                  "File":"/KR/BiFiDeposit_KXRP.md"
+                  "Title":"BiFi에 oXRP 예금하기",
+                  "File":"/KR/BiFiDeposit_OXRP.md"
                }
             ]
          }
@@ -218,28 +218,28 @@
                   "File":"/KR/BiFiWithdraw_KLAY.md"
                },
                {
-                  "Class":"KWBTC 출금하기",
+                  "Class":"oWBTC 출금하기",
                   "Symbol":"WBTC",
-                  "Title":"BiFi에서 KWBTC 출금하기",
-                  "File":"/KR/BiFiWithdraw_KWBTC.md"
+                  "Title":"BiFi에서 oWBTC 출금하기",
+                  "File":"/KR/BiFiWithdraw_OWBTC.md"
                },
                {
-                  "Class":"KETH 출금하기",
+                  "Class":"oETH 출금하기",
                   "Symbol":"ETH",
-                  "Title":"BiFi에서 KETH 출금하기",
-                  "File":"/KR/BiFiWithdraw_KETH.md"
+                  "Title":"BiFi에서 oETH 출금하기",
+                  "File":"/KR/BiFiWithdraw_OETH.md"
                },
                {
-                  "Class":"KUSDT 출금하기",
+                  "Class":"oUSDT 출금하기",
                   "Symbol":"USDT",
-                  "Title":"BiFi에서 KUSDT 출금하기",
-                  "File":"/KR/BiFiWithdraw_KUSDT.md"
+                  "Title":"BiFi에서 oUSDT 출금하기",
+                  "File":"/KR/BiFiWithdraw_OUSDT.md"
                },
                {
-                  "Class":"KUSDC 출금하기",
+                  "Class":"oUSDC 출금하기",
                   "Symbol":"USDC",
-                  "Title":"BiFi에서 KUSDC 출금하기",
-                  "File":"/KR/BiFiWithdraw_KUSDC.md"
+                  "Title":"BiFi에서 oUSDC 출금하기",
+                  "File":"/KR/BiFiWithdraw_OUSDC.md"
                },
                {
                   "Class":"KDAI 출금하기",
@@ -248,10 +248,10 @@
                   "File":"/KR/BiFiWithdraw_KDAI.md"
                },
                {
-                  "Class":"KXRP 출금하기",
+                  "Class":"oXRP 출금하기",
                   "Symbol":"XRP",
-                  "Title":"BiFi에서 KXRP 출금하기",
-                  "File":"/KR/BiFiWithdraw_KXRP.md"
+                  "Title":"BiFi에서 oXRP 출금하기",
+                  "File":"/KR/BiFiWithdraw_OXRP.md"
                }
             ]
          }
@@ -272,28 +272,28 @@
                   "File":"/KR/BiFiBorrow_KLAY.md"
                },
                {
-                  "Class":"KWBTC 대출하기",
+                  "Class":"oWBTC 대출하기",
                   "Symbol":"WBTC",
-                  "Title":"BiFi에서 KWBTC 대출하기",
-                  "File":"/KR/BiFiBorrow_KWBTC.md"
+                  "Title":"BiFi에서 oWBTC 대출하기",
+                  "File":"/KR/BiFiBorrow_OWBTC.md"
                },
                {
-                  "Class":"KETH 대출하기",
+                  "Class":"oETH 대출하기",
                   "Symbol":"ETH",
-                  "Title":"BiFi에서 KETH 대출하기",
-                  "File":"/KR/BiFiBorrow_KETH.md"
+                  "Title":"BiFi에서 oETH 대출하기",
+                  "File":"/KR/BiFiBorrow_OETH.md"
                },
                {
-                  "Class":"KUSDT 대출하기",
+                  "Class":"oUSDT 대출하기",
                   "Symbol":"USDT",
-                  "Title":"BiFi에서 KUSDT 대출하기",
-                  "File":"/KR/BiFiBorrow_KUSDT.md"
+                  "Title":"BiFi에서 oUSDT 대출하기",
+                  "File":"/KR/BiFiBorrow_OUSDT.md"
                },
                {
-                  "Class":"KUSDC 대출하기",
+                  "Class":"oUSDC 대출하기",
                   "Symbol":"USDC",
-                  "Title":"BiFi에서 KUSDC 대출하기",
-                  "File":"/KR/BiFiBorrow_KUSDC.md"
+                  "Title":"BiFi에서 oUSDC 대출하기",
+                  "File":"/KR/BiFiBorrow_OUSDC.md"
                },
                {
                   "Class":"KDAI 대출하기",
@@ -302,10 +302,10 @@
                   "File":"/KR/BiFiBorrow_KDAI.md"
                },
                {
-                  "Class":"KXRP 대출하기",
+                  "Class":"oXRP 대출하기",
                   "Symbol":"XRP",
-                  "Title":"BiFi에서 KXRP 대출하기",
-                  "File":"/KR/BiFiBorrow_KXRP.md"
+                  "Title":"BiFi에서 oXRP 대출하기",
+                  "File":"/KR/BiFiBorrow_OXRP.md"
                }
             ]
          }
@@ -326,28 +326,28 @@
                   "File":"/KR/BiFiRepay_KLAY.md"
                },
                {
-                  "Class":"KWBTC 상환하기",
+                  "Class":"oWBTC 상환하기",
                   "Symbol":"WBTC",
-                  "Title":"BiFi에 KWBTC 상환하기",
-                  "File":"/KR/BiFiRepay_KWBTC.md"
+                  "Title":"BiFi에 oWBTC 상환하기",
+                  "File":"/KR/BiFiRepay_OWBTC.md"
                },
                {
-                  "Class":"KETH 상환하기",
+                  "Class":"oETH 상환하기",
                   "Symbol":"ETH",
-                  "Title":"BiFi에 KETH 상환하기",
-                  "File":"/KR/BiFiRepay_KETH.md"
+                  "Title":"BiFi에 oETH 상환하기",
+                  "File":"/KR/BiFiRepay_OETH.md"
                },
                {
-                  "Class":"KUSDT 상환하기",
+                  "Class":"oUSDT 상환하기",
                   "Symbol":"USDT",
-                  "Title":"BiFi에 KUSDT 상환하기",
-                  "File":"/KR/BiFiRepay_KUSDT.md"
+                  "Title":"BiFi에 oUSDT 상환하기",
+                  "File":"/KR/BiFiRepay_OUSDT.md"
                },
                {
-                  "Class":"KUSDC 상환하기",
+                  "Class":"oUSDC 상환하기",
                   "Symbol":"USDC",
-                  "Title":"BiFi에 KUSDC 상환하기",
-                  "File":"/KR/BiFiRepay_KUSDC.md"
+                  "Title":"BiFi에 oUSDC 상환하기",
+                  "File":"/KR/BiFiRepay_OUSDC.md"
                },
                {
                   "Class":"KDAI 상환하기",
@@ -356,10 +356,10 @@
                   "File":"/KR/BiFiRepay_KDAI.md"
                },
                {
-                  "Class":"KXRP 상환하기",
+                  "Class":"oXRP 상환하기",
                   "Symbol":"XRP",
-                  "Title":"BiFi에 KXRP 상환하기",
-                  "File":"/KR/BiFiRepay_KXRP.md"
+                  "Title":"BiFi에 oXRP 상환하기",
+                  "File":"/KR/BiFiRepay_OXRP.md"
                }
             ]
          }
