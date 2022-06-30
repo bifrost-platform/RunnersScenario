@@ -15,7 +15,7 @@ In this scenario, you will repay WBTC in BiFi.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.bifi.getMaxRepayAmount("wbtc");
+let amountRepayMax = Q.bifi.getRepayableAmount("wbtc");
 assert(amountRepayMax > 0.000001 wbtc, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```
@@ -33,7 +33,7 @@ let amountRepay = 0.01;
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value");
 assert(Q.Token.balanceOf("wbtc") >= amountRepay, "Insufficient WBTC available to repay.");
-assert(Q.bifi.getMaxRepayAmount("wbtc") >= amountRepay, "You cannot repay more than your loan.");
+assert(Q.bifi.getRepayableAmount("wbtc") >= amountRepay, "You cannot repay more than your loan.");
 ```
 
 ### Proceed Repay

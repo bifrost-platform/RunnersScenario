@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic USDT
-let usdtAmount = Q.sushi.getAmountsOutFromExactIn("usdt", amountIn);
+let usdtAmount = Q.sushi.getAmountOut ("eth", "usdt", amountIn);
 print(usdtAmount);
 ```
 
@@ -32,7 +32,7 @@ print(usdtAmount);
 
 ```taster
 // Swap ETH to USDT.
-Q.sushi.swapExactETHForTokens("usdt", amountIn);
+Q.sushi.sell ("eth", "usdt", amountIn);
 ```
 
 ### All steps are done successfully.

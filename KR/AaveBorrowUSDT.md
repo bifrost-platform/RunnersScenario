@@ -12,8 +12,8 @@ usdt
 - 정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("usdt") && !Q.aaveV2.getIsFrozen("usdt"), "시장 설정으로 인해 현재 대출할 수 없습니다.");
-let amountBorrowMax = Q.aaveV2.getAmountBorrowMax("usdt");
+assert(L2Lending.aaveV2.getIsActive("usdt") && !L2Lending.aaveV2.getIsFrozen("usdt"), "시장 설정으로 인해 현재 대출할 수 없습니다.");
+let amountBorrowMax = Q.aaveV2.getBorrowableAmount("usdt");
 assert(amountBorrowMax > 0.000001 usdt, "대출 가능한 금액이 너무 적습니다.");
 print("대출 가능한 금액: " + amountBorrowMax.toString());
 ```

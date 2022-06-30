@@ -25,7 +25,7 @@ assert(getBalance() >= amountIn, "보유한 ETH가 부족합니다.");
 - 설정한 금액만큼 예금합니다.
 
 ```taster
-Q.compound.deposit("ether", amountIn);
+Q.compound.deposit("eth", amountIn);
 ```
 
 ### 설정 한 금액을 담보로 설정하기
@@ -34,7 +34,7 @@ Q.compound.deposit("ether", amountIn);
 - 예금만 한다면 이 단계는 생략해도 되고, 담보 활성화 여부는 [Compound](https://app.compound.finance/)에서 수정 가능합니다.
 
 ```taster
-Q.compound.setUseReserveAsCollateral("ether", true);
+Q.compound.setUseReserveAsCollateral("eth", true);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

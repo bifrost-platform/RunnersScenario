@@ -32,7 +32,7 @@ print(daiAmount);
 
 ```taster
 // Swap BNB to DAI.
-Q.sushi.swapExactBNBForTokens("dai", amountIn);
+Q.sushi.sell ("bnb", "dai", amountIn);
 ```
 
 ### All steps are done successfully.

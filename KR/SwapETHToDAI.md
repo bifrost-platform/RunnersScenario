@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "ETH 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic DAI
-let daiAmount = Q.sushi.getAmountsOutFromExactIn ("dai", amountIn);
+let daiAmount = Q.sushi.getAmountOut ("eth", "dai", amountIn);
 print(daiAmount);
 ```
 
@@ -32,7 +32,7 @@ print(daiAmount);
 
 ```taster
 // ETH를 DAI로 교환합니다.
-Q.sushi.swapExactETHForTokens("dai", amountIn);
+Q.sushi.sell ("eth", "dai", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

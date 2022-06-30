@@ -21,7 +21,7 @@ assert(amount <= getBalance (), "Insufficient KLAY");
 
 ```taster
 // Confirm the maximum boost of KLAY to leverage in BiFi-X.
-let maxBoost = Q.bifiX.getMaxBoost ("klay");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("klay");
 
 // Start Earn position
 let ok = Q.bifiX.earn("klay", amount, maxBoost);

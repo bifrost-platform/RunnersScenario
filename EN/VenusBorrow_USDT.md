@@ -11,7 +11,7 @@ In this scenario, you will borrow USDT in Venus.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.venus.getAmountBorrowMax("usdt");
+let amountBorrowMax = Q.venus.getBorrowableAmount("usdt");
 assert(amountBorrowMax > 0.000001 usdt, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
@@ -28,7 +28,7 @@ let amountBorrow = 100;
 ```input-Verify
 assert(amountBorrow > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountBorrow), "Invalid value.");
-assert(Q.venus.getAmountBorrowMax("usdt") >= amountBorrow, "Insufficient USDT to borrow.");
+assert(Q.venus.getBorrowableAmount("usdt") >= amountBorrow, "Insufficient USDT to borrow.");
 ```
 
 ### Proceed loaning

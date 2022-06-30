@@ -19,7 +19,7 @@ assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic USDT
-let usdtAmount = Q.pancake.getAmountsOutFromExactIn("usdt", amountIn);
+let usdtAmount = Q.pancake.getAmountOut ("bnb", "usdt", amountIn);
 print(usdtAmount);
 ```
 
@@ -29,7 +29,7 @@ print(usdtAmount);
 
 ```taster
 // Swap BNB to USDT.
-Q.pancake.swapExactBNBForTokens("usdt", amountIn);
+Q.pancake.sell ("bnb", "usdt", amountIn);
 ```
 
 ### All steps are done successfully.

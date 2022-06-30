@@ -23,8 +23,8 @@ assert(interestRateMode == 1 || interestRateMode == 2, "Incorrect interest calcu
 ```
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("ether"), "Repayment is limited due to the circuit status of the market.");
-let amountRepayMax = Q.aaveV2.getAmountRepayMax("ether", interestRateMode);
+assert(L2Lending.aaveV2.getIsActive("eth"), "Repayment is limited due to the circuit status of the market.");
+let amountRepayMax = Q.aaveV2.getRepayableAmount("eth", interestRateMode);
 assert(amountRepayMax > 0.000001 ether, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```
@@ -50,7 +50,7 @@ assert(amountRepayMax >= amount, "You cannot repay more than your loan.");
 - Now, Proceed repay.
 
 ```taster
-Q.aaveV2.repay("ether", amount, interestRateMode);
+Q.aaveV2.repay("eth", amount, interestRateMode);
 ```
 
 ### All steps are done successfully.

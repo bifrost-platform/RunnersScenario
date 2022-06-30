@@ -46,7 +46,7 @@ Q.bifiX.approve("bifib", bifiFee);
 
 ```taster
 // BiFi-X에서 레버리지 할 수 있는 BTCB의 최대 배율을 확인합니다
-let maxBoost = Q.bifiX.getMaxBoost ("btcb");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("btcb");
 
 // 포지션을 생성하기 앞서, BTCB 토큰을 승인합니다.
 Q.bifiX.approve("btcb", amount);

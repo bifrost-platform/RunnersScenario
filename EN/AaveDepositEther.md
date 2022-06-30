@@ -15,7 +15,7 @@ let amountIn = 0.1;
 ```
 
 ```input-Verify
-assert(Q.aaveV2.getIsActive("ether") && !Q.aaveV2.getIsFrozen("ether"), "Deposit is limited due to the circuit status of the market.");
+assert(L2Lending.aaveV2.getIsActive("eth") && !L2Lending.aaveV2.getIsFrozen("eth"), "Deposit is limited due to the circuit status of the market.");
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
 assert(getBalance() >= amountIn, "Insufficient number of ETH");
@@ -26,7 +26,7 @@ assert(getBalance() >= amountIn, "Insufficient number of ETH");
 - Now, deposit your asset.
 
 ```taster
-Q.aaveV2.deposit("ether", amountIn);
+Q.aaveV2.deposit("eth", amountIn);
 ```
 
 ### Set your deposit as collateral
@@ -37,7 +37,7 @@ Q.aaveV2.deposit("ether", amountIn);
 - This step is optional. You may change collateral activation settings in [Aave V2](https://app.aave.com/#/dashboard).
 
 ```taster
-Q.aaveV2.setUseReserveAsCollateral("ether", true);
+Q.aaveV2.setUseReserveAsCollateral("eth", true);
 ```
 
 ### All steps are done successfully.

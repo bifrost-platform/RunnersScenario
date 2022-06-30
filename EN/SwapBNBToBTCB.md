@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic BTCB
-let btcbAmount = Q.sushi.getAmountsOutFromExactIn("btcb", amountIn);
+let btcbAmount = Q.sushi.getAmountOut ("bnb", "btcb", amountIn);
 print(btcbAmount);
 ```
 
@@ -32,7 +32,7 @@ print(btcbAmount);
 
 ```taster
 // Swap BNB to BTCB.
-Q.sushi.swapExactBNBForTokens("btcb", amountIn);
+Q.sushi.sell ("bnb", "btcb", amountIn);
 ```
 
 ### All steps are done successfully.

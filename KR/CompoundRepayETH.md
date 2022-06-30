@@ -10,7 +10,7 @@ Chainrunner Q는 이 문서의 내용대로 Compound에서 대출한 ETH를 상�
 - 상환 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountRepayMax = Q.compound.getRepayAmount ("ether");
+let amountRepayMax = Q.compound.getRepayableAmount ("eth");
 assert (amountRepayMax >= 0.000001 ether, "상환 가능한 금액이 너무 적습니다.");
 print ("상환 가능한 금액: " + amountRepayMax.toString ());
 ```
@@ -36,7 +36,7 @@ assert(amountRepayMax >= amount, "부채보다 많은 금액을 상환할수 없
 - 설정한 금액만큼 상환합니다.
 
 ```taster
-Q.compound.repay("ether", amount);
+Q.compound.repay("eth", amount);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

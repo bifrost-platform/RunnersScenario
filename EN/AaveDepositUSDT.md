@@ -16,7 +16,7 @@ let amountIn = 100;
 ```
 
 ```input-Verify
-assert(Q.aaveV2.getIsActive("usdt") && !Q.aaveV2.getIsFrozen("usdt"), "Deposit is limited due to the circuit status of the market.");
+assert(L2Lending.aaveV2.getIsActive("usdt") && !L2Lending.aaveV2.getIsFrozen("usdt"), "Deposit is limited due to the circuit status of the market.");
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
 assert(Q.Token.balanceOf("usdt") >= amountIn, "Insufficient USDT");

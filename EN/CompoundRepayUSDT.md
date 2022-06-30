@@ -11,7 +11,7 @@ In this scenario, you will repay USDT in Compound.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.compound.getRepayAmount ("usdt");
+let amountRepayMax = Q.compound.getRepayableAmount ("usdt");
 assert (amountRepayMax >= 0.000001 usdt, "Insufficient asset available for repay.");
 print ("Balance available to repay: " + amountRepayMax.toString ());
 ```

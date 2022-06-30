@@ -11,7 +11,7 @@ In this scenario, you will repay WBTC in Compound.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.compound.getRepayAmount ("wbtc");
+let amountRepayMax = Q.compound.getRepayableAmount ("wbtc");
 assert (amountRepayMax >= 0.000001 wbtc, "Insufficient asset available for repay.");
 print ("Balance available to repay: " + amountRepayMax.toString ());
 ```

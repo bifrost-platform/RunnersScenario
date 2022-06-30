@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "KLAY 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic KDAI
-let kdaiAmount = Q.klay.getAmountsOutFromExactIn("kdai", amountIn);
+let kdaiAmount = Q.klay.getAmountOut("klay", "kdai", amountIn);
 print(kdaiAmount);
 ```
 
@@ -32,7 +32,7 @@ print(kdaiAmount);
 
 ```taster
 // KLAY를 KDAI로 교환합니다.
-Q.klay.exchangeKlayPos ("kdai", amountIn);
+Q.klay.sell ("klay", "kdai", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

@@ -12,8 +12,8 @@ wbtc
 - 정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("wbtc") && !Q.aaveV2.getIsFrozen("wbtc"), "시장 설정으로 인해 현재 대출할 수 없습니다.");
-let amountBorrowMax = Q.aaveV2.getAmountBorrowMax("wbtc");
+assert(L2Lending.aaveV2.getIsActive("wbtc") && !L2Lending.aaveV2.getIsFrozen("wbtc"), "시장 설정으로 인해 현재 대출할 수 없습니다.");
+let amountBorrowMax = Q.aaveV2.getBorrowableAmount("wbtc");
 assert(amountBorrowMax > 0.000001 wbtc, "대출 가능한 금액이 너무 적습니다.");
 print("대출 가능한 금액: " + amountBorrowMax.toString());
 ```

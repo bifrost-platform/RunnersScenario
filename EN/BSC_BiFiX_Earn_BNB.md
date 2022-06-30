@@ -39,7 +39,7 @@ Q.bifiX.approve("bifib", bifiFee);
 
 ```taster
 // Confirm the maximum boost of BNB to leverage in BiFi-X.
-let maxBoost = Q.bifiX.getMaxBoost ("bnb");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("bnb");
 
 // Start Earn position
 Q.bifiX.earn("bnb", amount, maxBoost);

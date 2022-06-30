@@ -28,7 +28,8 @@ assert(amountIn <= getBalance(), "BNB 잔액이 부족합니다." );
 - PancakeSwap 기본 슬리피지 값(0.5%)을 적용합니다.
 
 ```taster
-let amountUsdt = Q.pancake.swapExactBNBForTokens ("usdt", amountIn / 2);
+let amountUsdt = Q.pancake.getAmountOut ("bnb", "usdt", amountIn / 2);
+Q.pancake.sell ("bnb", "usdt", amountIn / 2);
 ```
 
 ### 유동성을 공급합니다.

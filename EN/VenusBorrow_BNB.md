@@ -10,7 +10,7 @@ In this scenario, you will borrow BNB in Venus.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.venus.getAmountBorrowMax("bnb");
+let amountBorrowMax = Q.venus.getBorrowableAmount("bnb");
 assert(amountBorrowMax > 0.000001 bnb, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```

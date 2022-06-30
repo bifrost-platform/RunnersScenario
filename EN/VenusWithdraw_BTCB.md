@@ -12,7 +12,7 @@ In this scenario, you will withdraw BTCB in Venus.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Venus](https://app.venus.io/dashboard).
 
 ```output-Dynamic
-let amountWithdrawMax = Q.venus.getAmountWithdrawMax("btcb");
+let amountWithdrawMax = Q.venus.getWithdrawableAmount("btcb");
 assert(amountWithdrawMax > 0.000001 btcb, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```

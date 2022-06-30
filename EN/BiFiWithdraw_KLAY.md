@@ -14,7 +14,7 @@ In this scenario, you will withdraw KLAY in BiFi.
 - Confirm asset available to withdraw.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("klay");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("klay");
 assert(amountWithdrawMax > 0.000001 klay, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountWithdraw = 0.1;
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value");
-assert(Q.bifi.getMaxWithdrawAmount("klay") >= amountWithdraw, "Insufficient KLAY to withdraw.");
+assert(Q.bifi.getWithdrawableAmount("klay") >= amountWithdraw, "Insufficient KLAY to withdraw.");
 ```
 
 ### Proceed withdrawal

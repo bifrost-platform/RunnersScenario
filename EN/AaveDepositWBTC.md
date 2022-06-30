@@ -16,7 +16,7 @@ let amountIn = 0.01;
 ```
 
 ```input-Verify
-assert(Q.aaveV2.getIsActive("wbtc") && !Q.aaveV2.getIsFrozen("wbtc"), "Deposit is limited due to the circuit status of the market.");
+assert(L2Lending.aaveV2.getIsActive("wbtc") && !L2Lending.aaveV2.getIsFrozen("wbtc"), "Deposit is limited due to the circuit status of the market.");
 assert(amountIn > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountIn), "Invalid value");
 assert(Q.Token.balanceOf("wbtc") >= amountIn, "Insufficient WBTC");

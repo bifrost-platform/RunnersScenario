@@ -15,7 +15,7 @@ In this scenario, you will withdraw WBTC in BiFi.
 - Confirm asset available to withdraw.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("wbtc");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("wbtc");
 assert(amountWithdrawMax > 0.000001 wbtc, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountWithdraw = 0.01;
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value");
-assert(Q.bifi.getMaxWithdrawAmount("wbtc") >= amountWithdraw, "Insufficient WBTC to withdraw.");
+assert(Q.bifi.getWithdrawableAmount("wbtc") >= amountWithdraw, "Insufficient WBTC to withdraw.");
 ```
 
 ### Proceed withdrawal

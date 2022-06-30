@@ -25,7 +25,7 @@ assert(getBalance() >= amountIn, "Insufficient ETH");
 - Now, deposit your asset.
 
 ```taster
-Q.compound.deposit("ether", amountIn);
+Q.compound.deposit("eth", amountIn);
 ```
 
 ### Set your deposit as collateral
@@ -35,7 +35,7 @@ Q.compound.deposit("ether", amountIn);
 - This step is optional. You may change collateral activation settings in [Compound](https://app.compound.finance/).
 
 ```taster
-Q.compound.setUseReserveAsCollateral("ether", true);
+Q.compound.setUseReserveAsCollateral("eth", true);
 ```
 
 ### All steps are done successfully.

@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "BNB 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic DAI
-let daiAmount = Q.sushi.getAmountsOutFromExactIn("dai", amountIn);
+let daiAmount = Q.sushi.getAmountOut ("bnb", "dai", amountIn);
 print(daiAmount);
 ```
 
@@ -32,7 +32,7 @@ print(daiAmount);
 
 ```taster
 // BNB를 DAI로 교환합니다.
-Q.sushi.swapExactBNBForTokens("dai", amountIn);
+Q.sushi.sell ("bnb", "dai", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

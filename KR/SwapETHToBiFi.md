@@ -24,7 +24,7 @@ assert(amountIn <= getBalance(), "ETH 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic BIFI
-let bifiAmount = Q.sushi.getAmountsOutFromExactIn("bifi", amountIn);
+let bifiAmount = Q.sushi.getAmountOut ("eth", "bifi", amountIn);
 print(bifiAmount);
 ```
 
@@ -34,7 +34,7 @@ print(bifiAmount);
 
 ```taster
 // ETH를 BiFi로 교환합니다.
-Q.sushi.swapExactETHForTokens ("bifi", amountIn);
+Q.sushi.sell  ("eth", "bifi", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

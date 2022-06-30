@@ -11,8 +11,8 @@
 - 정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("ether"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
-let amountWithdrawMax = Q.aaveV2.getAmountWithdrawMax("ether");
+assert(L2Lending.aaveV2.getIsActive("eth"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
+let amountWithdrawMax = Q.aaveV2.getWithdrawableAmount("eth");
 assert(amountWithdrawMax > 0.000001 eth, "출금 가능한 금액이 너무 적습니다.");
 print("출금 가능한 금액: " + amountWithdrawMax.toString());
 ```
@@ -37,7 +37,7 @@ assert(amountWithdrawMax >= amountOut, "예금된 ETH가 부족합니다.");
 - 설정한 금액만큼 출금합니다.
 
 ```taster
-Q.aaveV2.withdraw("ether", amountOut);
+Q.aaveV2.withdraw("eth", amountOut);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

@@ -27,8 +27,8 @@ assert(bfcAmount > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency (bfcAmount), "잘못된 형식의 값이 입력 되었습니다.");
 assert(bfcAmount <= Q.Token.balanceOf ("bfc"), "BFC 잔액이 부족합니다.");
 let ethBalance = getBalance ();
-let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bfc", bfcAmount);
-assert(ethAmount <= ethBalance, "ETH 잔액이 부족합니다. BFC의 수량을 낮게 조절하십시요." );
+let ethAmount = Q.sushi.getAmountIn ("eth", "bfc", bfcAmount);
+assert(currencyToNum (ethAmount) <= currencyToNum (ethBalance), "ETH 잔액이 부족합니다. BFC의 수량을 낮게 조절하십시요." );
 ```
 
 ### Sushiswap의 BFC-WETH 풀에 유동성을 추가합니다.
@@ -36,7 +36,10 @@ assert(ethAmount <= ethBalance, "ETH 잔액이 부족합니다. BFC의 수량을
 - Sushiswap 기본 슬리피지 값(0.5%)을 사용합니다.
 
 ```taster
-let lpAmount = Q.sushi.addLiquidityETH ("bfc", bfcAmount, ethAmount);
+let lpBalanceBefore = Q.sushi.getWETHLpBalance ("bfc");
+Q.sushi.addLiquidityETH ("bfc", bfcAmount, ethAmount);
+let lpBalanceAfter = Q.sushi.getWETHLpBalance ("bfc");
+let lpAmount = lpBalanceAfter - lpBalanceBefore;
 assert (lpAmount > 0, "유동성 토큰 잔액이 0입니다.");
 ```
 

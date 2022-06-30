@@ -14,7 +14,7 @@ In this scenario, you will borrow ETH from BiFi.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.bifi.getMaxBorrowAmount("ether");
+let amountBorrowMax = Q.bifi.getBorrowableAmount("eth");
 assert(amountBorrowMax > 0.000001 ether, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountBorrow = 0.1;
 ```input-Verify
 assert(amountBorrow > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountBorrow), "Invalid value");
-assert(Q.bifi.getMaxBorrowAmount("ether") >= amountBorrow, "Insufficient ETH to borrow.");
+assert(Q.bifi.getBorrowableAmount("eth") >= amountBorrow, "Insufficient ETH to borrow.");
 ```
 
 ### Proceed loaning
@@ -39,7 +39,7 @@ assert(Q.bifi.getMaxBorrowAmount("ether") >= amountBorrow, "Insufficient ETH to 
 - Now, proceed loaning in BiFi.
 
 ```taster
-Q.bifi.borrow("ether", amountBorrow);
+Q.bifi.borrow("eth", amountBorrow);
 ```
 
 ### All steps are done successfully.

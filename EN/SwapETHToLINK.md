@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic LINK
-let linkAmount = Q.sushi.getAmountsOutFromExactIn("link", amountIn);
+let linkAmount = Q.sushi.getAmountOut ("eth", "link", amountIn);
 print(linkAmount);
 ```
 
@@ -32,7 +32,7 @@ print(linkAmount);
 
 ```taster
 // Swap ETH to LINK.
-Q.sushi.swapExactETHForTokens("link", amountIn);
+Q.sushi.sell ("eth", "link", amountIn);
 ```
 
 ### All steps are done successfully.

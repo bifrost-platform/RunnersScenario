@@ -24,7 +24,7 @@ assert(amountIn <= getBalance(), "ETH 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic BFC
-let bfcAmount = Q.sushi.getAmountsOutFromExactIn("bfc", amountIn);
+let bfcAmount = Q.sushi.getAmountOut ("eth", "bfc", amountIn);
 print(bfcAmount);
 ```
 
@@ -34,7 +34,7 @@ print(bfcAmount);
 
 ```taster
 // ETH를 BFC로 교환합니다.
-Q.sushi.swapExactETHForTokens("bfc", amountIn);
+Q.sushi.sell ("eth", "bfc", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

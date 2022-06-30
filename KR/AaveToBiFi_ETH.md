@@ -11,9 +11,9 @@
 - 예금을 담보로 사용하고 있는 경우, 출금이 제한될 수 있습니다. [AAVE](https://app.aave.com/#/dashboard)에서 가능 여부를 확인하세요.
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("ether"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
+assert(L2Lending.aaveV2.getIsActive("eth"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
 // AAVE에 예금된 ETH의 양을 확인합니다
-let assetAmount = Q.aaveV2.getUserReserve ("ether");
+let assetAmount = Q.aaveV2.getDepositedAmount ("eth");
 assert (assetAmount >= 0.000001 ether, "AAVE v2에 ETH 예금이 없거나 너무 작습니다.");
 print ("ETH 예금량:" + assetAmount.toString());
 ```
@@ -22,14 +22,14 @@ print ("ETH 예금량:" + assetAmount.toString());
 
 ```taster
 // AAVE에서 ETH를 출금합니다
-Q.aaveV2.withdraw ("ether", assetAmount);
+Q.aaveV2.withdraw ("eth", assetAmount);
 ```
 
 ### 출금한 ETH를 BiFi에 다시 예금합니다.
 
 ```taster
 // BiFi에 ETH를 다시 예금합니다
-Q.bifi.deposit (assetAmount);
+Q.bifi.deposit ("eth", assetAmount);
 print (assetAmount.toString () + " 를 AAVE에서 BiFi로 옮겼습니다.");
 ```
 

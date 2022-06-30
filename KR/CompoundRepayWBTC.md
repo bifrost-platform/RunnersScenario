@@ -11,7 +11,7 @@ Chainrunner Q는 이 문서의 내용대로 Compound에서 대출한 WBTC를 상
 - 상환 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountRepayMax = Q.compound.getRepayAmount ("wbtc");
+let amountRepayMax = Q.compound.getRepayableAmount ("wbtc");
 assert (amountRepayMax >= 0.000001 wbtc, "상환 가능한 금액이 너무 적습니다.");
 print ("상환 가능한 금액: " + amountRepayMax.toString ());
 ```

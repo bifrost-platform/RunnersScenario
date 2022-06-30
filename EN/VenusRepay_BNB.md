@@ -10,7 +10,7 @@ In this scenario, you will repay BNB in Venus.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.venus.getAmountRepayMax("bnb");
+let amountRepayMax = Q.venus.getRepayableAmount("bnb");
 assert(amountRepayMax > 0.000001 bnb, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```

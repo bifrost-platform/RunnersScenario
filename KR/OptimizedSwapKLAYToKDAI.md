@@ -13,15 +13,15 @@ Chainrunner Q는 이 문서의 내용대로 최적의 DEX에서 KLAY를 KDAI로 
 - DEX에서 구매가능한 수량 부족시 최대 구매가능 KDAI의 수량만 표시됩니다.
 
 ```output-Dynamic
-let outputs = Q.optimizedSwap.klay.getOutputs("kdai", 1 klay);
-let target = Q.optimizedSwap.getBest (outputs);
+let outputs = Q.optimizedSwap.getAmountOuts("klay", "kdai", 1 klay);
+Q.optimizedSwap.checkOutputs (outputs);
 let (bestAmount, target) = outputs[0];
 print("최적 DEX는 " + target + " 입니다. (" + bestAmount.toString() + ")\n");
 print ("\n최적 DEX 대비 손익 비교\n");
 print ("\n현재 체인 : \n");
 Q.optimizedSwap.printOutputs (bestAmount, outputs);
 print ("\n다른 체인 : ");
-Q.optimizedSwap.klay.printOtherChainOutputs (bestAmount, "kdai", 1 klay);
+Q.optimizedSwap.printOtherOutputs (bestAmount, "klay", "kdai", 1 klay);
 ```
 
 ### 교환할 KLAY의 수량을 입력합니다.
@@ -40,7 +40,7 @@ assert(amountIn <= getBalance (), "KLAY 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic KDAI
-Q.optimizedSwap.klay.getOutput (target, "kdai", amountIn);
+Q.optimizedSwap.getAmountOut (target, "klay", "kdai", amountIn);
 ```
 
 ### 최적의 DEX에서 KLAY를 KDAI로 교환합니다.
@@ -49,7 +49,7 @@ Q.optimizedSwap.klay.getOutput (target, "kdai", amountIn);
 
 ```taster
 // KLAY를 KDAI로 교환합니다.
-Q.optimizedSwap.klay.swap (target, "kdai", amountIn);
+Q.optimizedSwap.swap (target, "klay", "kdai", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

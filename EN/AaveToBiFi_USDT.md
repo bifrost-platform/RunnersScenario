@@ -12,9 +12,9 @@ In this scenario, you will move USDT from Aave V2 to BiFi. This service may be l
 - If you are using deposits as collateral, withdrawals may be limited. Check availability in [Aave V2](https://app.aave.com/#/dashboard).
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("usdt"), "Withdrawal is limited to the circuit status of the market.");
+assert(L2Lending.aaveV2.getIsActive("usdt"), "Withdrawal is limited to the circuit status of the market.");
 // Confirm the amount of USDT in Aave V2.
-let assetAmount = Q.aaveV2.getUserReserve ("usdt");
+let assetAmount = Q.aaveV2.getDepositedAmount ("usdt");
 assert (assetAmount >= 0.000001 usdt, "Confirm the amount of USDT in AAVE v2.");
 print ("Deposited USDT:" + assetAmount.toString());
 ```

@@ -11,7 +11,7 @@ Chainrunner Q는 이 문서의 내용대로 Venus에서 BTCB를 대출합니다.
 - 대출 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountBorrowMax = Q.venus.getAmountBorrowMax("btcb");
+let amountBorrowMax = Q.venus.getBorrowableAmount("btcb");
 assert(amountBorrowMax > 0.000001 btcb, "대출 가능한 금액이 너무 적습니다.");
 print("대출 가능한 금액: " + amountBorrowMax.toString());
 ```

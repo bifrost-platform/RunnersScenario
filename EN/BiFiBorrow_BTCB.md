@@ -11,7 +11,7 @@ In this scenario, you will borrow BTCB from BiFi.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.bifi.getMaxBorrowAmount("btcb");
+let amountBorrowMax = Q.bifi.getBorrowableAmount("btcb");
 assert(amountBorrowMax > 0.000001 btcb, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
@@ -28,7 +28,7 @@ let amountBorrow = 0.01;
 ```input-Verify
 assert(amountBorrow > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountBorrow), "Invalid value");
-assert(Q.bifi.getMaxBorrowAmount("btcb") >= amountBorrow, "Insufficient BTCB to borrow.");
+assert(Q.bifi.getBorrowableAmount("btcb") >= amountBorrow, "Insufficient BTCB to borrow.");
 ```
 
 ### Proceed loaning

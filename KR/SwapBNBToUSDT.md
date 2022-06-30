@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "BNB 잔액이 부족합니다.");
 ```
 
 ```output-Dynamic USDT
-let usdtAmount = Q.sushi.getAmountsOutFromExactIn("usdt", amountIn);
+let usdtAmount = Q.sushi.getAmountOut ("bnb", "usdt", amountIn);
 print(usdtAmount);
 ```
 
@@ -32,7 +32,7 @@ print(usdtAmount);
 
 ```taster
 // BNB를 USDT로 교환합니다.
-Q.sushi.swapExactBNBForTokens("usdt", amountIn);
+Q.sushi.sell ("bnb", "usdt", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

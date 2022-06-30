@@ -14,7 +14,7 @@ In this scenario, you will withdraw ETH in BiFi.
 - Confirm asset available to withdraw.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("ether");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("eth");
 assert(amountWithdrawMax > 0.000001 ether, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountWithdraw = 0.1;
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value");
-assert(Q.bifi.getMaxWithdrawAmount("ether") >= amountWithdraw, "Insufficient ETH to withdraw.");
+assert(Q.bifi.getWithdrawableAmount("eth") >= amountWithdraw, "Insufficient ETH to withdraw.");
 ```
 
 ### Proceed withdrawal
@@ -39,7 +39,7 @@ assert(Q.bifi.getMaxWithdrawAmount("ether") >= amountWithdraw, "Insufficient ETH
 - Now, proceed withdrawal in BiFi.
 
 ```taster
-Q.bifi.withdraw("ether", amountWithdraw);
+Q.bifi.withdraw("eth", amountWithdraw);
 ```
 
 ### All steps are done successfully.

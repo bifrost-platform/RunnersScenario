@@ -15,7 +15,7 @@ In this scenario, you will repay KDAI in BiFi.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.bifi.getMaxRepayAmount("kdai");
+let amountRepayMax = Q.bifi.getRepayableAmount("kdai");
 assert(amountRepayMax > 0.000001 kdai, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```
@@ -33,7 +33,7 @@ let amountRepay = 100;
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value");
 assert(Q.Token.balanceOf("kdai") >= amountRepay, "Insufficient KDAI available to repay.");
-assert(Q.bifi.getMaxRepayAmount("kdai") >= amountRepay, "You cannot repay more than your loan.");
+assert(Q.bifi.getRepayableAmount("kdai") >= amountRepay, "You cannot repay more than your loan.");
 ```
 
 ### Proceed Repay

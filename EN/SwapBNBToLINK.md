@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic LINK
-let linkAmount = Q.sushi.getAmountsOutFromExactIn("link", amountIn);
+let linkAmount = Q.sushi.getAmountOut ("bnb", "link", amountIn);
 print(linkAmount);
 ```
 
@@ -32,7 +32,7 @@ print(linkAmount);
 
 ```taster
 // Swap BNB to LINK.
-Q.sushi.swapExactBNBForTokens("link", amountIn);
+Q.sushi.sell ("bnb", "link", amountIn);
 ```
 
 ### All steps are done successfully.

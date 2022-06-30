@@ -15,15 +15,15 @@ ChainRunner Q compares DEXes to swap ETH to BFC in the most price efficient way.
 - Only the maximum amount of BFC available for swap will be displayed if the token pool in DEX is insufficient.
 
 ```output-Dynamic
-let outputs = Q.optimizedSwap.eth.getOutputs("bfc", 1 ether);
-let target = Q.optimizedSwap.getBest (outputs);
+let outputs = Q.optimizedSwap.getAmountOuts("eth", "bfc", 1 eth);
+Q.optimizedSwap.checkOutputs (outputs);
 let (bestAmount, target) = outputs[0];
 print("Best DEX is " + target + ". (" + bestAmount.toString() + ")\n");
 print ("\nDifferences from Best DEX\n");
 print ("\nCurrent Chain : \n");
 Q.optimizedSwap.printOutputs (bestAmount, outputs);
 print ("\nOther Chain : ");
-Q.optimizedSwap.eth.printOtherChainOutputs (bestAmount, "bfc", 1 ether);
+Q.optimizedSwap.printOtherOutputs (bestAmount, "eth", "bfc", 1 eth);
 ```
 
 ### Set the amount of ETH to swap.
@@ -42,7 +42,7 @@ assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic BFC
-Q.optimizedSwap.eth.getOutput (target, "bfc", amountIn);
+Q.optimizedSwap.getAmountOut (target, "eth", "bfc", amountIn);
 ```
 
 ### ChainRunner Q swaps ETH to BFC in the most optimzed DEX.
@@ -51,7 +51,7 @@ Q.optimizedSwap.eth.getOutput (target, "bfc", amountIn);
 
 ```taster
 // Swap ETH to BFC.
-Q.optimizedSwap.eth.swap (target, "bfc", amountIn);
+Q.optimizedSwap.swap (target, "eth", "bfc", amountIn);
 ```
 
 ### All steps are done successfully.

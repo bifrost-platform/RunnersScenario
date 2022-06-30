@@ -14,7 +14,7 @@ In this scenario, you will borrow BNB from BiFi.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.bifi.getMaxBorrowAmount("bnb");
+let amountBorrowMax = Q.bifi.getBorrowableAmount("bnb");
 assert(amountBorrowMax > 0.000001 bnb, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountBorrow = 0.1;
 ```input-Verify
 assert(amountBorrow > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountBorrow), "Invalid value");
-assert(Q.bifi.getMaxBorrowAmount("bnb") >= amountBorrow, "Insufficient BNB to borrow.");
+assert(Q.bifi.getBorrowableAmount("bnb") >= amountBorrow, "Insufficient BNB to borrow.");
 ```
 
 ### Proceed loaning

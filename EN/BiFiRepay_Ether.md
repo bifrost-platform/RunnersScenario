@@ -14,7 +14,7 @@ In this scenario, you will repay ETH in BiFi.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.bifi.getMaxRepayAmount("ether");
+let amountRepayMax = Q.bifi.getRepayableAmount("eth");
 assert(amountRepayMax > 0.000001 ether, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountRepay = 0.1;
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value");
 assert(getBalance() >= amountRepay, "Insufficient ETH available to repay.");
-assert(Q.bifi.getMaxRepayAmount("ether") >= amountRepay, "You cannot repay more than your loan.");
+assert(Q.bifi.getRepayableAmount("eth") >= amountRepay, "You cannot repay more than your loan.");
 ```
 
 ### Proceed Repay
@@ -40,7 +40,7 @@ assert(Q.bifi.getMaxRepayAmount("ether") >= amountRepay, "You cannot repay more 
 - Now, proceed repay in BiFi.
 
 ```taster
-Q.bifi.repay("ether", amountRepay);
+Q.bifi.repay("eth", amountRepay);
 ```
 
 ### All steps are done successfully.

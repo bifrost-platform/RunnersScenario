@@ -12,8 +12,8 @@ usdt
 - 정확한 액수는 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("usdt"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
-let amountWithdrawMax = Q.aaveV2.getAmountWithdrawMax("usdt");
+assert(L2Lending.aaveV2.getIsActive("usdt"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
+let amountWithdrawMax = Q.aaveV2.getWithdrawableAmount("usdt");
 assert(amountWithdrawMax > 0.000001 usdt, "출금 가능한 금액이 너무 적습니다.");
 print("출금 가능한 금액: " + amountWithdrawMax.toString());
 ```

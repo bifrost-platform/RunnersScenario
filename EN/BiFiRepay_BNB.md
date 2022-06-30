@@ -14,7 +14,7 @@ In this scenario, you will repay BNB in BiFi.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.bifi.getMaxRepayAmount("bnb");
+let amountRepayMax = Q.bifi.getRepayableAmount("bnb");
 assert(amountRepayMax > 0.000001 bnb, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountRepay = 0.1;
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value");
 assert(getBalance() >= amountRepay, "Insufficient BNB available to repay.");
-assert(Q.bifi.getMaxRepayAmount("bnb") >= amountRepay, "You cannot repay more than your loan.");
+assert(Q.bifi.getRepayableAmount("bnb") >= amountRepay, "You cannot repay more than your loan.");
 ```
 
 ### Proceed Repay

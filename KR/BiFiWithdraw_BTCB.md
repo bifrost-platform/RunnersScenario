@@ -14,7 +14,7 @@ Chainrunner Q는 이 문서의 내용대로 BiFi에 예금한 BTCB를 출금합�
 - 출금 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("btcb");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("btcb");
 assert(amountWithdrawMax > 0.000001 btcb, "출금 가능한 금액이 너무 적습니다.");
 print("출금 가능한 금액: " + amountWithdrawMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountWithdraw = 0.01;
 ```input-Verify
 assert(amountWithdraw > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountWithdraw), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.bifi.getMaxWithdrawAmount("btcb") >= amountWithdraw, "출금 가능한 BTCB가 부족합니다.");
+assert(Q.bifi.getWithdrawableAmount("btcb") >= amountWithdraw, "출금 가능한 BTCB가 부족합니다.");
 ```
 
 ### 설정한 금액 출금하기

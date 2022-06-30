@@ -29,7 +29,7 @@ assert(getBalance() >= amountDeposit, "Insufficient number of ETH");
 - Now, proceed loaning in BiFi.
 
 ```taster
-Q.bifi.deposit("ether", amountDeposit);
+Q.bifi.deposit("eth", amountDeposit);
 ```
 
 ### All steps are done successfully.

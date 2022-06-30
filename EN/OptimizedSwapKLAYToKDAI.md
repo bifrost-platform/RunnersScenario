@@ -13,15 +13,15 @@ ChainRunner Q compares DEXes to swap KLAY to KDAI in the most price efficient wa
 - Only the maximum amount of KDAI available for swap will be displayed if the token pool in DEX is insufficient.
 
 ```output-Dynamic
-let outputs = Q.optimizedSwap.klay.getOutputs("kdai", 1 klay);
-let target = Q.optimizedSwap.getBest (outputs);
+let outputs = Q.optimizedSwap.getAmountOuts("klay", "kdai", 1 klay);
+Q.optimizedSwap.checkOutputs (outputs);
 let (bestAmount, target) = outputs[0];
 print("Best DEX is " + target + ". (" + bestAmount.toString() + ")\n");
 print ("\nDifferences from Best DEX\n");
 print ("\nCurrent Chain : \n");
 Q.optimizedSwap.printOutputs (bestAmount, outputs);
 print ("\nOther Chain : ");
-Q.optimizedSwap.klay.printOtherChainOutputs (bestAmount, "kdai", 1 klay);
+Q.optimizedSwap.printOtherOutputs (bestAmount, "klay", "kdai", 1 klay);
 ```
 
 ### Set the amount of KLAY to swap.
@@ -40,7 +40,7 @@ assert(amountIn <= getBalance(), "Insufficient KLAY.");
 ```
 
 ```output-Dynamic KDAI
-Q.optimizedSwap.klay.getOutput (target, "kdai", amountIn);
+Q.optimizedSwap.getAmountOut (target, "klay", "kdai", amountIn);
 ```
 
 ### ChainRunner Q swaps KLAY to KDAI in the most optimzed DEX.
@@ -49,7 +49,7 @@ Q.optimizedSwap.klay.getOutput (target, "kdai", amountIn);
 
 ```taster
 // Swap KLAY to KDAI.
-Q.optimizedSwap.klay.swap (target, "kdai", amountIn);
+Q.optimizedSwap.swap (target, "klay", "kdai", amountIn);
 ```
 
 ### All steps are done successfully.

@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic USDT
-let usdtAmount = Q.sushi.getAmountsOutFromExactIn("usdt", amountIn);
+let usdtAmount = Q.sushi.getAmountOut ("bnb", "usdt", amountIn);
 print(usdtAmount);
 ```
 
@@ -32,7 +32,7 @@ print(usdtAmount);
 
 ```taster
 // Swap BNB to USDT.
-Q.sushi.swapExactBNBForTokens("usdt", amountIn);
+Q.sushi.sell ("bnb", "usdt", amountIn);
 ```
 
 ### All steps are done successfully.

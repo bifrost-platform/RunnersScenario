@@ -13,7 +13,7 @@ Chainrunner Q는 이 문서의 내용대로 BiFi에 예금한 BNB를 출금합�
 - 출금 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("bnb");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("bnb");
 assert(amountWithdrawMax > 0.000001 bnb, "출금 가능한 금액이 너무 적습니다.");
 print("출금 가능한 금액: " + amountWithdrawMax.toString());
 ```
@@ -30,7 +30,7 @@ let amountWithdraw = 0.1;
 ```input-Verify
 assert(amountWithdraw > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountWithdraw), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.bifi.getMaxWithdrawAmount("bnb") >= amountWithdraw, "출금 가능한 BNB가 부족합니다.");
+assert(Q.bifi.getWithdrawableAmount("bnb") >= amountWithdraw, "출금 가능한 BNB가 부족합니다.");
 ```
 
 ### 설정한 금액 출금하기

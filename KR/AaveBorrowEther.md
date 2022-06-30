@@ -11,9 +11,9 @@
 - 정확한 수량은 [AAVE](https://app.aave.com/#/dashboard)에서 확인할 수 있습니다.
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("ether") && !Q.aaveV2.getIsFrozen("ether"), "시장 설정으로 인해 현재 대출할 수 없습니다.");
-let amountBorrowMax = Q.aaveV2.getAmountBorrowMax("ether");
-assert(amountBorrowMax > 0.000001 ether, "대출 가능한 금액이 너무 적습니다.");
+assert(L2Lending.aaveV2.getIsActive("eth") && !L2Lending.aaveV2.getIsFrozen("eth"), "시장 설정으로 인해 현재 대출할 수 없습니다.");
+let amountBorrowMax = Q.aaveV2.getBorrowableAmount("eth");
+assert(amountBorrowMax > 0.000001 eth, "대출 가능한 금액이 너무 적습니다.");
 print("대출 가능한 금액: " + amountBorrowMax.toString());
 ```
 
@@ -47,7 +47,7 @@ let interestRateMode = 1;
 
 ```input-Verify
 assert(interestRateMode == 1 || interestRateMode == 2, "잘못된 이자 계산 방식입니다.");
-assert(Q.aaveV2.getBorrowEnabled("ether", interestRateMode), "현재 선택한 이자 계산 방식으로 대출할 수 없습니다.");
+assert(Q.aaveV2.getBorrowEnabled("eth", interestRateMode), "현재 선택한 이자 계산 방식으로 대출할 수 없습니다.");
 ```
 
 ### 설정 한 금액 대출하기
@@ -55,7 +55,7 @@ assert(Q.aaveV2.getBorrowEnabled("ether", interestRateMode), "현재 선택한 �
 - 설정한 금액만큼 대출합니다.
 
 ```taster
-Q.aaveV2.borrow("ether", amount, interestRateMode);
+Q.aaveV2.borrow("eth", amount, interestRateMode);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

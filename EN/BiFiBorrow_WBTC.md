@@ -15,7 +15,7 @@ In this scenario, you will borrow WBTC from BiFi.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.bifi.getMaxBorrowAmount("wbtc");
+let amountBorrowMax = Q.bifi.getBorrowableAmount("wbtc");
 assert(amountBorrowMax > 0.000001 wbtc, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountBorrow = 0.01;
 ```input-Verify
 assert(amountBorrow > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountBorrow), "Invalid value");
-assert(Q.bifi.getMaxBorrowAmount("wbtc") >= amountBorrow, "Insufficient WBTC to borrow.");
+assert(Q.bifi.getBorrowableAmount("wbtc") >= amountBorrow, "Insufficient WBTC to borrow.");
 ```
 
 ### Proceed loaning

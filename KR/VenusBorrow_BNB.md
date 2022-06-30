@@ -10,7 +10,7 @@ Chainrunner Q는 이 문서의 내용대로 Venus에서 BNB를 대출합니다.
 - 대출 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountBorrowMax = Q.venus.getAmountBorrowMax("bnb");
+let amountBorrowMax = Q.venus.getBorrowableAmount("bnb");
 assert(amountBorrowMax > 0.000001 bnb, "대출 가능한 금액이 너무 적습니다.");
 print("대출 가능한 금액: " + amountBorrowMax.toString());
 ```

@@ -12,7 +12,7 @@ Chainrunner Q는 이 문서의 내용대로 Compound에서 USDT를 대출합니�
 - 정확한 수량은 [Compound](https://app.compound.finance/)에서 확인할 수 있습니다.
 
 ```output-Dynamic
-let amountBorrowMax = Q.compound.getAvailableBorrows("usdt");
+let amountBorrowMax = Q.compound.getBorrowableAmount("usdt");
 assert(amountBorrowMax >= 0.000001 usdt, "Compound에서 대출 가능한 USDT가 없거나 너무 적습니다.");
 print("대출 가능한 금액: " + amountBorrowMax.toString());
 ```

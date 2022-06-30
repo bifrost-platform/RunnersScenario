@@ -15,7 +15,7 @@ let amountIn = 0.1;
 ```
 
 ```input-Verify
-assert(Q.aaveV2.getIsActive("ether") && !Q.aaveV2.getIsFrozen("ether"), "시장 설정으로 인해 현재 예금할 수 없습니다.");
+assert(L2Lending.aaveV2.getIsActive("eth") && !L2Lending.aaveV2.getIsFrozen("eth"), "시장 설정으로 인해 현재 예금할 수 없습니다.");
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
 assert(getBalance() >= amountIn, "보유한 ETH가 부족합니다.");
@@ -26,7 +26,7 @@ assert(getBalance() >= amountIn, "보유한 ETH가 부족합니다.");
 - 설정한 금액만큼 예금합니다.
 
 ```taster
-Q.aaveV2.deposit("ether", amountIn);
+Q.aaveV2.deposit("eth", amountIn);
 ```
 
 ### 예금을 담보로 설정하기
@@ -35,7 +35,7 @@ Q.aaveV2.deposit("ether", amountIn);
 - 예금만 한다면 이 단계는 생략해도 되고, 담보 활성화 여부는 [AAVE](https://app.aave.com/#/dashboard)에서 수정 가능합니다.
 
 ```taster
-Q.aaveV2.setUseReserveAsCollateral("ether", true);
+Q.aaveV2.setUseReserveAsCollateral("eth", true);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

@@ -12,7 +12,7 @@ In this scenario, you will withdraw WBTC in Compound.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Compound](https://app.compound.finance/).
 
 ```output-Dynamic
-let amountWithdrawMax = Q.compound.getDepositAssetAmount ("wbtc");
+let amountWithdrawMax = Q.compound.getWithdrawableAmount ("wbtc");
 assert(amountWithdrawMax >= 0.000001 wbtc,"Insufficient asset to withdraw.");
 print ("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```

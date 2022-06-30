@@ -27,8 +27,8 @@ assert(bifiAmount > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency (bifiAmount), "잘못된 형식의 값이 입력 되었습니다.");
 assert(bifiAmount <= Q.Token.balanceOf ("bifi"), "BiFi 잔액이 부족합니다.");
 let ethBalance = getBalance ();
-let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bifi", bifiAmount);
-assert(ethAmount <= ethBalance, "ETH 잔액이 부족합니다. BiFi의 수량을 낮게 조절하십시요." );
+let ethAmount = Q.sushi.getAmountIn ("eth", "bifi", bifiAmount);
+assert(currencyToNum (ethAmount) <= currencyToNum (ethBalance), "ETH 잔액이 부족합니다. BiFi의 수량을 낮게 조절하십시요." );
 ```
 
 ### Sushiswap의 BiFi-WETH 풀에 유동성을 추가합니다.
@@ -36,7 +36,10 @@ assert(ethAmount <= ethBalance, "ETH 잔액이 부족합니다. BiFi의 수량�
 - Sushiswap 기본 슬리피지 값(0.5%)을 사용합니다.
 
 ```taster
-let lpAmount = Q.sushi.addLiquidityETH ("bifi", bifiAmount, ethAmount);
+let lpBalanceBefore = Q.sushi.getWETHLpBalance ("bifi");
+Q.sushi.addLiquidityETH ("bifi", bifiAmount, ethAmount);
+let lpBalanceAfter = Q.sushi.getWETHLpBalance ("bifi");
+let lpAmount = lpBalanceAfter - lpBalanceBefore;
 assert (lpAmount > 0, "유동성 토큰 잔액이 0입니다.");
 ```
 

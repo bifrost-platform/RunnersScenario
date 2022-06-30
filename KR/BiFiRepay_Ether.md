@@ -13,7 +13,7 @@ Chainrunner Q는 이 문서의 내용대로 BiFi에서 대출한 ETH를 상환�
 - 상환 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountRepayMax = Q.bifi.getMaxRepayAmount("ether");
+let amountRepayMax = Q.bifi.getRepayableAmount("eth");
 assert(amountRepayMax > 0.000001 ether, "상환 가능한 금액이 너무 적습니다.");
 print("상환 가능한 금액: " + amountRepayMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountRepay = 0.1;
 assert(amountRepay > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountRepay), "잘못된 형식의 값이 입력 되었습니다.");
 assert(getBalance() >= amountRepay, "상환할 수 있는 ETH가 부족합니다.");
-assert(Q.bifi.getMaxRepayAmount("ether") >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
+assert(Q.bifi.getRepayableAmount("eth") >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
 ```
 
 ### 설정한 금액 상환하기
@@ -39,7 +39,7 @@ assert(Q.bifi.getMaxRepayAmount("ether") >= amountRepay, "부채보다 많은 �
 - 설정한 금액만큼을 BiFi에 상환합니다.
 -
 ```taster
-Q.bifi.repay("ether", amountRepay);
+Q.bifi.repay("eth", amountRepay);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

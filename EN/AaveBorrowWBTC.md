@@ -11,8 +11,8 @@ In this scenario, you will borrow WBTC in Aave V2. This service may be limited a
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Aave V2](https://app.aave.com/#/dashboard).
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("wbtc") && !Q.aaveV2.getIsFrozen("wbtc"), "Loaning is limited due to the circuit status of the market.");
-let amountBorrowMax = Q.aaveV2.getAmountBorrowMax("wbtc");
+assert(L2Lending.aaveV2.getIsActive("wbtc") && !L2Lending.aaveV2.getIsFrozen("wbtc"), "Loaning is limited due to the circuit status of the market.");
+let amountBorrowMax = Q.aaveV2.getBorrowableAmount("wbtc");
 assert(amountBorrowMax > 0.000001 wbtc, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```

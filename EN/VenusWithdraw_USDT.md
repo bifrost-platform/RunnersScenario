@@ -12,7 +12,7 @@ In this scenario, you will withdraw USDT in Venus.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Venus](https://app.venus.io/dashboard).
 
 ```output-Dynamic
-let amountWithdrawMax = Q.venus.getAmountWithdrawMax("usdt");
+let amountWithdrawMax = Q.venus.getWithdrawableAmount("usdt");
 assert(amountWithdrawMax > 0.000001 usdt, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```

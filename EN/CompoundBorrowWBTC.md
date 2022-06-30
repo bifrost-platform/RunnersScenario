@@ -12,7 +12,7 @@ In this scenario, you will borrow WBTC in Compound.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Compound](https://app.compound.finance/).
 
 ```output-Dynamic
-let amountBorrowMax = Q.compound.getAvailableBorrows("wbtc");
+let amountBorrowMax = Q.compound.getBorrowableAmount("wbtc");
 assert(amountBorrowMax >= 0.000001 wbtc, "Insufficient WBTC available to borrow in Compound.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```

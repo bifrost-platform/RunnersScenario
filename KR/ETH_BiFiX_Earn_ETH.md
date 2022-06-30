@@ -31,7 +31,7 @@ assert(amount <= getBalance (), "ETH 잔액이 부족합니다." );
 let bifiBalance = Q.Token.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
 if (bifiBalance < bifiFee) {
-    Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);
+    Q.sushi.buyTokenByCoin ("bifi", bifiFee - bifiBalance);
 }
 ```
 
@@ -45,10 +45,10 @@ Q.bifiX.approve("bifi", bifiFee);
 
 ```taster
 // BiFi-X에서 레버리지 할 수 있는 ETH의 최대 배율을 확인합니다
-let maxBoost = Q.bifiX.getMaxBoost ("ether");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("eth");
 
 // Earn 포지션을 생성합니다
-Q.bifiX.earn("ether", amount, maxBoost);
+Q.bifiX.earn("eth", amount, maxBoost);
 ```
 
 ### 모든 step이 정상적으로 완료되었습니다.

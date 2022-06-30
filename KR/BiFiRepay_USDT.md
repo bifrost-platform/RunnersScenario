@@ -14,7 +14,7 @@ Chainrunner Q는 이 문서의 내용대로 BiFi에서 대출한 USDT를 상환�
 - 상환 가능한 금액을 확인합니다.
 
 ```output-Dynamic
-let amountRepayMax = Q.bifi.getMaxRepayAmount("usdt");
+let amountRepayMax = Q.bifi.getRepayableAmount("usdt");
 assert(amountRepayMax > 0.000001 usdt, "상환 가능한 금액이 너무 적습니다.");
 print("상환 가능한 금액: " + amountRepayMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountRepay = 100;
 assert(amountRepay > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountRepay), "잘못된 형식의 값이 입력 되었습니다.");
 assert(Q.Token.balanceOf("usdt") >= amountRepay, "상환할 수 있는 USDT가 부족합니다.");
-assert(Q.bifi.getMaxRepayAmount("usdt") >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
+assert(Q.bifi.getRepayableAmount("usdt") >= amountRepay, "부채보다 많은 금액을 상환할수 없습니다.");
 ```
 
 ### 설정한 금액 상환하기

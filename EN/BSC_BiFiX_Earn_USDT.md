@@ -42,7 +42,7 @@ Q.bifiX.approve("bifib", bifiFee);
 
 ```taster
 // Confirm the maximum boost of USDT to leverage in BiFi-X.
-let maxBoost = Q.bifiX.getMaxBoost ("usdt");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("usdt");
 
 // Approve USDT before starting position.
 Q.bifiX.approve("usdt", amount);

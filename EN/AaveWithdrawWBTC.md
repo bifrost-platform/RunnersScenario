@@ -11,8 +11,8 @@ In this scenario, you will withdraw WBTC from Aave V2. This service may be limit
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Aave V2](https://app.aave.com/#/dashboard).
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("wbtc"), "Withdrawal is limited to the circuit status of the market.");
-let amountWithdrawMax = Q.aaveV2.getAmountWithdrawMax("wbtc");
+assert(L2Lending.aaveV2.getIsActive("wbtc"), "Withdrawal is limited to the circuit status of the market.");
+let amountWithdrawMax = Q.aaveV2.getWithdrawableAmount("wbtc");
 assert(amountWithdrawMax > 0.000001 wbtc, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```

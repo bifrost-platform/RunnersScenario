@@ -12,7 +12,7 @@ In this scenario, you will move ETH from Compound to BiFi.
 
 ```output-Dynamic
 // Confirm ETH in Compound.
-let assetAmount = Q.compound.getDepositAssetAmount ("ether");
+let assetAmount = Q.compound.getWithdrawableAmount ("eth");
 assert (assetAmount >= 0.000001 ether, "Confirm the amount of ETH in Compound.");
 print ("Deposited ETH:" + assetAmount.toString());
 ```
@@ -21,14 +21,14 @@ print ("Deposited ETH:" + assetAmount.toString());
 
 ```taster
 // Withdraw ETH in Compound.
-Q.compound.withdraw ("ether", assetAmount);
+Q.compound.withdraw ("eth", assetAmount);
 ```
 
 ### Deposit ETH to BiFi.
 
 ```taster
 // Deposit ETH in BiFi.
-Q.bifi.deposit (assetAmount);
+Q.bifi.deposit ("eth", assetAmount);
 print (assetAmount.toString () + " moved from Compound to BiFi.");
 ```
 

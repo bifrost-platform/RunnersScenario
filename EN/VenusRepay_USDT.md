@@ -11,7 +11,7 @@ In this scenario, you will repay USDT in Venus.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.venus.getAmountRepayMax("usdt");
+let amountRepayMax = Q.venus.getRepayableAmount("usdt");
 assert(amountRepayMax > 0.000001 usdt, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```
@@ -29,7 +29,7 @@ let amountRepay = 100;
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value.");
 assert(Q.Token.balanceOf("usdt") >= amountRepay, "Insufficient USDT to repay.");
-assert(Q.venus.getAmountRepayMax("usdt") >= amountRepay, "You cannot repay more than your loan.");
+assert(Q.venus.getRepayableAmount("usdt") >= amountRepay, "You cannot repay more than your loan.");
 ```
 
 ### Proceed Repay

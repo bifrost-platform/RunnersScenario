@@ -13,7 +13,7 @@ In this scenario, you will move USDC from Compound to BiFi.
 
 ```output-Dynamic
 // Confirm USDC in Compound.
-let assetAmount = Q.compound.getDepositAssetAmount ("usdc");
+let assetAmount = Q.compound.getWithdrawableAmount ("usdc");
 assert (assetAmount >= 0.000001 usdc, "Confirm the amount of USDC in Compound.");
 print ("Deposited USDC:" + assetAmount.toString());
 ```

@@ -27,7 +27,7 @@ assert(amount <= getBalance (), "Insufficient ETH." );
 let bifiBalance = Q.Token.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
 if (bifiBalance < bifiFee) {
-    Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);
+    Q.sushi.buyTokenByCoin ("bifi", bifiFee - bifiBalance);
 }
 ```
 
@@ -41,10 +41,10 @@ Q.bifiX.approve("bifi", bifiFee);
 
 ```taster
 // Confirm the maximum boost of ETH to leverage in BiFi-X.
-let maxBoost = Q.bifiX.getMaxBoost ("ether");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("eth");
 
 // Start Earn postion
-Q.bifiX.earn("ether", amount, maxBoost);
+Q.bifiX.earn("eth", amount, maxBoost);
 ```
 
 ### All steps are done successfully.

@@ -28,7 +28,7 @@ assert(getBalance() >= amountDeposit, "보유한 ETH가 부족합니다.");
 - 설정한 금액만큼을 BiFi에 예금합니다.
 
 ```taster
-Q.bifi.deposit("ether", amountDeposit);
+Q.bifi.deposit("eth", amountDeposit);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

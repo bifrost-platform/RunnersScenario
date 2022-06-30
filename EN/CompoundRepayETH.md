@@ -10,7 +10,7 @@ In this scenario, you will repay ETH in Compound.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.compound.getRepayAmount ("ether");
+let amountRepayMax = Q.compound.getRepayableAmount ("eth");
 assert (amountRepayMax >= 0.000001 ether, "Insufficient asset available for repay.");
 print ("Balance available to repay: " + amountRepayMax.toString ());
 ```
@@ -36,7 +36,7 @@ assert(amountRepayMax >= amount, "You cannot repay more than your loan.");
 - Now, Proceed repay.
 
 ```taster
-Q.compound.repay("ether", amount);
+Q.compound.repay("eth", amount);
 ```
 
 ### All steps are done successfully.

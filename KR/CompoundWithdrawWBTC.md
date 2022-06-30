@@ -12,7 +12,7 @@ Chainrunner Q는 이 문서의 내용대로 Compound에 예금한 WBTC를 출금
 - 정확한 액수는 [Compound](https://app.compound.finance/)에서 확인할 수 있습니다.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.compound.getDepositAssetAmount("wbtc");
+let amountWithdrawMax = Q.compound.getWithdrawableAmount("wbtc");
 assert(amountWithdrawMax >= 0.000001 wbtc, "출금 가능한 금액이 너무 적습니다.");
 print("출금 가능한 금액: " + amountWithdrawMax.toString());
 ```

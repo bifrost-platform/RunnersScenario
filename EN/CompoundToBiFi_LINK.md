@@ -13,7 +13,7 @@ In this scenario, you will move LINK from Compound to BiFi.
 
 ```output-Dynamic
 // Confirm LINK in Compound.
-let assetAmount = Q.compound.getDepositAssetAmount ("link");
+let assetAmount = Q.compound.getWithdrawableAmount ("link");
 assert (assetAmount >= 0.000001 link, "Confirm the amount of LINK in Compound.");
 print ("Deposited LINK:" + assetAmount.toString());
 ```

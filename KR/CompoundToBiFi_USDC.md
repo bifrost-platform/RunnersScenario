@@ -13,7 +13,7 @@ Chainrunner Q는 이 문서의 내용대로 Compound에 있는 나의 USDC 예�
 
 ```output-Dynamic
 // Compound에 예금된 USDC의 양을 확인합니다
-let assetAmount = Q.compound.getDepositAssetAmount ("usdc");
+let assetAmount = Q.compound.getWithdrawableAmount ("usdc");
 assert (assetAmount >= 0.000001 usdc, "Compound에 USDC 예금이 없거나 너무 작습니다.");
 print ("USDC 예금량:" + assetAmount.toString());
 ```

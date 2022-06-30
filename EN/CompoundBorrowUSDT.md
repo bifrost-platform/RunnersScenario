@@ -12,7 +12,7 @@ In this scenario, you will borrow USDT in Compound.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Compound](https://app.compound.finance/).
 
 ```output-Dynamic
-let amountBorrowMax = Q.compound.getAvailableBorrows("usdt");
+let amountBorrowMax = Q.compound.getBorrowableAmount("usdt");
 assert(amountBorrowMax >= 0.000001 usdt, "Insufficient USDT available to borrow in Compound.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```

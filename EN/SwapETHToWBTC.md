@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic WBTC
-let wbtcAmount = Q.sushi.getAmountsOutFromExactIn("wbtc", amountIn);
+let wbtcAmount = Q.sushi.getAmountOut ("eth", "wbtc", amountIn);
 print(wbtcAmount);
 ```
 
@@ -32,7 +32,7 @@ print(wbtcAmount);
 
 ```taster
 // Swap ETH to WBTC.
-Q.sushi.swapExactETHForTokens("wbtc", amountIn);
+Q.sushi.sell ("eth", "wbtc", amountIn);
 ```
 
 ### All steps are done successfully.

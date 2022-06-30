@@ -30,7 +30,7 @@ assert(amount <= Q.Token.balanceOf ("usdt"), "Insufficient USDT." );
 let bifiBalance = Q.Token.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
 if (bifiBalance < bifiFee) {
-    Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);
+    Q.sushi.buyTokenByCoin ("bifi", bifiFee - bifiBalance);
 }
 ```
 
@@ -44,7 +44,7 @@ Q.bifiX.approve("bifi", bifiFee);
 
 ```taster
 // Confirm the maximum boost of USDT to leverage in BiFi-X.
-let maxBoost = Q.bifiX.getMaxBoost ("usdt");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("usdt");
 
 // Approve USDT before starting position.
 Q.bifiX.approve("usdt", amount);

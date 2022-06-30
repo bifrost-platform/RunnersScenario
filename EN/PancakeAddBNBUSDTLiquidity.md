@@ -27,7 +27,8 @@ assert(amountIn <= getBalance(), "Insufficient BNB." );
 - Default PancakeSwap slippage (0.5%)
 
 ```taster
-let amountUsdt = Q.pancake.swapExactBNBForTokens ("usdt", amountIn / 2);
+let amountUsdt = Q.pancake.getAmountOut ("bnb", "usdt", amountIn / 2);
+Q.pancake.sell ("bnb", "usdt", amountIn / 2);
 ```
 
 ### Provide liquidity.

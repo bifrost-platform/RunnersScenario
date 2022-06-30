@@ -14,7 +14,7 @@ In this scenario, you will borrow KLAY from BiFi.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.bifi.getMaxBorrowAmount("klay");
+let amountBorrowMax = Q.bifi.getBorrowableAmount("klay");
 assert(amountBorrowMax > 0.000001 klay, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountBorrow = 0.1;
 ```input-Verify
 assert(amountBorrow > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountBorrow), "Invalid value");
-assert(Q.bifi.getMaxBorrowAmount("klay") >= amountBorrow, "Insufficient KLAY to borrow.");
+assert(Q.bifi.getBorrowableAmount("klay") >= amountBorrow, "Insufficient KLAY to borrow.");
 ```
 
 ### Proceed loaning

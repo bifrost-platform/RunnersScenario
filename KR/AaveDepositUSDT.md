@@ -16,7 +16,7 @@ let amountIn = 100;
 ```
 
 ```input-Verify
-assert(Q.aaveV2.getIsActive("usdt") && !Q.aaveV2.getIsFrozen("usdt"), "시장 설정으로 인해 현재 예금할 수 없습니다.");
+assert(L2Lending.aaveV2.getIsActive("usdt") && !L2Lending.aaveV2.getIsFrozen("usdt"), "시장 설정으로 인해 현재 예금할 수 없습니다.");
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
 assert(Q.Token.balanceOf("usdt") >= amountIn, "보유한 USDT가 부족합니다.");

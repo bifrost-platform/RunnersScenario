@@ -30,7 +30,7 @@ assert(amount <= Q.Token.balanceOf ("link"), "Insufficient LINK." );
 let bifiBalance = Q.Token.balanceOf ("bifi");
 let bifiFee = Q.bifiX.getFee ();
 if (bifiBalance < bifiFee) {
-    Q.sushi.swapETHForExactTokens ("bifi", bifiFee - bifiBalance);
+    Q.sushi.buyTokenByCoin ("bifi", bifiFee - bifiBalance);
 }
 ```
 
@@ -44,7 +44,7 @@ Q.bifiX.approve("bifi", bifiFee);
 
 ```taster
 // Confirm the maximum boost of LINK to leverage in BiFi-X.
-let maxBoost = Q.bifiX.getMaxBoost ("link");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("link");
 
 // Approve LINK before starting position.
 Q.bifiX.approve("link", amount);

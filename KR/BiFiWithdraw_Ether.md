@@ -13,7 +13,7 @@ Chainrunner Q는 이 문서의 내용대로 BiFi에 예금한 ETH를 출금합�
 - 출금 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("ether");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("eth");
 assert(amountWithdrawMax > 0.000001 ether, "출금 가능한 금액이 너무 적습니다.");
 print("출금 가능한 금액: " + amountWithdrawMax.toString());
 ```
@@ -30,7 +30,7 @@ let amountWithdraw = 0.1;
 ```input-Verify
 assert(amountWithdraw > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountWithdraw), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.bifi.getMaxWithdrawAmount("ether") >= amountWithdraw, "출금 가능한 ETH가 부족합니다.");
+assert(Q.bifi.getWithdrawableAmount("eth") >= amountWithdraw, "출금 가능한 ETH가 부족합니다.");
 ```
 
 ### 설정한 금액 출금하기
@@ -38,7 +38,7 @@ assert(Q.bifi.getMaxWithdrawAmount("ether") >= amountWithdraw, "출금 가능한
 - 설정한 금액만큼을 BiFi에 출금합니다.
 
 ```taster
-Q.bifi.withdraw("ether", amountWithdraw);
+Q.bifi.withdraw("eth", amountWithdraw);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

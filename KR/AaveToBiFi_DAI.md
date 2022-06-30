@@ -12,9 +12,9 @@ dai
 - 예금을 담보로 사용하고 있는 경우, 출금이 제한될 수 있습니다. [AAVE](https://app.aave.com/#/dashboard)에서 가능 여부를 확인하세요.
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("dai"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
+assert(L2Lending.aaveV2.getIsActive("dai"), "시장 설정으로 인해 현재 출금할 수 없습니다.");
 // AAVE에 예금된 DAI의 양을 확인합니다
-let assetAmount = Q.aaveV2.getUserReserve ("dai");
+let assetAmount = Q.aaveV2.getDepositedAmount ("dai");
 assert(assetAmount >= 0.000001 dai, "AAVE v2에 DAI 예금이 없거나 너무 작습니다.");
 print ("DAI 예금량:" + assetAmount.toString());
 ```

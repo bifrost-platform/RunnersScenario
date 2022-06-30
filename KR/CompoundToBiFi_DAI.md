@@ -13,7 +13,7 @@ Chainrunner Q는 이 문서의 내용대로 Compound에 있는 나의 DAI 예금
 
 ```output-Dynamic
 // Compound에 예금된 DAI의 양을 확인합니다
-let assetAmount = Q.compound.getDepositAssetAmount ("dai");
+let assetAmount = Q.compound.getWithdrawableAmount ("dai");
 assert (assetAmount >= 0.000001 dai, "Compound에 DAI 예금이 없거나 너무 작습니다.");
 print ("DAI 예금량:" + assetAmount.toString());
 ```

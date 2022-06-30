@@ -16,7 +16,7 @@ let amountIn = 0.01;
 ```
 
 ```input-Verify
-assert(Q.aaveV2.getIsActive("wbtc") && !Q.aaveV2.getIsFrozen("wbtc"), "시장 설정으로 인해 현재 예금할 수 없습니다.");
+assert(L2Lending.aaveV2.getIsActive("wbtc") && !L2Lending.aaveV2.getIsFrozen("wbtc"), "시장 설정으로 인해 현재 예금할 수 없습니다.");
 assert(amountIn > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountIn), "잘못된 형식의 값이 입력 되었습니다.");
 assert(Q.Token.balanceOf("wbtc") >= amountIn, "보유한 WBTC가 부족합니다.");

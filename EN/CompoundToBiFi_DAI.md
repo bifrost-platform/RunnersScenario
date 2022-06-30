@@ -13,7 +13,7 @@ In this scenario, you will move DAI from Compound to BiFi.
 
 ```output-Dynamic
 // Confirm DAI in Compound.
-let assetAmount = Q.compound.getDepositAssetAmount ("dai");
+let assetAmount = Q.compound.getWithdrawableAmount ("dai");
 assert (assetAmount >= 0.000001 dai, "Confirm the amount of DAI in Compound.");
 print ("Deposited DAI:" + assetAmount.toString());
 ```

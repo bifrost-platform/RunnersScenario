@@ -13,7 +13,7 @@ Chainrunner Q는 이 문서의 내용대로 Compound에 있는 나의 LINK 예�
 
 ```output-Dynamic
 // Compound에 예금된 LINK의 양을 확인합니다
-let assetAmount = Q.compound.getDepositAssetAmount ("link");
+let assetAmount = Q.compound.getWithdrawableAmount ("link");
 assert (assetAmount >= 0.000001 link, "Compound에 LINK 예금이 없거나 너무 작습니다.");
 print ("LINK 예금량:" + assetAmount.toString());
 ```

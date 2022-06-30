@@ -23,8 +23,8 @@ assert(interestRateMode == 1 || interestRateMode == 2, "잘못된 이자 계산 
 ```
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("wbtc"), "시장 설정으로 인해 현재 상환할 수 없습니다.");
-let amountRepayMax = Q.aaveV2.getAmountRepayMax("wbtc", interestRateMode);
+assert(L2Lending.aaveV2.getIsActive("wbtc"), "시장 설정으로 인해 현재 상환할 수 없습니다.");
+let amountRepayMax = Q.aaveV2.getRepayableAmount("wbtc", interestRateMode);
 assert(amountRepayMax > 0.000001 wbtc, "상환 가능한 금액이 너무 적습니다.");
 print("상환 가능한 금액: " + amountRepayMax.toString());
 ```

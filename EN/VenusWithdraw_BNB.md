@@ -11,7 +11,7 @@ In this scenario, you will withdraw BNB in Venus.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Venus](https://app.venus.io/dashboard).
 
 ```output-Dynamic
-let amountWithdrawMax = Q.venus.getAmountWithdrawMax("bnb");
+let amountWithdrawMax = Q.venus.getWithdrawableAmount("bnb");
 assert(amountWithdrawMax > 0.000001 bnb, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```

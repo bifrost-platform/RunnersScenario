@@ -12,7 +12,7 @@ In this scenario, you will withdraw USDT in Compound.
 - Value shown may not be accurate. or precise value, please obtain asset directly from [Compound](https://app.compound.finance/).
 
 ```output-Dynamic
-let amountWithdrawMax = Q.compound.getDepositAssetAmount ("usdt");
+let amountWithdrawMax = Q.compound.getWithdrawableAmount ("usdt");
 assert(amountWithdrawMax >= 0.000001 usdt,"Insufficient asset to withdraw.");
 print ("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```

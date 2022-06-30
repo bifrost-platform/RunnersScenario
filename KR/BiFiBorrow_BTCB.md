@@ -14,7 +14,7 @@ Chainrunner Q는 이 문서의 내용대로 BiFi에서 BTCB를 대출합니다.
 - 대출 가능한 금액을 확인합니다.
 
 ```output-Dynamic
-let amountBorrowMax = Q.bifi.getMaxBorrowAmount("btcb");
+let amountBorrowMax = Q.bifi.getBorrowableAmount("btcb");
 assert(amountBorrowMax > 0.000001 btcb, "대출 가능한 금액이 너무 적습니다.");
 print("대출 가능한 금액: " + amountBorrowMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountBorrow = 0.01;
 ```input-Verify
 assert(amountBorrow > 0, "잘못된 금액이 입력 되었습니다.");
 assert(isCurrency(amountBorrow), "잘못된 형식의 값이 입력 되었습니다.");
-assert(Q.bifi.getMaxBorrowAmount("btcb") >= amountBorrow, "빌릴 수 있는 BTCB가 부족합니다.");
+assert(Q.bifi.getBorrowableAmount("btcb") >= amountBorrow, "빌릴 수 있는 BTCB가 부족합니다.");
 ```
 
 ### 설정한 금액 대출하기

@@ -15,7 +15,7 @@ In this scenario, you will withdraw KDAI in BiFi.
 - Confirm asset available to withdraw.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("kdai");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("kdai");
 assert(amountWithdrawMax > 0.000001 kdai, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountWithdraw = 100;
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value");
-assert(Q.bifi.getMaxWithdrawAmount("kdai") >= amountWithdraw, "Insufficient KDAI to withdraw.");
+assert(Q.bifi.getWithdrawableAmount("kdai") >= amountWithdraw, "Insufficient KDAI to withdraw.");
 ```
 
 ### Proceed withdrawal

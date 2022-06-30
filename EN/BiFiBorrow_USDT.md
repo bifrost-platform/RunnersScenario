@@ -15,7 +15,7 @@ In this scenario, you will borrow USDT from BiFi.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.bifi.getMaxBorrowAmount("usdt");
+let amountBorrowMax = Q.bifi.getBorrowableAmount("usdt");
 assert(amountBorrowMax > 0.000001 usdt, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountBorrow = 100;
 ```input-Verify
 assert(amountBorrow > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountBorrow), "Invalid value");
-assert(Q.bifi.getMaxBorrowAmount("usdt") >= amountBorrow, "Insufficient USDT to borrow.");
+assert(Q.bifi.getBorrowableAmount("usdt") >= amountBorrow, "Insufficient USDT to borrow.");
 ```
 
 ### Proceed loaning

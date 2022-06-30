@@ -22,8 +22,8 @@ assert(interestRateMode == 1 || interestRateMode == 2, "잘못된 이자 계산 
 ```
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("ether"), "시장 설정으로 인해 현재 상환할 수 없습니다.");
-let amountRepayMax = Q.aaveV2.getAmountRepayMax("ether", interestRateMode);
+assert(L2Lending.aaveV2.getIsActive("eth"), "시장 설정으로 인해 현재 상환할 수 없습니다.");
+let amountRepayMax = Q.aaveV2.getRepayableAmount("eth", interestRateMode);
 assert(amountRepayMax > 0.000001 ether, "상환 가능한 금액이 너무 적습니다.");
 print("상환 가능한 금액: " + amountRepayMax.toString());
 ```
@@ -49,7 +49,7 @@ assert(amountRepayMax >= amount, "부채보다 많은 금액을 상환할수 없
 - 설정한 금액만큼 상환합니다.
 
 ```taster
-Q.aaveV2.repay("ether", amount, interestRateMode);
+Q.aaveV2.repay("eth", amount, interestRateMode);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

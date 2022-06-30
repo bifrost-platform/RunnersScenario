@@ -29,8 +29,8 @@ assert(bfcAmount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (bfcAmount), "Invalid value");
 assert(bfcAmount <= Q.Token.balanceOf ("bfc"), "Insufficient BFC." );
 let ethBalance = getBalance ();
-let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bfc", bfcAmount);
-assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BFC." );
+let ethAmount = Q.sushi.getAmountIn ("eth", "bfc", bfcAmount);
+assert(currencyToNum (ethAmount) <= currencyToNum (ethBalance), "Insufficent ETH. Please set lower amount of BFC." );
 ```
 
 ### Provide liquidity of BFC-WETH pair in SushiSwap.
@@ -38,7 +38,10 @@ assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BFC
 - Use default Sushiswap slippage (0.5%)
 
 ```taster
-let lpAmount = Q.sushi.addLiquidityETH ("bfc", bfcAmount, ethAmount);
+let lpBalanceBefore = Q.sushi.getWETHLpBalance ("bfc");
+Q.sushi.addLiquidityETH ("bfc", bfcAmount, ethAmount);
+let lpBalanceAfter = Q.sushi.getWETHLpBalance ("bfc");
+let lpAmount = lpBalanceAfter - lpBalanceBefore;
 assert (lpAmount > 0, "Liquidity token balance: 0");
 ```
 

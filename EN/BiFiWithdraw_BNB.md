@@ -14,7 +14,7 @@ In this scenario, you will withdraw BNB in BiFi.
 - Confirm asset available to withdraw.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("bnb");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("bnb");
 assert(amountWithdrawMax > 0.000001 bnb, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
@@ -31,7 +31,7 @@ let amountWithdraw = 0.1;
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value");
-assert(Q.bifi.getMaxWithdrawAmount("bnb") >= amountWithdraw, "Insufficient BNB to withdraw.");
+assert(Q.bifi.getWithdrawableAmount("bnb") >= amountWithdraw, "Insufficient BNB to withdraw.");
 ```
 
 ### Proceed withdrawal

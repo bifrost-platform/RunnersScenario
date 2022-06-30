@@ -12,7 +12,7 @@ Chainrunner Q는 이 문서의 내용대로 Venus에 예금한 BTCB를 출금합
 - 정확한 액수는 [Venus](https://app.venus.io/dashboard)에서 직접 확인할 수 있습니다.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.venus.getAmountWithdrawMax("btcb");
+let amountWithdrawMax = Q.venus.getWithdrawableAmount("btcb");
 assert(amountWithdrawMax > 0.000001 btcb, "출금 가능한 금액이 너무 적습니다.");
 print("출금 가능한 금액: " + amountWithdrawMax.toString());
 ```

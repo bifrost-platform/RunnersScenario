@@ -13,15 +13,15 @@ ChainRunner Q compares DEXes to swap ETH to WBTC in the most price efficient way
 - Only the maximum amount of WBTC available for swap will be displayed if the token pool in DEX is insufficient.
 
 ```output-Dynamic
-let outputs = Q.optimizedSwap.eth.getOutputs("wbtc", 1 ether);
-let target = Q.optimizedSwap.getBest (outputs);
+let outputs = Q.optimizedSwap.getAmountOuts("eth", "wbtc", 1 eth);
+Q.optimizedSwap.checkOutputs (outputs);
 let (bestAmount, target) = outputs[0];
 print("Best DEX is " + target + ". (" + bestAmount.toString() + ")\n");
 print ("\nDifferences from Best DEX\n");
 print ("\nCurrent Chain : \n");
 Q.optimizedSwap.printOutputs (bestAmount, outputs);
 print ("\nOther Chain : ");
-Q.optimizedSwap.eth.printOtherChainOutputs (bestAmount, "wbtc", 1 ether);
+Q.optimizedSwap.printOtherOutputs (bestAmount, "eth", "wbtc", 1 eth);
 ```
 
 ### Set the amount of ETH to swap.
@@ -40,7 +40,7 @@ assert(amountIn <= getBalance(), "Insufficient ETH.");
 ```
 
 ```output-Dynamic WBTC
-Q.optimizedSwap.eth.getOutput (target, "wbtc", amountIn);
+Q.optimizedSwap.getAmountOut (target, "eth", "wbtc", amountIn);
 ```
 
 ### ChainRunner Q swaps ETH to WBTC in the most optimzed DEX.
@@ -49,7 +49,7 @@ Q.optimizedSwap.eth.getOutput (target, "wbtc", amountIn);
 
 ```taster
 // Swap ETH to WBTC.
-Q.optimizedSwap.eth.swap (target, "wbtc", amountIn);
+Q.optimizedSwap.swap (target, "eth", "wbtc", amountIn);
 ```
 
 ### All steps are done successfully.

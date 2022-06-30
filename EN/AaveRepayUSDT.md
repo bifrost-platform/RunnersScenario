@@ -24,8 +24,8 @@ assert(interestRateMode == 1 || interestRateMode == 2, "Incorrect interest calcu
 ```
 
 ```output-Dynamic
-assert(Q.aaveV2.getIsActive("usdt"), "Repayment is limited due to the circuit status of the market.");
-let amountRepayMax = Q.aaveV2.getAmountRepayMax("usdt", interestRateMode);
+assert(L2Lending.aaveV2.getIsActive("usdt"), "Repayment is limited due to the circuit status of the market.");
+let amountRepayMax = Q.aaveV2.getRepayableAmount("usdt", interestRateMode);
 assert(amountRepayMax > 0.000001 usdt, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```

@@ -22,7 +22,7 @@ assert(amountIn <= getBalance(), "ETH 잔액이 부족합니다." );
 ```
 
 ```output-Dynamic LINK
-let linkAmount = Q.sushi.getAmountsOutFromExactIn("link", amountIn);
+let linkAmount = Q.sushi.getAmountOut ("eth", "link", amountIn);
 print(linkAmount);
 ```
 
@@ -32,7 +32,7 @@ print(linkAmount);
 
 ```taster
 // ETH를 LINK로 교환합니다.
-Q.sushi.swapExactETHForTokens("link", amountIn);
+Q.sushi.sell ("eth", "link", amountIn);
 ```
 
 ### 모든 Step이 정상적으로 완료되었습니다.

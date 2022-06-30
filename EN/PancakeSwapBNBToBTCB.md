@@ -19,7 +19,7 @@ assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic BTCB
-let btcbAmount = Q.pancake.getAmountsOutFromExactIn("btcb", amountIn);
+let btcbAmount = Q.pancake.getAmountOut ("bnb", "btcb", amountIn);
 print(btcbAmount);
 ```
 
@@ -29,7 +29,7 @@ print(btcbAmount);
 
 ```taster
 // Swap BNB to BTCB.
-Q.pancake.swapExactBNBForTokens("btcb", amountIn);
+Q.pancake.sell ("bnb", "btcb", amountIn);
 ```
 
 ### All steps are done successfully.

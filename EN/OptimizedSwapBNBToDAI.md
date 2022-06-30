@@ -13,15 +13,15 @@ ChainRunner Q compares DEXes to swap BNB to DAI in the most price efficient way.
 - Only the maximum amount of DAI available for swap will be displayed if the token pool in DEX is insufficient.
 
 ```output-Dynamic
-let outputs = Q.optimizedSwap.bsc.getOutputs("dai", 1 bnb);
-let target = Q.optimizedSwap.getBest (outputs);
+let outputs = Q.optimizedSwap.getAmountOuts("bnb", "dai", 1 bnb);
+Q.optimizedSwap.checkOutputs (outputs);
 let (bestAmount, target) = outputs[0];
 print("Best DEX is " + target + ". (" + bestAmount.toString() + ")\n");
 print ("\nDifferences from Best DEX\n");
 print ("\nCurrent Chain : \n");
 Q.optimizedSwap.printOutputs (bestAmount, outputs);
 print ("\nOther Chain : ");
-Q.optimizedSwap.bsc.printOtherChainOutputs (bestAmount, "dai", 1 bnb);
+Q.optimizedSwap.printOtherOutputs (bestAmount, "bnb", "dai", 1 bnb);
 ```
 
 ### Set the amount of BNB to swap.
@@ -40,7 +40,7 @@ assert(amountIn <= getBalance(), "Insufficient BNB.");
 ```
 
 ```output-Dynamic DAI
-Q.optimizedSwap.bsc.getOutput (target, "dai", amountIn);
+Q.optimizedSwap.getAmountOut (target, "bnb", "dai", amountIn);
 ```
 
 ### ChainRunner Q swaps BNB to DAI in the most optimzed DEX.
@@ -49,7 +49,7 @@ Q.optimizedSwap.bsc.getOutput (target, "dai", amountIn);
 
 ```taster
 // Swap BNB to DAI.
-Q.optimizedSwap.bsc.swap (target, "dai", amountIn);
+Q.optimizedSwap.swap (target, "bnb", "dai", amountIn);
 ```
 
 ### All steps are done successfully.

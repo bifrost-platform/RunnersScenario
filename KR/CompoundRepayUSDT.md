@@ -11,7 +11,7 @@ Chainrunner Q는 이 문서의 내용대로 Compound에서 대출한 USDT를 상
 - 상환 가능한 최대 금액을 확인합니다.
 
 ```output-Dynamic
-let amountRepayMax = Q.compound.getRepayAmount ("usdt");
+let amountRepayMax = Q.compound.getRepayableAmount ("usdt");
 assert (amountRepayMax >= 0.000001 usdt, "상환 가능한 금액이 너무 적습니다.");
 print ("상환 가능한 금액: " + amountRepayMax.toString ());
 ```

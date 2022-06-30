@@ -15,7 +15,7 @@ In this scenario, you will withdraw USDT in BiFi.
 - Confirm asset available to withdraw.
 
 ```output-Dynamic
-let amountWithdrawMax = Q.bifi.getMaxWithdrawAmount("usdt");
+let amountWithdrawMax = Q.bifi.getWithdrawableAmount("usdt");
 assert(amountWithdrawMax > 0.000001 usdt, "Insufficient asset to withdraw.");
 print("Asset available to withdraw: " + amountWithdrawMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountWithdraw = 100;
 ```input-Verify
 assert(amountWithdraw > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountWithdraw), "Invalid value");
-assert(Q.bifi.getMaxWithdrawAmount("usdt") >= amountWithdraw, "Insufficient USDT to withdraw.");
+assert(Q.bifi.getWithdrawableAmount("usdt") >= amountWithdraw, "Insufficient USDT to withdraw.");
 ```
 
 ### Proceed withdrawal

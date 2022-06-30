@@ -25,7 +25,7 @@ assert(amount <= getBalance (), "KLAY 잔액이 부족합니다.");
 
 ```taster
 // BiFi-X에서 레버리지 할 수 있는 KLAY의 최대 배율을 확인합니다
-let maxBoost = Q.bifiX.getMaxBoost ("klay");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("klay");
 
 // Earn 포지션을 생성합니다
 let ok = Q.bifiX.earn("klay", amount, maxBoost);

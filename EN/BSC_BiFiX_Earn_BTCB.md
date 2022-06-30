@@ -42,7 +42,7 @@ Q.bifiX.approve("bifib", bifiFee);
 
 ```taster
 // Confirm the maximum boost of BTCB to leverage in BiFi-X.
-let maxBoost = Q.bifiX.getMaxBoost ("btcb");
+let maxBoost = L2Lending.bifiX.getMaxBoost ("btcb");
 
 // Approve BTCB before starting position.
 Q.bifiX.approve("btcb", amount);

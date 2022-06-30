@@ -15,7 +15,7 @@ In this scenario, you will borrow KDAI from BiFi.
 - Confirm amount of asset available to borrow.
 
 ```output-Dynamic
-let amountBorrowMax = Q.bifi.getMaxBorrowAmount("kdai");
+let amountBorrowMax = Q.bifi.getBorrowableAmount("kdai");
 assert(amountBorrowMax > 0.000001 kdai, "Insufficient asset to borrow.");
 print("Loanable amount: " + amountBorrowMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountBorrow = 100;
 ```input-Verify
 assert(amountBorrow > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountBorrow), "Invalid value");
-assert(Q.bifi.getMaxBorrowAmount("kdai") >= amountBorrow, "Insufficient KDAI to borrow.");
+assert(Q.bifi.getBorrowableAmount("kdai") >= amountBorrow, "Insufficient KDAI to borrow.");
 ```
 
 ### Proceed loaning

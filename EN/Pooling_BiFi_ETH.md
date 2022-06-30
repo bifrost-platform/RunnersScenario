@@ -29,8 +29,8 @@ assert(bifiAmount > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency (bifiAmount), "Invalid value");
 assert(bifiAmount <= Q.Token.balanceOf ("bifi"), "Insufficient BIFI." );
 let ethBalance = getBalance ();
-let ethAmount = Q.sushi.getETHAmountsOutFromExactIn("bifi", bifiAmount);
-assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BiFi." );
+let ethAmount = Q.sushi.getAmountIn ("eth", "bifi", bifiAmount);
+assert(currencyToNum (ethAmount) <= currencyToNum (ethBalance), "Insufficent ETH. Please set lower amount of BiFi." );
 ```
 
 ### Provide liquidity of BiFi-WETH pair in SushiSwap.
@@ -38,7 +38,10 @@ assert(ethAmount <= ethBalance, "Insufficent ETH. Please set lower amount of BiF
 - Use default Sushiswap slippage (0.5%)
 
 ```taster
-let lpAmount = Q.sushi.addLiquidityETH ("bifi", bifiAmount, ethAmount);
+let lpBalanceBefore = Q.sushi.getWETHLpBalance ("bifi");
+Q.sushi.addLiquidityETH ("bifi", bifiAmount, ethAmount);
+let lpBalanceAfter = Q.sushi.getWETHLpBalance ("bifi");
+let lpAmount = lpBalanceAfter - lpBalanceBefore;
 assert (lpAmount > 0, "Liquidity token balance: 0");
 ```
 

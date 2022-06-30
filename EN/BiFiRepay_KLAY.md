@@ -14,7 +14,7 @@ In this scenario, you will repay KLAY in BiFi.
 - Confirm your asset available to repay.
 
 ```output-Dynamic
-let amountRepayMax = Q.bifi.getMaxRepayAmount("klay");
+let amountRepayMax = Q.bifi.getRepayableAmount("klay");
 assert(amountRepayMax > 0.000001 klay, "Insufficient asset available for repay.");
 print("Balance available to repay: " + amountRepayMax.toString());
 ```
@@ -32,7 +32,7 @@ let amountRepay = 0.1;
 assert(amountRepay > 0, "Incorrect value. Please enter value more than 0.");
 assert(isCurrency(amountRepay), "Invalid value");
 assert(getBalance() >= amountRepay, "Insufficient KLAY available to repay.");
-assert(Q.bifi.getMaxRepayAmount("klay") >= amountRepay, "You cannot repay more than your loan.");
+assert(Q.bifi.getRepayableAmount("klay") >= amountRepay, "You cannot repay more than your loan.");
 ```
 
 ### Proceed Repay
